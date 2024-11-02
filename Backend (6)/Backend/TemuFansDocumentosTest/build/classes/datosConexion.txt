@@ -1,0 +1,5 @@
+hostname=basededatosexamen.cuynluw8snao.us-east-1.rds.amazonaws.com
+user=admin
+password=1INF33Melgar
+port=3306
+database=mydb
