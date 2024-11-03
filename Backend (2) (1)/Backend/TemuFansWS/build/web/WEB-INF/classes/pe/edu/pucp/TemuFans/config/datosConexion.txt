@@ -1,5 +1,0 @@
-hostname=basededatosexamen.cuynluw8snao.us-east-1.rds.amazonaws.com
-user=admin
-password=K0YCHnRSxD6qOmakIavcWQ==
-port=3306
-database=mydb
