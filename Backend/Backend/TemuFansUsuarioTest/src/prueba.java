@@ -16,7 +16,7 @@ public class prueba {
     public static void main(String[] args){
         ClienteBO clientebo = new ClienteBO();
         ArrayList<Cliente> lista = clientebo.listarTodos();
-        
+        System.out.println("holamundo");
         for(Cliente cli : lista){
             System.out.println(cli.getCodigo() + " " + cli.getNombre());
         }
