@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URL;
+import java.net.URLDecoder;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -60,7 +62,8 @@ public class DBManager {
         url = url.concat(":");
         url = url.concat(this.puerto);
         url = url.concat("/");
-        url = url.concat(this.base_de_datos);        
+        url = url.concat(this.base_de_datos);
+        url = url.concat("?useSSL=false");
         return url;
     }
 
@@ -70,7 +73,13 @@ public class DBManager {
             //el siguiente código ha sido probado en Windows
             //el archivo de configuración se encuentra en la carpeta resources/jdbc.properties
             //del proyecto que lo invoca
-            String nmArchivoConf = "resources" + "/" + ARCHIVO_CONFIGURACION;
+            URL resourceUrl = DBManager.class.getResource("/pe/edu/pucp/TemuFans/config/");
+            String decodePath = URLDecoder.decode(resourceUrl.getPath(), "UTF-8");
+            String nmArchivoConf = decodePath + ARCHIVO_CONFIGURACION;
+            System.out.println(nmArchivoConf);
+            /*
+            String nmArchivoConf = "resources/" + ARCHIVO_CONFIGURACION;
+            */
 
             properties.load(new FileInputStream(new File(nmArchivoConf)));
             this.driver = properties.getProperty("driver");
