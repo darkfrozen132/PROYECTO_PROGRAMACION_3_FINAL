@@ -17,6 +17,7 @@ public class prueba {
         ClienteBO clientebo = new ClienteBO();
         ArrayList<Cliente> lista = clientebo.listarTodos();
         System.out.println("holamundo");
+        System.out.println("");
         for(Cliente cli : lista){
             System.out.println(cli.getCodigo() + " " + cli.getNombre());
         }
