@@ -16,8 +16,9 @@ import pe.edu.pucp.usuario.model.Cliente;
  * @author usuario
  */
 @WebService(serviceName = "ClienteWS")
-public class ClienteWS {
+public class ServicioWS {
     private ClienteBO clientebo;
+    
     /**
      * This is a sample web service operation
      */
@@ -26,8 +27,8 @@ public class ClienteWS {
         return "Hello " + txt + " !";
     }
     
-    @WebMethod(operationName = "listarClientes")
-    public ArrayList<Cliente> listarClientes(){
+    @WebMethod(operationName = "cliente_listarClientes")
+    public ArrayList<Cliente> cliente_listarClientes(){
         clientebo = new ClienteBO();
         return this.clientebo.listarTodos();
     }
