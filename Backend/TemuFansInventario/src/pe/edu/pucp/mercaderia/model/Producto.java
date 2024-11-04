@@ -3,14 +3,14 @@ package pe.edu.pucp.mercaderia.model;
 
 
 public class Producto {
-    private Integer idPaquete;
+    private Integer idProducto;
     private String codigo;
     private String nombre;
     private Integer cantidad;
     private double precio;
 
-    public Producto(Integer idPaquete, String codigo, Integer cantidad, String nombre, double precio) {
-        this.idPaquete = idPaquete;
+    public Producto(Integer idProducto, String codigo, Integer cantidad, String nombre, double precio) {
+        this.idProducto = idProducto;
         this.codigo = codigo;
         this.cantidad = cantidad;
         this.nombre = nombre;
@@ -18,27 +18,14 @@ public class Producto {
     }
     
     public Producto() {
-        this.idPaquete = null;
+        this.idProducto = null;
         this.codigo = null;
         this.cantidad = null;
         this.nombre = null;
         this.precio = 0;
     }
 
-    /**
-     * @return the idPaquete
-     */
-    public Integer getIdPaquete() {
-        return idPaquete;
-    }
-
-    /**
-     * @param idPaquete the idPaquete to set
-     */
-    public void setIdPaquete(Integer idPaquete) {
-        this.idPaquete = idPaquete;
-    }
-
+ 
     /**
      * @return the codigo
      */
@@ -93,6 +80,20 @@ public class Producto {
      */
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+
+    /**
+     * @return the idProducto
+     */
+    public Integer getIdProducto() {
+        return idProducto;
+    }
+
+    /**
+     * @param idProducto the idProducto to set
+     */
+    public void setIdProducto(Integer idProducto) {
+        this.idProducto = idProducto;
     }
     
 }
