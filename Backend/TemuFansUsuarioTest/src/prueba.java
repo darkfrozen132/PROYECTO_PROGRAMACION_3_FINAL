@@ -14,8 +14,16 @@ import pe.edu.pucp.usuario.model.Cliente;
  */
 public class prueba {
     public static void main(String[] args){
-        ClienteBO clientebo = new ClienteBO();
+        /*ClienteBO clientebo = new ClienteBO();
         ArrayList<Cliente> lista = clientebo.listarTodos();
+        System.out.println("holamundo");
+        System.out.println("");
+        for(Cliente cli : lista){
+            System.out.println(cli.getCodigo() + " " + cli.getNombre());
+        }
+        */
+        ClienteBO clientebo = new ClienteBO();
+        ArrayList<Cliente> lista = clientebo.listarTodosNombreCodigo(null, null);
         System.out.println("holamundo");
         System.out.println("");
         for(Cliente cli : lista){
