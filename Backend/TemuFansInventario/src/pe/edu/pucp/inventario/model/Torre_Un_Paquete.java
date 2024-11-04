@@ -1,15 +1,17 @@
 
 package pe.edu.pucp.inventario.model;
 
+import pe.edu.pucp.mercaderia.model.Producto;
+
 public class Torre_Un_Paquete {
     private Integer idTorre_Un_Paquete;
     private Integer nro_torre;
-    private Integer idProducto;
+    private Producto idProducto;
     private String codigo;
     private Integer cantidad_paquete;
     private Boolean estado;
 
-    public Torre_Un_Paquete(Integer idTorre_Un_Paquete,Integer nro_torre, Integer idProducto, String codigo, Integer cantidad_paquete, Boolean estado) {
+    public Torre_Un_Paquete(Integer idTorre_Un_Paquete,Integer nro_torre, Producto idProducto, String codigo, Integer cantidad_paquete, Boolean estado) {
         this.idTorre_Un_Paquete = idTorre_Un_Paquete;
         this.nro_torre = nro_torre;
         this.idProducto = idProducto;
@@ -24,7 +26,7 @@ public class Torre_Un_Paquete {
         this.cantidad_paquete = null;
         this.estado = null;
         this.nro_torre = 0;
-        this.idProducto = 0;
+        this.idProducto = null;
     }
 
     /**
@@ -100,14 +102,14 @@ public class Torre_Un_Paquete {
     /**
      * @return the idProducto
      */
-    public Integer getIdProducto() {
+    public Producto getIdProducto() {
         return idProducto;
     }
 
     /**
      * @param idProducto the idProducto to set
      */
-    public void setIdProducto(Integer idProducto) {
+    public void setIdProducto(Producto idProducto) {
         this.idProducto = idProducto;
     }
     
