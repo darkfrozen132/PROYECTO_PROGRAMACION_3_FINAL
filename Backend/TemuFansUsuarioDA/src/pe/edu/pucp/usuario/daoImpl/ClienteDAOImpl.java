@@ -6,6 +6,7 @@ package pe.edu.pucp.usuario.daoImpl;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -47,6 +48,9 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
             case 1 -> {
                 return "ListarClientesMantenimiento";
             }
+            case 2 -> {
+                return "ListarClientesFiltroMantenimiento";
+            }
         }
         
         //nunca se llega aqui, pero por defecto lista todo
@@ -77,9 +81,25 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
     @Override
     protected void getParamEntrada_Listar() {
         switch(this.tipoListado){
-            case 1:
+            case 1 -> {
                 //no tienen parametros de entrada;
-                break;
+            }
+            case 2 -> {
+                try {
+                    if(this.cliente.getNombre() == null)
+                        this.registrarParametroNulo("_nombre", Types.VARCHAR);
+                    else
+                        this.registrarParametroEntrada("_nombre", this.cliente.getNombre());
+                    
+                    if(this.cliente.getCodigo() == null)
+                        this.registrarParametroNulo("_codigo", Types.VARCHAR);
+                    else
+                        this.registrarParametroEntrada("_codigo", this.cliente.getCodigo());
+                } catch (SQLException ex) {
+                    Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+
         }
     }
 
@@ -139,6 +159,23 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
                     cli.setIdCliente(Integer.valueOf(cod[i]));
                     return cli;
                 }
+                case 2 -> {
+                    Cliente cli = new Cliente();
+                    cli.setNombre(lector.getString("nombre"));
+                    cli.setFecha_registro(lector.getDate("fechaRegistro"));
+                    String[] cod = lector.getString("codigo").split("-");
+                    //logica de asignacion del codgio si por alguna razon el cod tiene "-" incluido
+                    //como por ejemplo CLI-GOGO-12
+                    int i;
+                    String cod_unido = "";
+                    for(i=0; i<cod.length - 1; i++){
+                        cod_unido += cod[i];
+                        if(i<cod.length - 2)cod_unido += "-";
+                    }
+                    cli.setCodigo(cod_unido);
+                    cli.setIdCliente(Integer.valueOf(cod[i]));
+                    return cli;
+                }
             }
             
         } catch (SQLException ex) {
@@ -167,4 +204,17 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
         return lista;
     }
     
+    @Override
+    public ArrayList<Cliente> listarTodosNombreCodigo(String nombre, String codigo) {
+        this.nroParametros = 2;
+        this.cliente = new Cliente();
+        this.cliente.setNombre(nombre);
+        this.cliente.setCodigo(codigo);
+        this.tipoListado = 2;
+        ArrayList<Cliente> lista = new ArrayList<>();
+        for(Object obj : super.listar())
+            lista.add((Cliente)obj);
+        this.nroParametros = 0;
+        return lista;
+    }
 }

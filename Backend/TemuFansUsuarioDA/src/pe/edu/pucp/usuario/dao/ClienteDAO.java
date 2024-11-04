@@ -14,4 +14,5 @@ import pe.edu.pucp.usuario.model.Cliente;
 public interface ClienteDAO {
     public ArrayList<Cliente> listarTodos();
     
+    public ArrayList<Cliente> listarTodosNombreCodigo(String nombre, String codigo);
 }

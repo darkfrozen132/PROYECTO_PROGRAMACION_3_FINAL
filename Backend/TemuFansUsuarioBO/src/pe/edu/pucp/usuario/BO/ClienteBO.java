@@ -23,4 +23,8 @@ public class ClienteBO {
     public ArrayList<Cliente> listarTodos(){
         return clienteDAO.listarTodos();
     }
+    
+    public ArrayList<Cliente> listarTodosNombreCodigo(String nombre, String codigo){
+        return clienteDAO.listarTodosNombreCodigo(nombre, codigo);
+    }
 }

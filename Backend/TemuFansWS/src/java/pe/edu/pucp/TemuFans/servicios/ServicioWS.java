@@ -32,4 +32,10 @@ public class ServicioWS {
         clientebo = new ClienteBO();
         return this.clientebo.listarTodos();
     }
+    
+    @WebMethod(operationName = "cliente_listarClientesNombreCodigo")
+    public ArrayList<Cliente> cliente_listarClientesNombreCodigo(@WebParam(name = "nombre")String nombre, @WebParam(name = "codigo") String codigo){
+        clientebo = new ClienteBO();
+        return this.clientebo.listarTodosNombreCodigo(nombre, codigo);
+    }
 }
