@@ -18,9 +18,9 @@ public class ClienteBO {
     
     public ClienteBO(){
         this.clienteDAO = new ClienteDAOImpl();
-    }
-    
+    }   
     public ArrayList<Cliente> listarTodos(){
         return clienteDAO.listarTodos();
     }
+    
 }

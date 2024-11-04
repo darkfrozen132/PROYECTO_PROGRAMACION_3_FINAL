@@ -32,6 +32,9 @@ public class PedidoBO {
         ponerDatos(idUsuario,idEmpleado,subtotal,impuesto,total);
         return this.daoPedido.insertar(this.tipo,pedido);
     }
+    public void modificar_pago(Integer idPedido,Estado_Pedido estado){
+        this.daoPedido.modificar_pago(idPedido, estado);
+    }
     
     private void ponerDatos(Integer idUsuario, Integer idEmpleado,double subtotal, double impuesto, double total){
         this.pedido = new Pedido(this.tipo);

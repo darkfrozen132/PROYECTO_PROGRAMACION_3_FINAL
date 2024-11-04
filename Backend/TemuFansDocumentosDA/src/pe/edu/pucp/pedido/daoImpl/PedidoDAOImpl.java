@@ -15,6 +15,7 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
     
     private Pedido pedido;
     private Tipo_Pedido tipo;
+    
     private Usuario usuario;
 
     @Override
@@ -26,6 +27,15 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
         Integer id = this.pedido.getId_pedido(); 
         this.nroParametros = 0;
         return id;
+    }
+    @Override
+    public void modificar_pago(Integer idPedido,Estado_Pedido estado) {
+        this.nroParametros=2;
+        this.pedido=new Pedido();
+        this.pedido.setId_pedido(idPedido);
+        this.pedido.setEstado_pedido(estado);
+        super.modificar();
+        this.nroParametros=0;        
     }
 
     @Override
@@ -45,7 +55,7 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
 
     @Override
     protected String getProcedure_Modificar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "MODIFICAR_PAGO";
     }
 
     @Override
@@ -80,7 +90,13 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
 
     @Override
     protected void getParamEntrada_Modificar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        try{
+            this.registrarParametroEntrada("_id_pedido", this.pedido.getId_pedido());
+            this.registrarParametroEntrada("_estado",this.pedido.getEstado_pedido());
+        }
+       catch (SQLException ex) {
+            Logger.getLogger(PedidoDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @Override
@@ -113,7 +129,7 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
 
     @Override
     protected void getParamSalida_Modificar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return;
     }
 
     @Override
@@ -188,5 +204,8 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
     @Override
     protected void limpiarObjetoDelResultSet() {
     }
+
+    
+    
 
 }
