@@ -36,7 +36,12 @@ public class PedidoBO {
              
         this.daoPedido.modificar_pago(idPedido, estado);
     }
-    
+    public ArrayList<ResumenPorFecha> obtenerResumenPorFecha(Date fechaInicio, Date fechaFin) {
+
+        ArrayList<ResumenPorFecha> resumen = daoPedido.listarResumen(fechaInicio, fechaFin);
+
+        return resumen;
+    }
     private void ponerDatos(Integer idUsuario, Integer idEmpleado,double subtotal, double impuesto, double total){
         this.pedido = new Pedido(this.tipo);
         if(this.tipo == Tipo_Pedido.COMPRA){

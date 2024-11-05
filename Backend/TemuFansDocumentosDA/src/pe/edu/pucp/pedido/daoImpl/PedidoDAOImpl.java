@@ -6,6 +6,8 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.sql.Types;
+import java.util.ArrayList;
+import java.util.Date;
 import pe.edu.pucp.documento.pedido.model.*;
 import pe.edu.pucp.pedido.dao.PedidoDAO;
 import pe.edu.pucp.dbmanager.config.DAOImpl;
@@ -15,7 +17,8 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
     
     private Pedido pedido;
     private Tipo_Pedido tipo;
-    
+     private Date fechaInicio;
+    private Date fechaFin;
     private Usuario usuario;
 
     @Override
@@ -67,7 +70,8 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
 
     @Override
     protected String getProcedure_Listar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+                return "listar_resumen_pedidos";
+
     }
 
     @Override
@@ -108,7 +112,12 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
 
     @Override
     protected void getParamEntrada_Listar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+         try {
+            this.registrarParametroEntrada("fecha_inicio",fechaInicio);
+            this.registrarParametroEntrada("fecha_fin", fechaFin);
+        } catch (SQLException ex) {
+            Logger.getLogger(PedidoDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @Override
@@ -161,8 +170,18 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
 
     @Override
     protected Object agregarObjetoALaLista(ResultSet lector) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+         try {
+            ResumenPorFecha resumen = new ResumenPorFecha();
+            resumen.setFecha(lector.getDate("Fecha"));
+            resumen.setCantPedidos(lector.getInt("Cant_Pedidos"));
+            resumen.setTotal(lector.getDouble("Total"));
+            return resumen;
+        } catch (SQLException ex) {
+            Logger.getLogger(PedidoDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        }
     }
+    
 
     @Override
     protected void instanciarObjetoDelResultSet(ResultSet lector) {
@@ -205,6 +224,18 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
 
     @Override
     protected void limpiarObjetoDelResultSet() {
+    }
+    @Override
+    public ArrayList<ResumenPorFecha>listarResumen(Date fechaInicio, Date fechaFin){
+        this.fechaInicio=fechaInicio;
+        this.fechaFin=fechaFin;
+        this.nroParametros=2;
+        ArrayList<ResumenPorFecha> listaResumen = new ArrayList<>();
+        for(Object obj:super.listar()){
+            listaResumen.add((ResumenPorFecha)obj);
+        }
+        this.nroParametros=0;
+        return listaResumen;
     }
 
     
