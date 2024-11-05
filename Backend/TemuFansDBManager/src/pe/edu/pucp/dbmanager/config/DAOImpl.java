@@ -15,9 +15,11 @@ public abstract class DAOImpl {
     protected CallableStatement statement;
     protected ResultSet resultSet;
     protected Integer nroParametros;
+    protected Boolean usarTransaccion;
 
     public DAOImpl() {
         this.nroParametros = 0;
+        this.usarTransaccion = true;
     }
 
     protected void iniciarTransaccion() throws SQLException {
@@ -63,10 +65,11 @@ public abstract class DAOImpl {
         Integer resultado = 0;
         try {
             //iniciar la transaccion
-            this.iniciarTransaccion();
+            if(this.usarTransaccion){
+                this.iniciarTransaccion();
+            }
             //generar la sentencia SQL para CallableStatement
             String sql = this.generarSentenciaSql(tipo);
-            System.out.println(sql);
             //colocar la sentencia SQL
             this.colocarSQLenStatement(sql);
             //obtener parametros de entrada
@@ -75,21 +78,26 @@ public abstract class DAOImpl {
             this.getProcedure_ParamSalida(tipo);
             //ejecutar el Callable Statement
             resultado = this.ejecutarModificacionEnBD();
-            System.out.println("El resultado fue: " + resultado.toString());
             //si hay parametros de salida, devolver los valores
             this.setProcedure_ParamSalida(tipo);
             //comitar la transaccion ya que no se devolvieron excepciones
-            this.comitarTransaccion();
+            if(this.usarTransaccion){
+                this.comitarTransaccion();                
+            }
         } catch (SQLException ex) {
             try {
                 System.err.println("Error al intentar ejecutar el comando SQL - " + ex);
-                this.rollbackTransaccion();
+                if(this.usarTransaccion){
+                    this.rollbackTransaccion();                    
+                }
             } catch (SQLException ex1) {
                 System.err.println("Error al intentar hacer rollback - " + ex);
             }
         } finally {
             try {
-                this.cerrarConexion();
+                if(this.usarTransaccion){
+                    this.cerrarConexion();                    
+                }
             } catch (SQLException ex) {
                 System.err.println("Error al intentar cerrar la conexion - " + ex);
             }
