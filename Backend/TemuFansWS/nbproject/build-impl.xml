@@ -841,6 +841,15 @@ exists or setup the property manually. For example like this:
         <ant antfile="${project.TemuFansDBManager}/build.xml" inheritall="false" target="jar">
             <property name="deploy.on.save" value="false"/>
         </ant>
+        <ant antfile="${project.TemuFansDocumentosBO}/build.xml" inheritall="false" target="jar">
+            <property name="deploy.on.save" value="false"/>
+        </ant>
+        <ant antfile="${project.TemuFansDocumentosDA}/build.xml" inheritall="false" target="jar">
+            <property name="deploy.on.save" value="false"/>
+        </ant>
+        <ant antfile="${project.TemuFansDocumentosModel}/build.xml" inheritall="false" target="jar">
+            <property name="deploy.on.save" value="false"/>
+        </ant>
         <ant antfile="${project.TemuFansUsuarioBO}/build.xml" inheritall="false" target="jar">
             <property name="deploy.on.save" value="false"/>
         </ant>
@@ -853,6 +862,15 @@ exists or setup the property manually. For example like this:
     </target>
     <target depends="init" if="dist.ear.dir" name="deps-ear-jar" unless="no.deps">
         <ant antfile="${project.TemuFansDBManager}/build.xml" inheritall="false" target="jar">
+            <property name="deploy.on.save" value="false"/>
+        </ant>
+        <ant antfile="${project.TemuFansDocumentosBO}/build.xml" inheritall="false" target="jar">
+            <property name="deploy.on.save" value="false"/>
+        </ant>
+        <ant antfile="${project.TemuFansDocumentosDA}/build.xml" inheritall="false" target="jar">
+            <property name="deploy.on.save" value="false"/>
+        </ant>
+        <ant antfile="${project.TemuFansDocumentosModel}/build.xml" inheritall="false" target="jar">
             <property name="deploy.on.save" value="false"/>
         </ant>
         <ant antfile="${project.TemuFansUsuarioBO}/build.xml" inheritall="false" target="jar">
@@ -1008,24 +1026,30 @@ exists or setup the property manually. For example like this:
     </target>
     <target depends="init,compile,compile-jsps,-pre-dist,-do-dist-with-manifest,-do-dist-without-manifest" name="do-dist"/>
     <target depends="init" if="dist.ear.dir" name="library-inclusion-in-manifest">
-        <copyfiles files="${reference.TemuFansDBManager.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
-        <copyfiles files="${reference.TemuFansUsuarioBO.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
-        <copyfiles files="${reference.TemuFansUsuarioDA.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <copyfiles files="${file.reference.commons-codec-1.17.1.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <copyfiles files="${file.reference.jakarta.xml.ws-api-4.0.2__1_.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <copyfiles files="${file.reference.mysql-connector-j-9.0.0.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${reference.TemuFansDBManager.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${reference.TemuFansUsuarioBO.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${reference.TemuFansUsuarioDA.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <copyfiles files="${reference.TemuFansUsuarioModel.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${reference.TemuFansDocumentosBO.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${reference.TemuFansDocumentosDA.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${reference.TemuFansDocumentosModel.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <mkdir dir="${build.web.dir}/META-INF"/>
         <manifest file="${build.web.dir}/META-INF/MANIFEST.MF" mode="update"/>
     </target>
     <target depends="init" name="library-inclusion-in-archive" unless="dist.ear.dir">
-        <copyfiles files="${reference.TemuFansDBManager.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
-        <copyfiles files="${reference.TemuFansUsuarioBO.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
-        <copyfiles files="${reference.TemuFansUsuarioDA.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${file.reference.commons-codec-1.17.1.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${file.reference.jakarta.xml.ws-api-4.0.2__1_.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${file.reference.mysql-connector-j-9.0.0.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${reference.TemuFansDBManager.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${reference.TemuFansUsuarioBO.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${reference.TemuFansUsuarioDA.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${reference.TemuFansUsuarioModel.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${reference.TemuFansDocumentosBO.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${reference.TemuFansDocumentosDA.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${reference.TemuFansDocumentosModel.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
     </target>
     <target depends="init" if="dist.ear.dir" name="-clean-webinf-lib">
         <delete dir="${build.web.dir}/WEB-INF/lib"/>
@@ -1441,6 +1465,9 @@ exists or setup the property manually. For example like this:
             -->
     <target depends="init" name="deps-clean" unless="no.deps">
         <ant antfile="${project.TemuFansDBManager}/build.xml" inheritall="false" target="clean"/>
+        <ant antfile="${project.TemuFansDocumentosBO}/build.xml" inheritall="false" target="clean"/>
+        <ant antfile="${project.TemuFansDocumentosDA}/build.xml" inheritall="false" target="clean"/>
+        <ant antfile="${project.TemuFansDocumentosModel}/build.xml" inheritall="false" target="clean"/>
         <ant antfile="${project.TemuFansUsuarioBO}/build.xml" inheritall="false" target="clean"/>
         <ant antfile="${project.TemuFansUsuarioDA}/build.xml" inheritall="false" target="clean"/>
         <ant antfile="${project.TemuFansUsuarioModel}/build.xml" inheritall="false" target="clean"/>

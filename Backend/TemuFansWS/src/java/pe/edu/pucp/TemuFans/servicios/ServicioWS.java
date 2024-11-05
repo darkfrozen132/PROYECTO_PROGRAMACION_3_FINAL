@@ -8,20 +8,28 @@ import jakarta.jws.WebService;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
 import java.util.ArrayList;
+import pe.edu.pucp.documento.pedido.model.Estado_Pedido;
+import pe.edu.pucp.documento.pedido.model.Tipo_Pedido;
 import pe.edu.pucp.usuario.BO.ClienteBO;
 import pe.edu.pucp.usuario.model.Cliente;
+import pe.edu.pucp.pedido.bo.PedidoBO;
 
 /**
  *
  * @author usuario
  */
-@WebService(serviceName = "ClienteWS")
+@WebService(serviceName = "ServicioWS")
 public class ServicioWS {
-    private ClienteBO clientebo;
-    
+   
+    private final ClienteBO clientebo;
+    private final PedidoBO pedidobo;
     /**
      * This is a sample web service operation
      */
+    public ServicioWS(){
+        clientebo= new ClienteBO();
+        pedidobo= new PedidoBO();
+    }
     @WebMethod(operationName = "hello")
     public String hello(@WebParam(name = "name") String txt) {
         return "Hello " + txt + " !";
@@ -29,13 +37,19 @@ public class ServicioWS {
     
     @WebMethod(operationName = "cliente_listarClientes")
     public ArrayList<Cliente> cliente_listarClientes(){
-        clientebo = new ClienteBO();
+        
         return this.clientebo.listarTodos();
     }
     
     @WebMethod(operationName = "cliente_listarClientesNombreCodigo")
     public ArrayList<Cliente> cliente_listarClientesNombreCodigo(@WebParam(name = "nombre")String nombre, @WebParam(name = "codigo") String codigo){
-        clientebo = new ClienteBO();
+        
         return this.clientebo.listarTodosNombreCodigo(nombre, codigo);
+    }
+    @WebMethod(operationName = "pedido_modificarPago")
+    public void pedido_modificar_pago(@WebParam(name = "idPedido")Integer idPedido, @WebParam(name = "estado_pedido") String estado_pedido){
+        
+        
+        this.pedidobo.modificar_pago(idPedido,estado_pedido);
     }
 }

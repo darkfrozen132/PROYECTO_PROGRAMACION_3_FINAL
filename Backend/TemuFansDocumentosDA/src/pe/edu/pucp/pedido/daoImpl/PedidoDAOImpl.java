@@ -29,11 +29,13 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
         return id;
     }
     @Override
-    public void modificar_pago(Integer idPedido,Estado_Pedido estado) {
+    public void modificar_pago(Integer idPedido,String estado) {
         this.nroParametros=2;
         this.pedido=new Pedido();
         this.pedido.setId_pedido(idPedido);
-        this.pedido.setEstado_pedido(estado);
+        Estado_Pedido est_ped;        
+        est_ped=Estado_Pedido.valueOf(estado);  
+        this.pedido.setEstado_pedido(est_ped);
         super.modificar();
         this.nroParametros=0;        
     }
@@ -149,7 +151,7 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
 
     @Override
     protected void setParamSalida_Modificar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return;
     }
 
     @Override

@@ -8,5 +8,5 @@ import pe.edu.pucp.documento.pedido.model.Tipo_Pedido;
 public interface PedidoDAO {
     public Integer insertar(Tipo_Pedido tipo,Pedido pedido);
     public Pedido obtenerPorId(Integer idPedido);
-    public void modificar_pago(Integer idPedido,Estado_Pedido estado);
+    public void modificar_pago(Integer idPedido,String estado);
 }

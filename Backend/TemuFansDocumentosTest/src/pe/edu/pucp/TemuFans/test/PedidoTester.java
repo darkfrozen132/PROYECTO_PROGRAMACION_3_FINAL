@@ -15,7 +15,7 @@ import pe.edu.pucp.pedido.bo.PedidoBO;
 public class PedidoTester {
     public static void main (String []args){
         PedidoBO pedido=new PedidoBO();        
-        pedido.modificar_pago(21,Estado_Pedido.PAGADO);
+        pedido.modificar_pago(10,"PAGADO");
         
     }
 }
