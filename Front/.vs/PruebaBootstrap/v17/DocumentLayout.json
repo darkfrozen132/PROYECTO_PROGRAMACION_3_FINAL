@@ -1,12 +1,160 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\probarBootrstrap (2)\\probarBootrstrap\\PruebaBootstrap\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C03E34-5892-4F0A-8DCC-4A9A692275FA}|TemuFansPedidoTestxd\\TemuFansPedidoTestxd.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\temufanspedidotestxd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C03E34-5892-4F0A-8DCC-4A9A692275FA}|TemuFansPedidoTestxd\\TemuFansPedidoTestxd.csproj|solutionrelative:temufanspedidotestxd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C03E34-5892-4F0A-8DCC-4A9A692275FA}|TemuFansPedidoTestxd\\TemuFansPedidoTestxd.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\temufanspedidotestxd\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{83C03E34-5892-4F0A-8DCC-4A9A692275FA}|TemuFansPedidoTestxd\\TemuFansPedidoTestxd.csproj|solutionrelative:temufanspedidotestxd\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EADFE4-D3AF-46BB-8B9A-20D608561168}|TemuFansBO\\TemuFansBO.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\temufansbo\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{06EADFE4-D3AF-46BB-8B9A-20D608561168}|TemuFansBO\\TemuFansBO.csproj|solutionrelative:temufansbo\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EADFE4-D3AF-46BB-8B9A-20D608561168}|TemuFansBO\\TemuFansBO.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\temufansbo\\basebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06EADFE4-D3AF-46BB-8B9A-20D608561168}|TemuFansBO\\TemuFansBO.csproj|solutionrelative:temufansbo\\basebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6215378D-576A-4184-8EE9-789DE78CBE56}|TemuFansDocumentosBO\\TemuFansDocumentosBO.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\temufansdocumentosbo\\pedidobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6215378D-576A-4184-8EE9-789DE78CBE56}|TemuFansDocumentosBO\\TemuFansDocumentosBO.csproj|solutionrelative:temufansdocumentosbo\\pedidobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\registrar_pago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\registrar_pago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\registrar_pago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\registrar_pago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Web.config",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Web.config",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Web.config",
+              "RelativeToolTip": "PruebaBootstrap\\Web.config",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-04T23:50:18.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansPedidoTestxd\\App.config",
+              "RelativeDocumentMoniker": "TemuFansPedidoTestxd\\App.config",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansPedidoTestxd\\App.config",
+              "RelativeToolTip": "TemuFansPedidoTestxd\\App.config",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAiwBAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-04T23:48:49.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansBO\\app.config",
+              "RelativeDocumentMoniker": "TemuFansBO\\app.config",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansBO\\app.config",
+              "RelativeToolTip": "TemuFansBO\\app.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-04T23:48:30.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansPedidoTestxd\\Program.cs",
+              "RelativeDocumentMoniker": "TemuFansPedidoTestxd\\Program.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansPedidoTestxd\\Program.cs",
+              "RelativeToolTip": "TemuFansPedidoTestxd\\Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:35:40.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PedidoBO.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansDocumentosBO\\PedidoBO.cs",
+              "RelativeDocumentMoniker": "TemuFansDocumentosBO\\PedidoBO.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansDocumentosBO\\PedidoBO.cs",
+              "RelativeToolTip": "TemuFansDocumentosBO\\PedidoBO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:26:24.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseBO.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansBO\\BaseBO.cs",
+              "RelativeDocumentMoniker": "TemuFansBO\\BaseBO.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansBO\\BaseBO.cs",
+              "RelativeToolTip": "TemuFansBO\\BaseBO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:18:17.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Registrar_Pago.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:12:40.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Registrar_Pago.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Registrar_Pago.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Registrar_Pago.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-04T23:12:34.153Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

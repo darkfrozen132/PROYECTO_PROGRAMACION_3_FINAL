@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -257,6 +259,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TemuFansBO\TemuFansBO.csproj">
+      <Project>{06eadfe4-d3af-46bb-8b9a-20d608561168}</Project>
+      <Name>TemuFansBO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TemuFansDocumentosBO\TemuFansDocumentosBO.csproj">
+      <Project>{6215378d-576a-4184-8ee9-789de78cbe56}</Project>
+      <Name>TemuFansDocumentosBO</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
