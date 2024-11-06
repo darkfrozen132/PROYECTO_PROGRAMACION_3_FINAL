@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\gestion_de_clientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\gestion_de_clientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\gestion_de_clientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\gestion_de_clientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\registrar_pago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\registrar_pago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\gestion_de_clientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\gestion_de_clientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83C03E34-5892-4F0A-8DCC-4A9A692275FA}|TemuFansPedidoTestxd\\TemuFansPedidoTestxd.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufanspedidotestxd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,7 +81,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -89,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Gestion_de_Clientes.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Gestion_de_Clientes.aspx.cs",
               "RelativeDocumentMoniker": "PruebaBootstrap\\Gestion_de_Clientes.aspx.cs",
@@ -98,6 +98,58 @@
               "ViewState": "AQIAABcAAAAAAAAAAAA3wCQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T05:46:52.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Agregar_Pedido.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Agregar_Pedido.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Agregar_Pedido.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Agregar_Pedido.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Agregar_Pedido.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-06T07:04:13.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Agregar_Pedido.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Agregar_Pedido.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Agregar_Pedido.aspx.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Agregar_Pedido.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Agregar_Pedido.aspx.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T07:06:53.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Gestion_de_Clientes.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Gestion_de_Clientes.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Gestion_de_Clientes.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Gestion_de_Clientes.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Gestion_de_Clientes.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-06T05:46:48.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Registrar_Pago.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAwwCQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T22:37:13.894Z",
               "EditorCaption": ""
             },
             {
@@ -112,45 +164,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T06:10:21.028Z",
               "EditorCaption": " [Solo lectura]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Registrar_Pago.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx.cs",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Registrar_Pago.aspx.cs",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx.cs",
-              "RelativeToolTip": "PruebaBootstrap\\Registrar_Pago.aspx.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAwwCQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T22:37:13.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Agregar_Pedido.aspx",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Agregar_Pedido.aspx",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Agregar_Pedido.aspx",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Agregar_Pedido.aspx",
-              "RelativeToolTip": "PruebaBootstrap\\Agregar_Pedido.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-06T07:04:13.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Agregar_Pedido.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Agregar_Pedido.aspx.cs",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Agregar_Pedido.aspx.cs",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Agregar_Pedido.aspx.cs",
-              "RelativeToolTip": "PruebaBootstrap\\Agregar_Pedido.aspx.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T07:06:53.967Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -180,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Registrar_Pago.aspx",
               "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx",
               "RelativeDocumentMoniker": "PruebaBootstrap\\Registrar_Pago.aspx",
@@ -202,19 +215,6 @@
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-11-06T05:04:28.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Gestion_de_Clientes.aspx",
-              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Gestion_de_Clientes.aspx",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Gestion_de_Clientes.aspx",
-              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Gestion_de_Clientes.aspx",
-              "RelativeToolTip": "PruebaBootstrap\\Gestion_de_Clientes.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-06T05:46:48.224Z",
               "EditorCaption": ""
             },
             {
