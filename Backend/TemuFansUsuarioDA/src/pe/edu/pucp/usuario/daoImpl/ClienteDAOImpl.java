@@ -7,6 +7,8 @@ package pe.edu.pucp.usuario.daoImpl;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -29,7 +31,7 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
 
     @Override
     protected String getProcedure_Insertar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "INSERTAR_CLIENTE";
     }
 
     @Override
@@ -65,7 +67,20 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
 
     @Override
     protected void getParamEntrada_Insertar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        try{
+            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+            String fecha = df.format(cliente.getFecha_registro());
+            this.registrarParametroEntrada("_tipo", cliente.getTipo_usuario().toString());
+            this.registrarParametroEntrada("__doi", cliente.getDoi());
+            this.registrarParametroEntrada("_tipo_doi", cliente.getTipo_doi().toString());
+            this.registrarParametroEntrada("_correo", cliente.getCorreo());
+            this.registrarParametroEntrada("_fecha_registro", fecha);
+            this.registrarParametroEntrada("_Nombre", cliente.getNombre());
+            this.registrarParametroEntrada("_telefono", cliente.getTelefono());
+        }
+        catch(SQLException ex){
+            Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @Override
@@ -99,7 +114,6 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
                     Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
-
         }
     }
 
@@ -110,7 +124,12 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
 
     @Override
     protected void getParamSalida_Insertar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        try{
+            this.registrarParametroSalida("_idUsuario", Types.INTEGER);
+        }
+        catch(SQLException ex){
+            Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @Override
@@ -125,7 +144,14 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
 
     @Override
     protected void setParamSalida_Insertar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        try{
+            Integer id = (Integer)this.obtenerParametroSalida("_idUsuario", Types.INTEGER);
+            this.cliente.setIdCliente(id);
+            this.cliente.setCodigo("CLI-" + id);
+        }
+        catch(SQLException ex) {
+            Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @Override
@@ -216,5 +242,16 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
             lista.add((Cliente)obj);
         this.nroParametros = 0;
         return lista;
+    }
+
+    @Override
+    public int insertar(Cliente cliente) {
+        this.nroParametros = 8;
+        this.cliente = cliente;
+        Integer resOperacion = super.insertar();
+        Integer id = cliente.getIdCliente();
+        this.nroParametros = 0;
+        
+        return id;
     }
 }

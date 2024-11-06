@@ -15,4 +15,6 @@ public interface ClienteDAO {
     public ArrayList<Cliente> listarTodos();
     
     public ArrayList<Cliente> listarTodosNombreCodigo(String nombre, String codigo);
+    
+    public int insertar(Cliente cliente);
 }

@@ -132,7 +132,7 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO{
     @Override
     protected void getParamSalida_Insertar() {
         try {
-            this.registrarParametroEntrada("_idPedido", Types.INTEGER);
+            this.registrarParametroSalida("_idPedido", Types.INTEGER);
         } catch (SQLException ex) {
             Logger.getLogger(PedidoDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
