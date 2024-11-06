@@ -23,6 +23,15 @@
   <message name="pedido_modificarPagoResponse">
     <part name="parameters" element="tns:pedido_modificarPagoResponse" />
   </message>
+  <message name="usuario_insertar_cliente">
+    <part name="parameters" element="tns:usuario_insertar_cliente" />
+  </message>
+  <message name="usuario_insertar_clienteResponse">
+    <part name="parameters" element="tns:usuario_insertar_clienteResponse" />
+  </message>
+  <message name="ParseException">
+    <part name="fault" element="tns:ParseException" />
+  </message>
   <message name="cliente_listarClientesNombreCodigo">
     <part name="parameters" element="tns:cliente_listarClientesNombreCodigo" />
   </message>
@@ -41,6 +50,11 @@
     <operation name="pedido_modificarPago">
       <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoRequest" message="tns:pedido_modificarPago" />
       <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoResponse" message="tns:pedido_modificarPagoResponse" />
+    </operation>
+    <operation name="usuario_insertar_cliente">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteRequest" message="tns:usuario_insertar_cliente" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteResponse" message="tns:usuario_insertar_clienteResponse" />
+      <fault wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_cliente/Fault/ParseException" name="ParseException" message="tns:ParseException" />
     </operation>
     <operation name="cliente_listarClientesNombreCodigo">
       <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodigoRequest" message="tns:cliente_listarClientesNombreCodigo" />
@@ -75,6 +89,18 @@
       <output>
         <soap:body use="literal" />
       </output>
+    </operation>
+    <operation name="usuario_insertar_cliente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="ParseException">
+        <soap:fault use="literal" name="ParseException" namespace="" />
+      </fault>
     </operation>
     <operation name="cliente_listarClientesNombreCodigo">
       <soap:operation soapAction="" />

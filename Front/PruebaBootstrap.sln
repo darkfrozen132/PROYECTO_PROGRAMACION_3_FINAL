@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemuFansDocumentosBO", "Tem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemuFansPedidoTestxd", "TemuFansPedidoTestxd\TemuFansPedidoTestxd.csproj", "{83C03E34-5892-4F0A-8DCC-4A9A692275FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemuFansUsuarioBO", "TemuFansUsuarioBO\TemuFansUsuarioBO.csproj", "{0184043D-EA3C-45D7-AA8B-A476FC6B91C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{83C03E34-5892-4F0A-8DCC-4A9A692275FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83C03E34-5892-4F0A-8DCC-4A9A692275FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83C03E34-5892-4F0A-8DCC-4A9A692275FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0184043D-EA3C-45D7-AA8B-A476FC6B91C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0184043D-EA3C-45D7-AA8B-A476FC6B91C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0184043D-EA3C-45D7-AA8B-A476FC6B91C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0184043D-EA3C-45D7-AA8B-A476FC6B91C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

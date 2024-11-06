@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://servicios.TemuFans.pucp.edu.pe/" targetNamespace="http://servicios.TemuFans.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ParseException" type="tns:ParseException" />
   <xs:element name="cliente_listarClientes" type="tns:cliente_listarClientes" />
   <xs:element name="cliente_listarClientesNombreCodigo" type="tns:cliente_listarClientesNombreCodigo" />
   <xs:element name="cliente_listarClientesNombreCodigoResponse" type="tns:cliente_listarClientesNombreCodigoResponse" />
@@ -8,6 +9,8 @@
   <xs:element name="helloResponse" type="tns:helloResponse" />
   <xs:element name="pedido_modificarPago" type="tns:pedido_modificarPago" />
   <xs:element name="pedido_modificarPagoResponse" type="tns:pedido_modificarPagoResponse" />
+  <xs:element name="usuario_insertar_cliente" type="tns:usuario_insertar_cliente" />
+  <xs:element name="usuario_insertar_clienteResponse" type="tns:usuario_insertar_clienteResponse" />
   <xs:complexType name="cliente_listarClientes">
     <xs:sequence />
   </xs:complexType>
@@ -56,6 +59,28 @@
   </xs:complexType>
   <xs:complexType name="pedido_modificarPagoResponse">
     <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="usuario_insertar_cliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tipo_usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="doi" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_doi" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_registro" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="usuario_insertar_clienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParseException">
+    <xs:sequence>
+      <xs:element name="errorOffset" type="xs:int" />
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="cliente_listarClientesNombreCodigo">
     <xs:sequence>

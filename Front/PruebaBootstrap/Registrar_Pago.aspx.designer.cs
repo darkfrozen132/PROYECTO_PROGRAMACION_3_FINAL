@@ -15,58 +15,22 @@ namespace PruebaBootstrap
     {
 
         /// <summary>
-        /// Control ddlPedidos.
+        /// Control txtPedidoID.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPedidos;
+        protected global::System.Web.UI.WebControls.TextBox txtPedidoID;
 
         /// <summary>
-        /// Control rdbEfectivo.
+        /// Control rbEstado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdbEfectivo;
-
-        /// <summary>
-        /// Control rdbTransferencia.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdbTransferencia;
-
-        /// <summary>
-        /// Control txtSubtotal.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSubtotal;
-
-        /// <summary>
-        /// Control txtIGV.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIGV;
-
-        /// <summary>
-        /// Control txtTotal.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTotal;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbEstado;
 
         /// <summary>
         /// Control btnCancelar.
@@ -78,21 +42,21 @@ namespace PruebaBootstrap
         protected global::System.Web.UI.WebControls.Button btnCancelar;
 
         /// <summary>
-        /// Control btnLimpiar.
+        /// Control btnBorrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLimpiar;
+        protected global::System.Web.UI.WebControls.Button btnBorrar;
 
         /// <summary>
-        /// Control btnRegistrar.
+        /// Control btnAceptar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegistrar;
+        protected global::System.Web.UI.WebControls.Button btnAceptar;
     }
 }

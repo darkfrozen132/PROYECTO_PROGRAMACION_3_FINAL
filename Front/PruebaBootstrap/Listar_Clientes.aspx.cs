@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TemuFansBO.ServicioWS;
+using TemuFansUsuarioBO;
 
 namespace PruebaBootstrap
 {
@@ -13,10 +16,11 @@ namespace PruebaBootstrap
         private DataTable resumenData;
         protected void Page_Load(object sender, EventArgs e)
         {
+            resumenData = ObtenerDatosDeResumen();
             if (!IsPostBack)
             {
                 // Cargar los datos al iniciar la página
-                resumenData = ObtenerDatosDeResumen();
+                
                 ViewState["ResumenData"] = resumenData; // Guardar datos en ViewState
                 gvResumen.DataSource = resumenData;
                 gvResumen.DataBind();
@@ -29,23 +33,19 @@ namespace PruebaBootstrap
 
         private DataTable ObtenerDatosDeResumen()
         {
+            ClienteBO clienteBO = new ClienteBO();
+            //            BindingList<cliente> lista = clienteBO.listarTodosNombreCodigo(txtCodigo.Text,txtCodigo.Text);
+            BindingList<cliente> lista = clienteBO.listarTodos();
+            
             DataTable dt = new DataTable();
             dt.Columns.Add("Codigo", typeof(string));
             dt.Columns.Add("Nombre", typeof(string));
             dt.Columns.Add("Fecha Registro", typeof(DateTime));
-            dt.Rows.Add("CLI-01", "Bodega San Pedro", DateTime.Parse("02/10/2024"));
-            dt.Rows.Add("CLI-02", "Bodega Central", DateTime.Parse("04/10/2024"));
-            dt.Rows.Add("CLI-03", "Bodega Los Olivos", DateTime.Parse("05/10/2024"));
-            dt.Rows.Add("CLI-04", "Bodega Los Pinos", DateTime.Parse("07/10/2024"));
-            dt.Rows.Add("CLI-05", "Bodega San Juan", DateTime.Parse("08/10/2024"));
-            dt.Rows.Add("CLI-06", "Bodega Pepito", DateTime.Parse("09/10/2024"));
-            dt.Rows.Add("CLI-07", "TITOS", DateTime.Parse("10/10/2024"));
-            dt.Rows.Add("CLI-08", "Comercial Valila", DateTime.Parse("11/10/2024"));
-            dt.Rows.Add("CLI-09", "AGAPITO", DateTime.Parse("12/10/2024"));
-            dt.Rows.Add("CLI-10", "Donde todos vuelven", DateTime.Parse("13/10/2024"));
-            dt.Rows.Add("CLI-11", "Donde todos llegan", DateTime.Parse("14/10/2024"));
-            dt.Rows.Add("CLI-12", "El pollon", DateTime.Parse("15/10/2024"));
-            dt.Rows.Add("CLI-13", "El pollo pechugon", DateTime.Parse("16/10/2024"));
+
+            for (int i = 0; i<lista.Count; i++)
+            {
+                dt.Rows.Add(string.Concat("CLI-",lista[i].idCliente), lista[i].nombre,lista[i].fecha_registro);
+            }
             return dt;
         }
 
@@ -59,16 +59,24 @@ namespace PruebaBootstrap
             if (codigo == "" || codigo.StartsWith("CLI-"))
             {
                 // Filtrar los datos en función de las fechas seleccionadas
-                var datosFiltrados = resumenData.AsEnumerable()
-                    .Where(row => row.Field<string>("Nombre") == nombre || row.Field<string>("Nombre").Contains(nombre)
-                    || row.Field<string>("Codigo") == codigo || row.Field<string>("Codigo").Contains(codigo))
-                    .CopyToDataTable();
+                ClienteBO clienteBO = new ClienteBO();
+                BindingList<cliente> lista = clienteBO.listarTodosNombreCodigo(nombre,codigo);
+
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Codigo", typeof(string));
+                dt.Columns.Add("Nombre", typeof(string));
+                dt.Columns.Add("Fecha Registro", typeof(DateTime));
+
+                for (int i = 0; i < lista.Count; i++)
+                {
+                    dt.Rows.Add(string.Concat("CLI-", lista[i].idCliente), lista[i].nombre, lista[i].fecha_registro);
+                }
 
                 // Guardar los datos filtrados en el ViewState para su uso en el RowDataBound y paginación
-                ViewState["ResumenDataFiltrada"] = datosFiltrados;
+                ViewState["ResumenDataFiltrada"] = dt;
 
                 // Actualizar el GridView con los datos filtrados
-                gvResumen.DataSource = datosFiltrados;
+                gvResumen.DataSource = dt;
                 gvResumen.DataBind();  // Ahora el RowDataBound se ejecutará correctamente con los datos filtrados
             }
             else

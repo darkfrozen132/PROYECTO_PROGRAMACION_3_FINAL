@@ -1,12 +1,214 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\probarBootrstrap (2)\\probarBootrstrap\\PruebaBootstrap\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EADFE4-D3AF-46BB-8B9A-20D608561168}|TemuFansBO\\TemuFansBO.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansbo\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{06EADFE4-D3AF-46BB-8B9A-20D608561168}|TemuFansBO\\TemuFansBO.csproj|solutionrelative:temufansbo\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06EADFE4-D3AF-46BB-8B9A-20D608561168}|TemuFansBO\\TemuFansBO.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansbo\\basebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06EADFE4-D3AF-46BB-8B9A-20D608561168}|TemuFansBO\\TemuFansBO.csproj|solutionrelative:temufansbo\\basebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\registrar_pago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\registrar_pago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\registrar_pago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\registrar_pago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\listar_clientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\listar_clientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\listar_clientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\listar_clientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C03E34-5892-4F0A-8DCC-4A9A692275FA}|TemuFansPedidoTestxd\\TemuFansPedidoTestxd.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufanspedidotestxd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C03E34-5892-4F0A-8DCC-4A9A692275FA}|TemuFansPedidoTestxd\\TemuFansPedidoTestxd.csproj|solutionrelative:temufanspedidotestxd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0184043D-EA3C-45D7-AA8B-A476FC6B91C4}|TemuFansUsuarioBO\\TemuFansUsuarioBO.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\temufansusuariobo\\clientebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0184043D-EA3C-45D7-AA8B-A476FC6B91C4}|TemuFansUsuarioBO\\TemuFansUsuarioBO.csproj|solutionrelative:temufansusuariobo\\clientebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6215378D-576A-4184-8EE9-789DE78CBE56}|TemuFansDocumentosBO\\TemuFansDocumentosBO.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansdocumentosbo\\pedidobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6215378D-576A-4184-8EE9-789DE78CBE56}|TemuFansDocumentosBO\\TemuFansDocumentosBO.csproj|solutionrelative:temufansdocumentosbo\\pedidobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C03E34-5892-4F0A-8DCC-4A9A692275FA}|TemuFansPedidoTestxd\\TemuFansPedidoTestxd.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufanspedidotestxd\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{83C03E34-5892-4F0A-8DCC-4A9A692275FA}|TemuFansPedidoTestxd\\TemuFansPedidoTestxd.csproj|solutionrelative:temufanspedidotestxd\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Listar_Clientes.aspx.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Listar_Clientes.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Listar_Clientes.aspx.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Listar_Clientes.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Listar_Clientes.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T20:28:54.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansPedidoTestxd\\App.config",
+              "RelativeDocumentMoniker": "TemuFansPedidoTestxd\\App.config",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansPedidoTestxd\\App.config",
+              "RelativeToolTip": "TemuFansPedidoTestxd\\App.config",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAiwBAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-04T23:48:49.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "app.config",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansBO\\app.config",
+              "RelativeDocumentMoniker": "TemuFansBO\\app.config",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansBO\\app.config",
+              "RelativeToolTip": "TemuFansBO\\app.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-04T23:48:30.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansPedidoTestxd\\Program.cs",
+              "RelativeDocumentMoniker": "TemuFansPedidoTestxd\\Program.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansPedidoTestxd\\Program.cs",
+              "RelativeToolTip": "TemuFansPedidoTestxd\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvx0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:35:40.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PedidoBO.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansDocumentosBO\\PedidoBO.cs",
+              "RelativeDocumentMoniker": "TemuFansDocumentosBO\\PedidoBO.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansDocumentosBO\\PedidoBO.cs",
+              "RelativeToolTip": "TemuFansDocumentosBO\\PedidoBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:26:24.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseBO.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansBO\\BaseBO.cs",
+              "RelativeDocumentMoniker": "TemuFansBO\\BaseBO.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansBO\\BaseBO.cs",
+              "RelativeToolTip": "TemuFansBO\\BaseBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:18:17.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Registrar_Pago.aspx.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Registrar_Pago.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T22:37:13.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Web.config",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Web.config",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Web.config",
+              "RelativeToolTip": "PruebaBootstrap\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-04T23:50:18.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Registrar_Pago.aspx",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Registrar_Pago.aspx",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Registrar_Pago.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Registrar_Pago.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-04T23:12:34.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Listar_Clientes.aspx",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Listar_Clientes.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Listar_Clientes.aspx",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Listar_Clientes.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Listar_Clientes.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-05T20:28:50.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteBO.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansUsuarioBO\\ClienteBO.cs",
+              "RelativeDocumentMoniker": "TemuFansUsuarioBO\\ClienteBO.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansUsuarioBO\\ClienteBO.cs",
+              "RelativeToolTip": "TemuFansUsuarioBO\\ClienteBO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T20:09:41.901Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

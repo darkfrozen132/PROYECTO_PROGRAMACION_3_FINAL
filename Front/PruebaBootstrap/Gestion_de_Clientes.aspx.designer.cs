@@ -33,6 +33,24 @@ namespace PruebaBootstrap
         protected global::System.Web.UI.WebControls.TextBox txtDOI;
 
         /// <summary>
+        /// Control lblTipoDOI.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTipoDOI;
+
+        /// <summary>
+        /// Control rbTipoDOI.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbTipoDOI;
+
+        /// <summary>
         /// Control lblNombre.
         /// </summary>
         /// <remarks>
@@ -51,58 +69,58 @@ namespace PruebaBootstrap
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
 
         /// <summary>
-        /// Control lblRazonSocial.
+        /// Control lblCorreo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRazonSocial;
+        protected global::System.Web.UI.WebControls.Label lblCorreo;
 
         /// <summary>
-        /// Control txtRazonSocial.
+        /// Control txtCorreo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRazonSocial;
+        protected global::System.Web.UI.WebControls.TextBox txtCorreo;
 
         /// <summary>
-        /// Control lblDireccion.
+        /// Control lblTipoUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDireccion;
+        protected global::System.Web.UI.WebControls.Label lblTipoUsuario;
 
         /// <summary>
-        /// Control txtDireccion.
+        /// Control rbTipoUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDireccion;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbTipoUsuario;
 
         /// <summary>
-        /// Control lblCargoContacto.
+        /// Control lblFechaRegistro.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCargoContacto;
+        protected global::System.Web.UI.WebControls.Label lblFechaRegistro;
 
         /// <summary>
-        /// Control txtCargoContacto.
+        /// Control dtpFechaRegistro.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCargoContacto;
+        protected global::System.Web.UI.WebControls.TextBox dtpFechaRegistro;
 
         /// <summary>
         /// Control lblTelefono.

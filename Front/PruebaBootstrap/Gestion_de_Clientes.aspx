@@ -15,24 +15,34 @@
                         <asp:TextBox ID="txtDOI" CssClass="form-control" runat="server"></asp:TextBox>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <asp:Label ID="lblNombre" runat="server" Text="Nombre del contacto:" CssClass="col-form-label" />
-                        <asp:TextBox ID="txtNombre" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:Label ID="lblTipoDOI" runat="server" Text="Tipo de DOI:" CssClass="col-form-label" />
+                        <asp:RadioButtonList ID="rbTipoDOI" runat="server" RepeatDirection="Horizontal" CellPadding="5" CssClass="form-control RadioButtonList">
+                            <asp:ListItem Value="PASAPORTE" Text="PASAPORTE" />
+                            <asp:ListItem Value="DNI" Text="DNI" />
+                            <asp:ListItem Value="RUC" Text="RUC" />
+                        </asp:RadioButtonList>
                     </div>
                 </div>
 
                 <div class="col-md-12 mb-3">
-                    <asp:Label ID="lblRazonSocial" runat="server" Text="Razón Social:" CssClass="col-form-label" />
-                    <asp:TextBox ID="txtRazonSocial" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:Label ID="lblNombre" runat="server" Text="Nombre del contacto:" CssClass="col-form-label" />
+                    <asp:TextBox ID="txtNombre" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>
                 <div class="col-md-12 mb-3">
-                    <asp:Label ID="lblDireccion" runat="server" Text="Direccion:" CssClass="col-form-label" />
-                    <asp:TextBox ID="txtDireccion" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:Label ID="lblCorreo" runat="server" Text="Correo Electronico:" CssClass="col-form-label" />
+                    <asp:TextBox ID="txtCorreo" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>
-
+                <div class="col-md-12 mb-3">
+                    <asp:Label ID="lblTipoUsuario" runat="server" Text="Tipo de Usuario:" CssClass="col-form-label" />
+                    <asp:RadioButtonList ID="rbTipoUsuario" runat="server" RepeatDirection="Horizontal" CellPadding="5" CssClass="form-control RadioButtonList">
+                        <asp:ListItem Value="CLIENTE" Text="CLIENTE" />
+                        <asp:ListItem Value="EMPRESA" Text="EMPRESA" />
+                    </asp:RadioButtonList>
+                </div>
                 <div class="row mb-3">
                     <div class="col-md-6 mb-3">
-                        <asp:Label ID="lblCargoContacto" runat="server" Text="Cargo del contacto:" CssClass="col-form-label" />
-                        <asp:TextBox ID="txtCargoContacto" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:Label ID="lblFechaRegistro" runat="server" Text="Fecha de Registro:" CssClass="col-form-label" />
+                        <asp:TextBox ID="dtpFechaRegistro" runat="server" type="date" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-6 mb-3">
                         <asp:Label ID="lblTelefono" runat="server" Text="Telefono de contacto:" CssClass="col-form-label" />

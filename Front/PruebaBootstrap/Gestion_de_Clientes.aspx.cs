@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TemuFansBO.ServicioWS;
+using TemuFansUsuarioBO;
 
 namespace PruebaBootstrap
 {
@@ -21,12 +23,18 @@ namespace PruebaBootstrap
 
         protected void btnRegresar_Click(Object sender, EventArgs e)
         {
-            Response.Redirect("../Home.aspx");
+            Response.Redirect("HomeVentas.aspx");
         }
 
         protected void btnGuardar_Click(Object sender, EventArgs e)
         {
-            Response.Redirect("../Home.aspx");
+            ClienteBO usuario = new ClienteBO();
+
+            usuario.insertarCliente(rbTipoUsuario.SelectedValue, txtDOI.Text,
+                rbTipoDOI.SelectedValue, txtCorreo.Text, dtpFechaRegistro.Text,
+                txtNombre.Text, txtTelefono.Text);
+
+            Response.Redirect("HomeVentas.aspx");
         }
     }
 }

@@ -11,136 +11,48 @@
 namespace TemuFansBO.ServicioWS {
     
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", ConfigurationName="ServicioWS.ServicioWS")]
-    public interface ServicioWS {
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/helloRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/helloResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.helloResponse hello(TemuFansBO.ServicioWS.helloRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/helloRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/helloResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.helloResponse> helloAsync(TemuFansBO.ServicioWS.helloRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.cliente_listarClientesResponse cliente_listarClientes(TemuFansBO.ServicioWS.cliente_listarClientesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_listarClientesResponse> cliente_listarClientesAsync(TemuFansBO.ServicioWS.cliente_listarClientesRequest request);
-        
-        // CODEGEN: El parámetro 'idPedido' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        TemuFansBO.ServicioWS.pedido_modificarPagoResponse pedido_modificarPago(TemuFansBO.ServicioWS.pedido_modificarPagoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_modificarPagoResponse> pedido_modificarPagoAsync(TemuFansBO.ServicioWS.pedido_modificarPagoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodi" +
-            "goRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodi" +
-            "goResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.cliente_listarClientesNombreCodigoResponse cliente_listarClientesNombreCodigo(TemuFansBO.ServicioWS.cliente_listarClientesNombreCodigoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodi" +
-            "goRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodi" +
-            "goResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_listarClientesNombreCodigoResponse> cliente_listarClientesNombreCodigoAsync(TemuFansBO.ServicioWS.cliente_listarClientesNombreCodigoRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="hello", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class helloRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string name;
-        
-        public helloRequest() {
-        }
-        
-        public helloRequest(string name) {
-            this.name = name;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="helloResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class helloResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string @return;
-        
-        public helloResponse() {
-        }
-        
-        public helloResponse(string @return) {
-            this.@return = @return;
-        }
-    }
-    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
-    public partial class cliente : usuario {
+    public partial class ParseException : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string codigoField;
+        private int errorOffsetField;
         
-        private int idClienteField;
-        
-        private bool idClienteFieldSpecified;
+        private string messageField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string codigo {
+        public int errorOffset {
             get {
-                return this.codigoField;
+                return this.errorOffsetField;
             }
             set {
-                this.codigoField = value;
-                this.RaisePropertyChanged("codigo");
+                this.errorOffsetField = value;
+                this.RaisePropertyChanged("errorOffset");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idCliente {
+        public string message {
             get {
-                return this.idClienteField;
+                return this.messageField;
             }
             set {
-                this.idClienteField = value;
-                this.RaisePropertyChanged("idCliente");
+                this.messageField = value;
+                this.RaisePropertyChanged("message");
             }
         }
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idClienteSpecified {
-            get {
-                return this.idClienteFieldSpecified;
-            }
-            set {
-                this.idClienteFieldSpecified = value;
-                this.RaisePropertyChanged("idClienteSpecified");
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
             }
         }
     }
@@ -367,6 +279,155 @@ namespace TemuFansBO.ServicioWS {
         EMPLEADO,
     }
     
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
+    public partial class cliente : usuario {
+        
+        private string codigoField;
+        
+        private int idClienteField;
+        
+        private bool idClienteFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string codigo {
+            get {
+                return this.codigoField;
+            }
+            set {
+                this.codigoField = value;
+                this.RaisePropertyChanged("codigo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int idCliente {
+            get {
+                return this.idClienteField;
+            }
+            set {
+                this.idClienteField = value;
+                this.RaisePropertyChanged("idCliente");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idClienteSpecified {
+            get {
+                return this.idClienteFieldSpecified;
+            }
+            set {
+                this.idClienteFieldSpecified = value;
+                this.RaisePropertyChanged("idClienteSpecified");
+            }
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", ConfigurationName="ServicioWS.ServicioWS")]
+    public interface ServicioWS {
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/helloRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/helloResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.helloResponse hello(TemuFansBO.ServicioWS.helloRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/helloRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/helloResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.helloResponse> helloAsync(TemuFansBO.ServicioWS.helloRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.cliente_listarClientesResponse cliente_listarClientes(TemuFansBO.ServicioWS.cliente_listarClientesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_listarClientesResponse> cliente_listarClientesAsync(TemuFansBO.ServicioWS.cliente_listarClientesRequest request);
+        
+        // CODEGEN: El parámetro 'idPedido' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        TemuFansBO.ServicioWS.pedido_modificarPagoResponse pedido_modificarPago(TemuFansBO.ServicioWS.pedido_modificarPagoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_modificarPagoResponse> pedido_modificarPagoAsync(TemuFansBO.ServicioWS.pedido_modificarPagoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteResponse" +
+            "")]
+        [System.ServiceModel.FaultContractAttribute(typeof(TemuFansBO.ServicioWS.ParseException), Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_cliente/Fault/P" +
+            "arseException", Name="ParseException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.usuario_insertar_clienteResponse usuario_insertar_cliente(TemuFansBO.ServicioWS.usuario_insertar_clienteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteResponse" +
+            "")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_insertar_clienteResponse> usuario_insertar_clienteAsync(TemuFansBO.ServicioWS.usuario_insertar_clienteRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodi" +
+            "goRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodi" +
+            "goResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.cliente_listarClientesNombreCodigoResponse cliente_listarClientesNombreCodigo(TemuFansBO.ServicioWS.cliente_listarClientesNombreCodigoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodi" +
+            "goRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodi" +
+            "goResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_listarClientesNombreCodigoResponse> cliente_listarClientesNombreCodigoAsync(TemuFansBO.ServicioWS.cliente_listarClientesNombreCodigoRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="hello", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class helloRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string name;
+        
+        public helloRequest() {
+        }
+        
+        public helloRequest(string name) {
+            this.name = name;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="helloResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class helloResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string @return;
+        
+        public helloResponse() {
+        }
+        
+        public helloResponse(string @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -425,6 +486,72 @@ namespace TemuFansBO.ServicioWS {
     public partial class pedido_modificarPagoResponse {
         
         public pedido_modificarPagoResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="usuario_insertar_cliente", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class usuario_insertar_clienteRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string tipo_usuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string doi;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string tipo_doi;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string correo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string fecha_registro;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string telefono;
+        
+        public usuario_insertar_clienteRequest() {
+        }
+        
+        public usuario_insertar_clienteRequest(string tipo_usuario, string doi, string tipo_doi, string correo, string fecha_registro, string nombre, string telefono) {
+            this.tipo_usuario = tipo_usuario;
+            this.doi = doi;
+            this.tipo_doi = tipo_doi;
+            this.correo = correo;
+            this.fecha_registro = fecha_registro;
+            this.nombre = nombre;
+            this.telefono = telefono;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="usuario_insertar_clienteResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class usuario_insertar_clienteResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public usuario_insertar_clienteResponse() {
+        }
+        
+        public usuario_insertar_clienteResponse(int @return) {
+            this.@return = @return;
         }
     }
     
@@ -562,6 +689,41 @@ namespace TemuFansBO.ServicioWS {
             inValue.idPedido = idPedido;
             inValue.estado_pedido = estado_pedido;
             return ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_modificarPagoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.usuario_insertar_clienteResponse TemuFansBO.ServicioWS.ServicioWS.usuario_insertar_cliente(TemuFansBO.ServicioWS.usuario_insertar_clienteRequest request) {
+            return base.Channel.usuario_insertar_cliente(request);
+        }
+        
+        public int usuario_insertar_cliente(string tipo_usuario, string doi, string tipo_doi, string correo, string fecha_registro, string nombre, string telefono) {
+            TemuFansBO.ServicioWS.usuario_insertar_clienteRequest inValue = new TemuFansBO.ServicioWS.usuario_insertar_clienteRequest();
+            inValue.tipo_usuario = tipo_usuario;
+            inValue.doi = doi;
+            inValue.tipo_doi = tipo_doi;
+            inValue.correo = correo;
+            inValue.fecha_registro = fecha_registro;
+            inValue.nombre = nombre;
+            inValue.telefono = telefono;
+            TemuFansBO.ServicioWS.usuario_insertar_clienteResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).usuario_insertar_cliente(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_insertar_clienteResponse> TemuFansBO.ServicioWS.ServicioWS.usuario_insertar_clienteAsync(TemuFansBO.ServicioWS.usuario_insertar_clienteRequest request) {
+            return base.Channel.usuario_insertar_clienteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_insertar_clienteResponse> usuario_insertar_clienteAsync(string tipo_usuario, string doi, string tipo_doi, string correo, string fecha_registro, string nombre, string telefono) {
+            TemuFansBO.ServicioWS.usuario_insertar_clienteRequest inValue = new TemuFansBO.ServicioWS.usuario_insertar_clienteRequest();
+            inValue.tipo_usuario = tipo_usuario;
+            inValue.doi = doi;
+            inValue.tipo_doi = tipo_doi;
+            inValue.correo = correo;
+            inValue.fecha_registro = fecha_registro;
+            inValue.nombre = nombre;
+            inValue.telefono = telefono;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).usuario_insertar_clienteAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

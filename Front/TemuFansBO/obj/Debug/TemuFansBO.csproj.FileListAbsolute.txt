@@ -5,3 +5,10 @@ C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO
 C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\obj\Debug\TemuFansBO.csproj.CoreCompileInputs.cache
 C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\obj\Debug\TemuFansBO.dll
 C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\obj\Debug\TemuFansBO.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\bin\Debug\TemuFansBO.dll.config
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\bin\Debug\TemuFansBO.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\bin\Debug\TemuFansBO.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\obj\Debug\TemuFansBO.csproj.AssemblyReference.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\obj\Debug\TemuFansBO.csproj.CoreCompileInputs.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\obj\Debug\TemuFansBO.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\obj\Debug\TemuFansBO.pdb

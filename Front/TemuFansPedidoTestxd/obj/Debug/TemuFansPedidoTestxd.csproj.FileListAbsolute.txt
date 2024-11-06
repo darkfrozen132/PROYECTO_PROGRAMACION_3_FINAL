@@ -11,3 +11,20 @@ C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPe
 C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\obj\Debug\TemuFans.1731D586.Up2Date
 C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\obj\Debug\TemuFansPedidoTestxd.exe
 C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\obj\Debug\TemuFansPedidoTestxd.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansPedidoTestxd.exe.config
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansPedidoTestxd.exe
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansPedidoTestxd.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansBO.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansDocumentosBO.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansUsuarioBO.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansBO.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansBO.dll.config
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansDocumentosBO.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansUsuarioBO.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\obj\Debug\TemuFansPedidoTestxd.csproj.AssemblyReference.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\obj\Debug\TemuFansPedidoTestxd.csproj.CoreCompileInputs.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\obj\Debug\TemuFans.1731D586.Up2Date
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\obj\Debug\TemuFansPedidoTestxd.exe
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\obj\Debug\TemuFansPedidoTestxd.pdb
+C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansUsuarioBO.dll
+C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansPedidoTestxd\bin\Debug\TemuFansUsuarioBO.pdb

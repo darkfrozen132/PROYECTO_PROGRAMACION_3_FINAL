@@ -10,8 +10,6 @@ namespace TemuFansDocumentosBO
     {
         public void modificar_pago(int idPedido, string estado)
         {        
-        
-            
             this.ServicioWS.pedido_modificarPago(idPedido, estado);
         }
     }

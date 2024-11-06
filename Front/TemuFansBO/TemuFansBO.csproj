@@ -75,6 +75,9 @@
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pedido_modificarPagoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.usuario_insertar_clienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServicioWS\" />

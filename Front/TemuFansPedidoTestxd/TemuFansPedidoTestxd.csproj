@@ -58,6 +58,10 @@
       <Project>{6215378d-576a-4184-8ee9-789de78cbe56}</Project>
       <Name>TemuFansDocumentosBO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TemuFansUsuarioBO\TemuFansUsuarioBO.csproj">
+      <Project>{0184043d-ea3c-45d7-aa8b-a476fc6b91c4}</Project>
+      <Name>TemuFansUsuarioBO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
