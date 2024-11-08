@@ -1,0 +1,20 @@
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansUsuarioBO\bin\Debug\TemuFansUsuarioBO.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansUsuarioBO\bin\Debug\TemuFansUsuarioBO.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansUsuarioBO\bin\Debug\TemuFansBO.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansUsuarioBO\bin\Debug\TemuFansBO.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansUsuarioBO\bin\Debug\TemuFansBO.dll.config
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansUsuarioBO\obj\Debug\TemuFansUsuarioBO.csproj.AssemblyReference.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansUsuarioBO\obj\Debug\TemuFansUsuarioBO.csproj.CoreCompileInputs.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansUsuarioBO\obj\Debug\TemuFans.B35702D9.Up2Date
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansUsuarioBO\obj\Debug\TemuFansUsuarioBO.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansUsuarioBO\obj\Debug\TemuFansUsuarioBO.pdb
+C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansUsuarioBO\bin\Debug\TemuFansUsuarioBO.dll
+C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansUsuarioBO\bin\Debug\TemuFansUsuarioBO.pdb
+C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansUsuarioBO\bin\Debug\TemuFansBO.dll
+C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansUsuarioBO\bin\Debug\TemuFansBO.pdb
+C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansUsuarioBO\bin\Debug\TemuFansBO.dll.config
+C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansUsuarioBO\obj\Debug\TemuFansUsuarioBO.csproj.AssemblyReference.cache
+C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansUsuarioBO\obj\Debug\TemuFansUsuarioBO.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansUsuarioBO\obj\Debug\TemuFans.B35702D9.Up2Date
+C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansUsuarioBO\obj\Debug\TemuFansUsuarioBO.dll
+C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansUsuarioBO\obj\Debug\TemuFansUsuarioBO.pdb

@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterVentas.master" AutoEventWireup="true" CodeBehind="MV_GesPed.master.cs" Inherits="PruebaBootstrap.MasterVentas_GestionPedido" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cphVentasContenido" runat="server">
+        <div class="container">
+            <div class="card">
+                <!-- header de pedido -->
+                <!-- active en calss y aria-current="true" para la pestaña en que se encuentra -->
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item">
+                        <a id="idAgregarPedido_Nuevo" class="nav-link" href="Agregar_Pedido.aspx" runat="server">Nuevo Pedido</a>
+                      </li>
+                      <li class="nav-item">
+                          <!-- mandar indicacion que solo quiero los pedidos pendientes que puedan ser modificados -->
+                        <a id="idAgregarPedido_Lista" class="nav-link" href="Historial_Ventas.aspx" runat="server">Lista Pendientes</a>
+                      </li>
+                    </ul>
+                 </div>              
+                <div class="card-body">
+                    <asp:ContentPlaceHolder ID="cphVentas_Ped" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    <!-- modal para seleccionar -->
+    <asp:ScriptManager runat="server"></asp:ScriptManager>
+        <!-- modal para seleccionar el cliente -->
+        <div class="modal" id="form-modal-pedido">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                <!-- encabezado de modal -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Busqueda del Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- contenido del model (usa UpdatePanel porque
+                                        actualiza la pagina parcialmente)
+                                        es una tabla GridView -->
+                <div class="modal-body">
+                    <p>
+                        CONTENIDO DE MODAL
+                    </p>
+                    <asp:UpdatePanel runat="server">
+                        <ContentTemplate>
+                            <div class="container row">
+
+                                <asp:GridView runat="server">
+                                    <Columns>
+
+                                        <asp:ButtonField HeaderText="Codigo"/>
+                                        <asp:ButtonField HeaderText="Nomnbre"/>
+                                        <asp:ButtonField HeaderText="Ruc"/>
+                                        <asp:ButtonField HeaderText="Fecha Registro"/>
+
+                                    </Columns>
+                                </asp:GridView>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+               </div>
+            </div>
+        </div>
+        <!-- modal para seleccionar el producto a agregar, o modificar la linea -->
+        <div class="modal" id="form-modal-agregar_producto">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Agregar Producto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Buscar el producto para el pedido </p>
+                        <!-- buscar el producto -->
+                        <div class="row">
+                            <div class="col">
+                                <asp:Label ID="lblNombreAgregarProducto" runat="server" Text="Nombre:" CssClass="col-form-label"></asp:Label>
+                                <div class="d-inline">
+                                    <asp:TextBox ID="txtNombreAgregarProducto" runat="server" CssClass="form-control" ReadOnly="true" ></asp:TextBox>
+                                    <asp:Button ID="btnNombreAgregarProducto" runat="server" class="btn btn-primary btn-lg" Text="Buscar" OnClick="btnNombreAgregarProducto_Click"/>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <asp:Button ID="btnIdAgregarProducto" runat="server" class="btn btn-primary btn-lg" Text="Buscar por Id" OnClick="btnIdAgregarProducto_Click"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <asp:Label ID="lbIdAgregarProducto" runat="server" Text="Codigo:" CssClass="col-form-label"></asp:Label>
+                                <asp:TextBox ID="txtIdAgregarProducto" runat="server" CssClass="form-control" ReadOnly="true" ></asp:TextBox>
+                            </div>
+                            <div class="col">
+                                <asp:Label ID="lbMarcaAgregarProducto" runat="server" Text="Marca:" CssClass="col-form-label"></asp:Label>
+                                <asp:TextBox ID="txtMarcaAgregarProducto" runat="server" CssClass="form-control" ReadOnly="true" ></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <asp:Label ID="lblBannerPromocional" runat="server" Text="Banner Promocional:" CssClass="col-form-label fw-bold" ></asp:Label>
+                                <asp:Image ID="imgBannerPromocional" runat="server" CssClass="img-fluid img-thumbnail" ImageUrl="/Images/logo2.png" Height="235" Width="720" />
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <asp:Label ID="lbCantidadAgregarProducto" runat="server" Text="Cantidad:" CssClass="col-form-label"></asp:Label>
+                                    <asp:TextBox ID="txtCantidadAgregarProducto" runat="server" CssClass="form-control" ReadOnly="true" ></asp:TextBox>
+                                </div>
+                                <div class="row">
+                                    <asp:Label ID="lbPrecioAgregarProducto" runat="server" Text="Precio:" CssClass="col-form-label"></asp:Label>
+                                    <asp:TextBox ID="txtPrecioAgregarProducto" runat="server" CssClass="form-control" ReadOnly="true" ></asp:TextBox>
+                                </div>
+                                <div class="row">
+                                    <asp:Label ID="lbStockAgregarProducto" runat="server" Text="Stock:" CssClass="col-form-label"></asp:Label>
+                                    <asp:TextBox ID="txtStockAgregarProducto" runat="server" CssClass="form-control" ReadOnly="true" ></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <asp:Label ID="lblDescAgregarProducto" runat="server" Text="Descripcion del Producto:" CssClass="col-form-label fw-bold" ></asp:Label>
+                            <textarea id="txtDescAgregarProducto" runat="server" class="form-control" cols="20" rows="2"></textarea>
+                        </div>
+                        <div class="row">
+                            <asp:Button ID="btnGuardarAgregarProducto" runat="server" class="btn btn-primary btn-lg bg-success" Text="Guardar" OnClick="btnGuardar_AgregarProducto"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</asp:Content>
