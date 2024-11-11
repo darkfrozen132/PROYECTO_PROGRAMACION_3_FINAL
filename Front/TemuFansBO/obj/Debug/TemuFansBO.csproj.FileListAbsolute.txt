@@ -12,10 +12,3 @@ D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Fron
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\obj\Debug\TemuFansBO.csproj.CoreCompileInputs.cache
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\obj\Debug\TemuFansBO.dll
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansBO\obj\Debug\TemuFansBO.pdb
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansBO\bin\Debug\TemuFansBO.dll.config
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansBO\bin\Debug\TemuFansBO.dll
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansBO\bin\Debug\TemuFansBO.pdb
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansBO\obj\Debug\TemuFansBO.csproj.AssemblyReference.cache
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansBO\obj\Debug\TemuFansBO.csproj.CoreCompileInputs.cache
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansBO\obj\Debug\TemuFansBO.dll
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansBO\obj\Debug\TemuFansBO.pdb

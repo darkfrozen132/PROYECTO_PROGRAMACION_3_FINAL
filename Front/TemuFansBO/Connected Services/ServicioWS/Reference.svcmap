@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:36264/TemuFansWS/ServicioWS?WSDL" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/TemuFansWS/ServicioWS?WSDL" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServicioWS1.xsd" MetadataType="Schema" ID="4b30181f-78bc-45df-9c5b-74ef5388579b" SourceId="1" SourceUrl="http://localhost:36264/TemuFansWS/ServicioWS?xsd=1" />
-    <MetadataFile FileName="ServicioWS1.wsdl" MetadataType="Wsdl" ID="b0903177-0469-45af-a9d5-e3590c7fcf01" SourceId="1" SourceUrl="http://localhost:36264/TemuFansWS/ServicioWS?WSDL" />
+    <MetadataFile FileName="ServicioWS.xsd" MetadataType="Schema" ID="ab7d51af-c18e-4398-abb5-027e783437b2" SourceId="1" SourceUrl="http://localhost:8080/TemuFansWS/ServicioWS?xsd=1" />
+    <MetadataFile FileName="ServicioWS.wsdl" MetadataType="Wsdl" ID="46e0d488-f169-4e38-8b74-bbd27ff80fd0" SourceId="1" SourceUrl="http://localhost:8080/TemuFansWS/ServicioWS?WSDL" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

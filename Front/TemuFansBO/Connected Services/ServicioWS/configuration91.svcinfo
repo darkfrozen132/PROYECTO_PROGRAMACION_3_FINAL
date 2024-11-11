@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="gFZsUwA7NvDgQwmNsDUVVbEJmccUvK8lKfpdJFrAD24=">
+<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="AHguZnCeA7/QBa0s5JDJoR0oXAaFTz4p4lXkg/UnDn0=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="ServicioWSPortBinding">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="ServicioWSPort" contract="ServicioWS.ServicioWS" bindingType="basicHttpBinding" address="http://localhost:36264/TemuFansWS/ServicioWS" bindingConfiguration="ServicioWSPortBinding">
+    <endpoint name="ServicioWSPort" contract="ServicioWS.ServicioWS" bindingType="basicHttpBinding" address="http://localhost:8080/TemuFansWS/ServicioWS" bindingConfiguration="ServicioWSPortBinding">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:36264/TemuFansWS/ServicioWS</serializedValue>
+          <serializedValue>http://localhost:8080/TemuFansWS/ServicioWS</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

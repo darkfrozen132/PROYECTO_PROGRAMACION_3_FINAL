@@ -56,8 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Connected Services\ServicioWS\ServicioWS1.wsdl" />
-    <None Include="Connected Services\ServicioWS\ServicioWS1.xsd">
+    <None Include="Connected Services\ServicioWS\ServicioWS.wsdl" />
+    <None Include="Connected Services\ServicioWS\ServicioWS.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.cliente.datasource">
@@ -78,10 +78,16 @@
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.helloResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pedido_listar_fechaResponse.datasource">
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.marca.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.marca_listarMarcasResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pedido_modificarPagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto_eliminarProductoResponse.datasource">
@@ -90,10 +96,13 @@
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto_insertarProductoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto_listarProductosNombreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto_modificarProductoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.resumenPorFecha.datasource">
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto_obtenerPorIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.usuario_insertar_clienteResponse.datasource">

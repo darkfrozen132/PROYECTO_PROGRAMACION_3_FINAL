@@ -10,8 +10,8 @@
       <h1 class="fw-light">Bienvenido al sistema</h1>
       <p class="lead text-body-secondary">Presione en ventas para generar un pedido. Presione en Inventario para su gestión</p>
       <p>
-        <a href="Registrar_Pago.aspx" class="btn btn-primary my-2">Registrar Pago</a>
-        <a href="añadirProducto2.aspx" class="btn btn-secondary my-2">Registrar Producto</a>
+        <a href="Ventas/Registrar_Pago.aspx" class="btn btn-primary my-2">Registrar Pago</a>
+        <a href="Inventario/añadirProducto.aspx" class="btn btn-secondary my-2">Registrar Producto</a>
       </p>
     </div>
   </div>

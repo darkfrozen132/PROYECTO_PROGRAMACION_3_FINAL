@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using TemuFansBO;
+using TemuFansBO.ServicioWS;
 
 namespace TemuFansInventarioBO
 {
@@ -22,6 +25,17 @@ namespace TemuFansInventarioBO
         public void eliminarProducto(int idProducto)
         {
             this.ServicioWS.producto_eliminarProducto(idProducto);
+        }
+
+        public BindingList<producto> listarProductosNombre()
+        {
+            producto[] productos = this.ServicioWS.producto_listarProductosNombre();
+            return new BindingList<producto>(productos);
+        }
+
+        public producto obtenerProductoPorId(int id)
+        {
+            return this.ServicioWS.producto_obtenerPorId(id);
         }
     }
 }

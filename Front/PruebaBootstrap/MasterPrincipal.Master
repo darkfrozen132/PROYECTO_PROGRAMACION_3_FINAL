@@ -106,16 +106,16 @@
     <header class="p-3 text-bg-dark">
      <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <img src="super_secret_settings/Fan_sin_Temu.png" alt="Alternate Text" class="bi me-2" width="40" height="32" aria-label="Bootstrap"/>
+        <a href="/Home.aspx" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="/super_secret_settings/Fan_sin_Temu.png" alt="Alternate Text" class="bi me-2" width="40" height="32" aria-label="Bootstrap"/>
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
-          <li><a href="HomeVentas.aspx" class="nav-link px-2 text-white">Ventas</a></li>
+          <li><a href="/Home.aspx" class="nav-link px-2 text-secondary">Inicio</a></li>
+          <li><a href="/Ventas/HomeVentas.aspx" class="nav-link px-2 text-white">Ventas</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Compras</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Almacen</a></li>
-          <li><a href="HomeInventario.aspx" class="nav-link px-2 text-white">Inventario</a></li>
+          <li><a href="/Inventario/HomeInventario.aspx" class="nav-link px-2 text-white">Inventario</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Configuracion</a></li>
         </ul>
           <!-- Comentando la parte del login

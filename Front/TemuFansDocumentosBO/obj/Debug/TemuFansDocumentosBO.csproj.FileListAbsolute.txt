@@ -18,13 +18,3 @@ D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Fron
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansDocumentosBO\obj\Debug\TemuFans.BF35D7D5.Up2Date
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansDocumentosBO\obj\Debug\TemuFansDocumentosBO.dll
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansDocumentosBO\obj\Debug\TemuFansDocumentosBO.pdb
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansDocumentosBO\bin\Debug\TemuFansDocumentosBO.dll
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansDocumentosBO\bin\Debug\TemuFansDocumentosBO.pdb
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansDocumentosBO\bin\Debug\TemuFansBO.dll
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansDocumentosBO\bin\Debug\TemuFansBO.pdb
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansDocumentosBO\bin\Debug\TemuFansBO.dll.config
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansDocumentosBO\obj\Debug\TemuFansDocumentosBO.csproj.AssemblyReference.cache
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansDocumentosBO\obj\Debug\TemuFansDocumentosBO.csproj.CoreCompileInputs.cache
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansDocumentosBO\obj\Debug\TemuFans.BF35D7D5.Up2Date
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansDocumentosBO\obj\Debug\TemuFansDocumentosBO.dll
-C:\Users\Ricardo\OneDrive\Documentos\FRONTPS\Front\TemuFansDocumentosBO\obj\Debug\TemuFansDocumentosBO.pdb

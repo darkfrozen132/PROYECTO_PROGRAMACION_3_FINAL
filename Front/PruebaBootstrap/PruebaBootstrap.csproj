@@ -69,8 +69,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Agregar_Pedido.aspx" />
-    <Content Include="añadirProducto.aspx" />
+    <Content Include="Ventas\Agregar_Pedido.aspx" />
+    <Content Include="Inventario\añadirProducto.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -105,23 +105,23 @@
     <Content Include="Content\Fonts\css\v4-shims.min.css" />
     <Content Include="Content\Fonts\css\v5-font-face.css" />
     <Content Include="Content\Fonts\css\v5-font-face.min.css" />
-    <Content Include="eliminarProducto.aspx" />
-    <Content Include="Gestion_de_Clientes.aspx" />
-    <Content Include="Historial_Ventas.aspx" />
-    <Content Include="HomeInventario.aspx" />
-    <Content Include="Listar_Clientes.aspx" />
-    <Content Include="modificarProducto.aspx" />
-    <Content Include="Registrar_Pago.aspx" />
-    <Content Include="Resumen_DiarioMensual.aspx" />
+    <Content Include="Inventario\eliminarProducto.aspx" />
+    <Content Include="Ventas\Gestion_de_Clientes.aspx" />
+    <Content Include="Ventas\Historial_Ventas.aspx" />
+    <Content Include="Inventario\HomeInventario.aspx" />
+    <Content Include="Ventas\Listar_Clientes.aspx" />
+    <Content Include="Inventario\modificarProducto.aspx" />
+    <Content Include="Ventas\Registrar_Pago.aspx" />
+    <Content Include="Ventas\Resumen_DiarioMensual.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="MV_GesPed.master" />
-    <Content Include="MV_GesCli.master" />
-    <Content Include="MasterInventario.master" />
+    <Content Include="Ventas\MV_GesPed.master" />
+    <Content Include="Ventas\MV_GesCli.master" />
+    <Content Include="Inventario\MasterInventario.master" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -133,91 +133,91 @@
     <Content Include="super_secret_settings\Ventas.png" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
-    <Content Include="HomeVentas.aspx" />
+    <Content Include="Ventas\HomeVentas.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agregar_Pedido.aspx.cs">
+    <Compile Include="Ventas\Agregar_Pedido.aspx.cs">
       <DependentUpon>Agregar_Pedido.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Agregar_Pedido.aspx.designer.cs">
+    <Compile Include="Ventas\Agregar_Pedido.aspx.designer.cs">
       <DependentUpon>Agregar_Pedido.aspx</DependentUpon>
     </Compile>
-    <Compile Include="añadirProducto.aspx.cs">
+    <Compile Include="Inventario\añadirProducto.aspx.cs">
       <DependentUpon>añadirProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="añadirProducto.aspx.designer.cs">
+    <Compile Include="Inventario\añadirProducto.aspx.designer.cs">
       <DependentUpon>añadirProducto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="eliminarProducto.aspx.cs">
+    <Compile Include="Inventario\eliminarProducto.aspx.cs">
       <DependentUpon>eliminarProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="eliminarProducto.aspx.designer.cs">
+    <Compile Include="Inventario\eliminarProducto.aspx.designer.cs">
       <DependentUpon>eliminarProducto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Gestion_de_Clientes.aspx.cs">
+    <Compile Include="Ventas\Gestion_de_Clientes.aspx.cs">
       <DependentUpon>Gestion_de_Clientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Gestion_de_Clientes.aspx.designer.cs">
+    <Compile Include="Ventas\Gestion_de_Clientes.aspx.designer.cs">
       <DependentUpon>Gestion_de_Clientes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Historial_Ventas.aspx.cs">
+    <Compile Include="Ventas\Historial_Ventas.aspx.cs">
       <DependentUpon>Historial_Ventas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Historial_Ventas.aspx.designer.cs">
+    <Compile Include="Ventas\Historial_Ventas.aspx.designer.cs">
       <DependentUpon>Historial_Ventas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="HomeInventario.aspx.cs">
+    <Compile Include="Inventario\HomeInventario.aspx.cs">
       <DependentUpon>HomeInventario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomeInventario.aspx.designer.cs">
+    <Compile Include="Inventario\HomeInventario.aspx.designer.cs">
       <DependentUpon>HomeInventario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Listar_Clientes.aspx.cs">
+    <Compile Include="Ventas\Listar_Clientes.aspx.cs">
       <DependentUpon>Listar_Clientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Listar_Clientes.aspx.designer.cs">
+    <Compile Include="Ventas\Listar_Clientes.aspx.designer.cs">
       <DependentUpon>Listar_Clientes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MasterInventario.master.cs">
+    <Compile Include="Inventario\MasterInventario.master.cs">
       <DependentUpon>MasterInventario.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MasterInventario.master.designer.cs">
+    <Compile Include="Inventario\MasterInventario.master.designer.cs">
       <DependentUpon>MasterInventario.master</DependentUpon>
     </Compile>
-    <Compile Include="MasterVentas.master.cs">
+    <Compile Include="Ventas\MasterVentas.master.cs">
       <DependentUpon>MasterVentas.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MasterVentas.master.designer.cs">
+    <Compile Include="Ventas\MasterVentas.master.designer.cs">
       <DependentUpon>MasterVentas.master</DependentUpon>
     </Compile>
-    <Compile Include="modificarProducto.aspx.cs">
+    <Compile Include="Inventario\modificarProducto.aspx.cs">
       <DependentUpon>modificarProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="modificarProducto.aspx.designer.cs">
+    <Compile Include="Inventario\modificarProducto.aspx.designer.cs">
       <DependentUpon>modificarProducto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MV_GesCli.master.cs">
+    <Compile Include="Ventas\MV_GesCli.master.cs">
       <DependentUpon>MV_GesCli.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MV_GesCli.master.designer.cs">
+    <Compile Include="Ventas\MV_GesCli.master.designer.cs">
       <DependentUpon>MV_GesCli.master</DependentUpon>
     </Compile>
-    <Compile Include="MV_GesPed.master.cs">
+    <Compile Include="Ventas\MV_GesPed.master.cs">
       <DependentUpon>MV_GesPed.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MV_GesPed.master.designer.cs">
+    <Compile Include="Ventas\MV_GesPed.master.designer.cs">
       <DependentUpon>MV_GesPed.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -235,25 +235,25 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="HomeVentas.aspx.cs">
+    <Compile Include="Ventas\HomeVentas.aspx.cs">
       <DependentUpon>HomeVentas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomeVentas.aspx.designer.cs">
+    <Compile Include="Ventas\HomeVentas.aspx.designer.cs">
       <DependentUpon>HomeVentas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Registrar_Pago.aspx.cs">
+    <Compile Include="Ventas\Registrar_Pago.aspx.cs">
       <DependentUpon>Registrar_Pago.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Registrar_Pago.aspx.designer.cs">
+    <Compile Include="Ventas\Registrar_Pago.aspx.designer.cs">
       <DependentUpon>Registrar_Pago.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Resumen_DiarioMensual.aspx.cs">
+    <Compile Include="Ventas\Resumen_DiarioMensual.aspx.cs">
       <DependentUpon>Resumen_DiarioMensual.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Resumen_DiarioMensual.aspx.designer.cs">
+    <Compile Include="Ventas\Resumen_DiarioMensual.aspx.designer.cs">
       <DependentUpon>Resumen_DiarioMensual.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -282,7 +282,7 @@
     <Content Include="Content\Fonts\webfonts\fa-solid-900.woff2" />
     <Content Include="Content\Fonts\webfonts\fa-v4compatibility.ttf" />
     <Content Include="Content\Fonts\webfonts\fa-v4compatibility.woff2" />
-    <Content Include="MasterVentas.master" />
+    <Content Include="Ventas\MasterVentas.master" />
     <None Include="packages.config" />
     <Content Include="MasterPrincipal.Master" />
     <Content Include="Scripts\bootstrap.min.js.map" />
