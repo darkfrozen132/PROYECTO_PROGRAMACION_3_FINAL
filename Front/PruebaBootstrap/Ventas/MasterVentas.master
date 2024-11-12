@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" MasterPageFile="../MasterPrincipal.Master" AutoEventWireup="true" CodeBehind="MasterVentas.master.cs" Inherits="PruebaBootstrap.NestedMasterPage1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cphTitle" runat="server">
+    Ventas
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphContenidoHome" runat="server">
+
+    <div class="d-flex">
+        <!-- SIDEBAR DE VENTAS -->
+          <div class="d-flex flex-column align-items-stretch flex-shrink-0 " style="width: 300px;">
+          <a href="HomeVentas.aspx" class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
+            <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-5 fw-semibold">Modulos de Ventas</span>
+          </a>
+          <div class="list-group list-group-flush border-bottom scrollarea" id="miDiv">
+            <a id="idGestionClientes" href="Gestion_de_Clientes.aspx"  class="list-group-item list-group-item-action py-3 lh-sm" runat="server">
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Gestion de clientes</strong>
+              </div>
+              <div class="col-10 mb-1 small">Agregar, modificar, listar e investigar clientes</div>
+            </a>
+            <a id="idAgregarPedido" href="Agregar_Pedido.aspx"  class="list-group-item list-group-item-action py-3 lh-sm" runat="server">
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Pedidos de Ventas</strong>
+              </div>
+              <div class="col-10 mb-1 small">Agregar y visualizar todas los pedidos de ventas pendientes</div>
+            </a>
+            <a id="idRegistrarPago" href="Registrar_Pago.aspx"  class="list-group-item list-group-item-action py-3 lh-sm" runat="server" >
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Registrar Pago</strong>
+              </div>
+              <div class="col-10 mb-1 small">Registrar los datos de la transferencia de un pedido</div>
+            </a>
+            <a id="idHistorialVentas" href="Historial_Ventas.aspx"  class="list-group-item list-group-item-action py-3 lh-sm" runat="server" >
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Historial de Ventas</strong>
+              </div>
+              <div class="col-10 mb-1 small">Visualizar las ventas concretadas y canceladas</div>
+            </a>
+            <a id="idResumenDiarioMensual" href="Resumen_DiarioMensual.aspx"  class="list-group-item list-group-item-action py-3 lh-sm" runat="server" >
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Resumen Diario/Mensual</strong>
+              </div>
+              <div class="col-10 mb-1 small">Visualizar las ventas concretadas en periodos de tiempo </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contenido principal -->
+          <div class="flex-grow-1 p-3">
+              <form runat="server">
+                  <!-- Contenido al lado del sidebar -->
+                  <asp:ContentPlaceHolder ID="cphVentasContenido" runat="server">
+
+                  </asp:ContentPlaceHolder>
+              </form>
+          </div>
+    </div>
+
+</asp:Content>

@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\almacen\\reportealmacen.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\reportealmacen.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\almacen\\reportealmacen.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\reportealmacen.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\almacen\\masteralmacen.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\masteralmacen.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\almacen\\reportealmacen.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\reportealmacen.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\inventario\\consultarstockproducto.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\inventario\\consultarstockproducto.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\almacen\\homealmacen.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\homealmacen.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\inventario\\homeinventario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\inventario\\homeinventario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\inventario\\alertasdestock.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\inventario\\alertasdestock.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\almacen\\masteralmacen.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\masteralmacen.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\homeventas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\homeventas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\inventario\\consultarstockproducto.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\inventario\\consultarstockproducto.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\inventario\\consultarstockproducto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\inventario\\consultarstockproducto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "reporteAlmacen.aspx",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-12T05:35:34.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "reporteAlmacen.aspx.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs*",
+              "RelativeToolTip": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs*",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAuwFoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T05:58:09.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "consultarStockProducto.aspx.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Inventario\\consultarStockProducto.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Inventario\\consultarStockProducto.aspx.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Inventario\\consultarStockProducto.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Inventario\\consultarStockProducto.aspx.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:48:36.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeAlmacen.aspx",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\HomeAlmacen.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\HomeAlmacen.aspx",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\HomeAlmacen.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Almacen\\HomeAlmacen.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-12T05:25:25.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MasterAlmacen.master",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\MasterAlmacen.master",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\MasterAlmacen.master",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\MasterAlmacen.master",
+              "RelativeToolTip": "PruebaBootstrap\\Almacen\\MasterAlmacen.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-12T04:28:42.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "reporteAlmacen.aspx.designer.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.designer.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.designer.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.designer.cs*",
+              "RelativeToolTip": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:41:21.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "consultarStockProducto.aspx.designer.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Inventario\\consultarStockProducto.aspx.designer.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Inventario\\consultarStockProducto.aspx.designer.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Inventario\\consultarStockProducto.aspx.designer.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Inventario\\consultarStockProducto.aspx.designer.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAQwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T04:55:28.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeInventario.aspx",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Inventario\\HomeInventario.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Inventario\\HomeInventario.aspx",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Inventario\\HomeInventario.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Inventario\\HomeInventario.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-12T05:32:39.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MasterPrincipal.Master",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\MasterPrincipal.Master",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\MasterPrincipal.Master",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\MasterPrincipal.Master",
+              "RelativeToolTip": "PruebaBootstrap\\MasterPrincipal.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-12T05:29:45.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AlertasDeStock.aspx.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Inventario\\AlertasDeStock.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Inventario\\AlertasDeStock.aspx.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Inventario\\AlertasDeStock.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Inventario\\AlertasDeStock.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T06:06:39.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Home.aspx",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Home.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Home.aspx",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Home.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Home.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-12T05:36:47.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MasterAlmacen.master.cs",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\MasterAlmacen.master.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\MasterAlmacen.master.cs",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\MasterAlmacen.master.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Almacen\\MasterAlmacen.master.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T05:44:41.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeVentas.aspx",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\HomeVentas.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\HomeVentas.aspx",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\HomeVentas.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\HomeVentas.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-12T05:32:50.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "consultarStockProducto.aspx",
+              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Inventario\\consultarStockProducto.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Inventario\\consultarStockProducto.aspx",
+              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Inventario\\consultarStockProducto.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Inventario\\consultarStockProducto.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-12T04:47:18.941Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
