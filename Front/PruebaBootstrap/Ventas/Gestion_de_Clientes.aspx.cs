@@ -18,12 +18,12 @@ namespace PruebaBootstrap
 
         protected void btnLimpiar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AñadirCliente.aspx");
+            Response.Redirect("/Ventas/AñadirCliente.aspx");
         }
 
         protected void btnRegresar_Click(Object sender, EventArgs e)
         {
-            Response.Redirect("../Home.aspx");
+            Response.Redirect("/Home.aspx");
         }
 
         protected void btnGuardar_Click(Object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace PruebaBootstrap
                 rbTipoDOI.SelectedValue, txtCorreo.Text, dtpFechaRegistro.Text,
                 txtNombre.Text, txtTelefono.Text);
 
-            Response.Redirect("../Home.aspx");
+            ClientScript.RegisterStartupScript(this.GetType(), "mostrarModal", "mostrarModal();", true);
         }
     }
 }

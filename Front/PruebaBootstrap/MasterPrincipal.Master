@@ -13,7 +13,7 @@
 	<script src="Scripts/bootstrap.bundle.js"> </script>
 
     <script src="Scripts/PruebaModal/gestionar_productos_pedido.js"></script>
-
+    <script src="/Scripts/gestion_clientes.js"></script>
     <title>
        <asp:ContentPlaceHolder ID="cphTitle" runat="server">
        </asp:ContentPlaceHolder>
