@@ -60,6 +60,15 @@
     <None Include="Connected Services\ServicioWS\ServicioWS.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.almacen.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.almacen_reportePorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.cliente.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -81,16 +90,22 @@
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.helloResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.marca.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.marca_listarMarcasResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pagoPedidoCliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pedido_listar_fechaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pedido_listar_historial_ventasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pedido_listar_pagoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pedido_modificarPagoResponse.datasource">
@@ -114,6 +129,9 @@
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto_obtenerPorIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.resumenHistorialVentas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.resumenPorFecha.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -121,6 +139,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.torre_listarAlertasDeStockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.usuario_existe_clienteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.usuario_insertar_clienteResponse.datasource">

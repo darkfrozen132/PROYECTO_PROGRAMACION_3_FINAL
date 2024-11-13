@@ -71,4 +71,19 @@ public class PedidoBO {
         return this.pedido;
     }
     
+    // Nuevo método para obtener el historial de ventas con filtros - Jairo
+    public ArrayList<ResumenHistorialVentas> obtenerHistorialVentasFiltrado(
+        String fechaInicio, String fechaFin, String fechaPagoInicio, String fechaPagoFin, 
+        String ruc, String razonSocial, String metodoPago) {
+
+        PedidoDAO ped = new PedidoDAOImpl();
+
+        return ped.listarResumenHistorialVentas(
+            fechaInicio, fechaFin, ruc, razonSocial, metodoPago, fechaPagoInicio, fechaPagoFin);
+    }
+    
+    public ArrayList<PagoPedidoCliente> obtenerListaPago(String fechaInicio, String fechaFin){
+        ArrayList<PagoPedidoCliente> resumen=daoPedido.listarPago(fechaInicio, fechaFin);
+        return resumen;
+    } 
 }

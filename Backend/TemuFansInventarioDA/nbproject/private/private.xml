@@ -2,13 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/yo/programacion%203/TA/Lab11_entrega/backend/PROYECTO_PROGRAMACION_3_FINAL/Backend/TemuFansInventarioDA/src/pe/edu/pucp/mercaderia/daoImpl/MarcaDAOImpl.java</file>
-            <file>file:/D:/yo/programacion%203/TA/Lab11_entrega/backend/PROYECTO_PROGRAMACION_3_FINAL/Backend/TemuFansInventarioDA/src/pe/edu/pucp/mercaderia/dao/MarcaDAO.java</file>
-            <file>file:/D:/yo/programacion%203/TA/Lab11_entrega/backend/PROYECTO_PROGRAMACION_3_FINAL/Backend/TemuFansInventarioDA/src/pe/edu/pucp/mercaderia/dao/Torre_Un_PaqueteDAO.java</file>
-            <file>file:/D:/yo/programacion%203/TA/Lab11_entrega/backend/PROYECTO_PROGRAMACION_3_FINAL/Backend/TemuFansInventarioDA/src/pe/edu/pucp/mercaderia/daoImpl/Torre_Un_PaqueteDAOImpl.java</file>
-            <file>file:/D:/yo/programacion%203/TA/Lab11_entrega/backend/PROYECTO_PROGRAMACION_3_FINAL/Backend/TemuFansInventarioDA/src/pe/edu/pucp/mercaderia/daoImpl/ProductoDAOImpl.java</file>
-            <file>file:/D:/yo/programacion%203/TA/Lab11_entrega/backend/PROYECTO_PROGRAMACION_3_FINAL/Backend/TemuFansInventarioDA/src/pe/edu/pucp/mercaderia/dao/ProductoDAO.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
