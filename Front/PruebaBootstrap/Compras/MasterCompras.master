@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" MasterPageFile="../MasterPrincipal.Master" AutoEventWireup="true" CodeBehind="MasterCompras.master.cs" Inherits="PruebaBootstrap.MasterCompras" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cphTitle" runat="server">
+    Compras
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphContenidoHome" runat="server">
+
+    <div class="d-flex">
+        <!-- SIDEBAR DE COMPRAS -->
+          <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 300px;">
+          <a href="HomeCompras.aspx" class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
+            <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-5 fw-semibold">Módulos de Compras</span>
+          </a>
+          <div class="list-group list-group-flush border-bottom scrollarea" id="miDiv">
+            <a id="idGestionProveedores" href="Gestion_de_Proveedores.aspx" class="list-group-item list-group-item-action py-3 lh-sm" runat="server">
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Gestión de Proveedores</strong>
+              </div>
+              <div class="col-10 mb-1 small">Agregar, modificar, listar e investigar proveedores</div>
+            </a>
+            <a id="idAgregarCompra" href="Agregar_Compra.aspx" class="list-group-item list-group-item-action py-3 lh-sm" runat="server">
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Compras</strong>
+              </div>
+              <div class="col-10 mb-1 small">Registrar y visualizar todas las compras realizadas</div>
+            </a>
+            <a id="idRegistrarPagoProveedor" href="Registrar_Pago_Proveedor.aspx" class="list-group-item list-group-item-action py-3 lh-sm" runat="server">
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Registrar Pago a Proveedor</strong>
+              </div>
+              <div class="col-10 mb-1 small">Registrar los datos del pago realizado a un proveedor</div>
+            </a>
+            <a id="idHistorialCompras" href="Historial_Compras.aspx" class="list-group-item list-group-item-action py-3 lh-sm" runat="server">
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Historial de Compras</strong>
+              </div>
+              <div class="col-10 mb-1 small">Visualizar las compras realizadas y canceladas</div>
+            </a>
+            <a id="idResumenDiarioMensualCompras" href="Resumen_DiarioMensual_Compras.aspx" class="list-group-item list-group-item-action py-3 lh-sm" runat="server">
+              <div class="d-flex w-100 align-items-center justify-content-between">
+                <strong class="mb-1">Resumen Diario/Mensual</strong>
+              </div>
+              <div class="col-10 mb-1 small">Visualizar las compras realizadas en periodos de tiempo</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contenido principal -->
+          <div class="flex-grow-1 p-3">
+              <form runat="server">
+                  <!-- Contenido al lado del sidebar -->
+                  <asp:ContentPlaceHolder ID="cphComprasContenido" runat="server">
+
+                  </asp:ContentPlaceHolder>
+              </form>
+          </div>
+    </div>
+
+</asp:Content>

@@ -77,12 +77,14 @@
   <ItemGroup>
     <Content Include="Almacen\HomeAlmacen.aspx" />
     <Content Include="Almacen\reporteAlmacen.aspx" />
+    <Content Include="Compras\HomeCompras.aspx" />
     <Content Include="Inventario\AlertasDeStock.aspx" />
     <Content Include="Inventario\consultarStockProducto.aspx" />
     <Content Include="Content\gestion_clientes.css" />
     <Content Include="Scripts\gestion_clientes.js" />
     <Content Include="super_secret_settings\AlertasDeStock.jpg" />
     <Content Include="super_secret_settings\almacen.png" />
+    <Content Include="super_secret_settings\img_proveedor.jpg" />
     <Content Include="super_secret_settings\TemuFansLogo.png" />
     <Content Include="super_secret_settings\TEMUFANS_logo2.png" />
     <Content Include="Ventas\Agregar_Pedido.aspx" />
@@ -139,6 +141,7 @@
     <Content Include="Ventas\MV_GesCli.master" />
     <Content Include="Inventario\MasterInventario.master" />
     <Content Include="Almacen\MasterAlmacen.master" />
+    <Content Include="Compras\MasterCompras.master" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -173,6 +176,20 @@
     </Compile>
     <Compile Include="Almacen\reporteAlmacen.aspx.designer.cs">
       <DependentUpon>reporteAlmacen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\HomeCompras.aspx.cs">
+      <DependentUpon>HomeCompras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\HomeCompras.aspx.designer.cs">
+      <DependentUpon>HomeCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\MasterCompras.master.cs">
+      <DependentUpon>MasterCompras.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\MasterCompras.master.designer.cs">
+      <DependentUpon>MasterCompras.master</DependentUpon>
     </Compile>
     <Compile Include="Inventario\AlertasDeStock.aspx.cs">
       <DependentUpon>AlertasDeStock.aspx</DependentUpon>
