@@ -1,73 +1,137 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\",
+  "WorkspaceRootPath": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\historial_ventas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\historial_ventas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\compras\\homecompras.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\compras\\homecompras.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|d:\\yo\\programacion 3\\ta\\lab11_entrega\\backend\\proyecto_programacion_3_final\\front\\pruebabootstrap\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\compras\\mastercompras.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\compras\\mastercompras.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\almacen\\reportealmacen.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\reportealmacen.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\compras\\mastercompras.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\compras\\mastercompras.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\almacen\\reportealmacen.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\reportealmacen.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\compras\\homecompras.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\compras\\homecompras.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\gestion_de_clientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\gestion_de_clientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\homeventas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\homeventas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\gestion_de_clientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\gestion_de_clientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\homeventas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\homeventas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\registrar_pago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\registrar_pago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\masterventas.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\masterventas.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\registrar_pago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\registrar_pago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\masterventas.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\masterventas.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\registrar_pago.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\registrar_pago.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\compras\\mastercompras.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\compras\\mastercompras.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6215378D-576A-4184-8EE9-789DE78CBE56}|TemuFansDocumentosBO\\TemuFansDocumentosBO.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansdocumentosbo\\pedidobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6215378D-576A-4184-8EE9-789DE78CBE56}|TemuFansDocumentosBO\\TemuFansDocumentosBO.csproj|solutionrelative:temufansdocumentosbo\\pedidobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\almacen\\homealmacen.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\homealmacen.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9F2120C-75D8-4AF1-A0CC-0543F99684CA}|TemuFansInventarioBO\\TemuFansInventarioBO.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansinventariobo\\almacenbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9F2120C-75D8-4AF1-A0CC-0543F99684CA}|TemuFansInventarioBO\\TemuFansInventarioBO.csproj|solutionrelative:temufansinventariobo\\almacenbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74E4ECB7-0624-475E-BFEE-A4B8BB6342A0}|TemuFansInventarioTest\\TemuFansInventarioTest.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansinventariotest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74E4ECB7-0624-475E-BFEE-A4B8BB6342A0}|TemuFansInventarioTest\\TemuFansInventarioTest.csproj|solutionrelative:temufansinventariotest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\scripts\\gestion_clientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\scripts\\gestion_clientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\masterprincipal.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0184043D-EA3C-45D7-AA8B-A476FC6B91C4}|TemuFansUsuarioBO\\TemuFansUsuarioBO.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansusuariobo\\clientebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\homeventas.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\homeventas.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\almacen\\masteralmacen.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\masteralmacen.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\mv_gesped.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\mv_gesped.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\mv_gescli.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\mv_gescli.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\mv_gesped.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\mv_gesped.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\mv_gescli.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\mv_gescli.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|c:\\users\\leoncio\\documents\\github\\proyecto_programacion_3_final\\front\\pruebabootstrap\\ventas\\historial_ventas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\historial_ventas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\almacen\\reportealmacen.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\reportealmacen.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\almacen\\reportealmacen.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\almacen\\reportealmacen.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\gestion_de_clientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\gestion_de_clientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\gestion_de_clientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\gestion_de_clientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\registrar_pago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\registrar_pago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\registrar_pago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\registrar_pago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\registrar_pago.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\registrar_pago.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6215378D-576A-4184-8EE9-789DE78CBE56}|TemuFansDocumentosBO\\TemuFansDocumentosBO.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansdocumentosbo\\pedidobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6215378D-576A-4184-8EE9-789DE78CBE56}|TemuFansDocumentosBO\\TemuFansDocumentosBO.csproj|solutionrelative:temufansdocumentosbo\\pedidobo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9F2120C-75D8-4AF1-A0CC-0543F99684CA}|TemuFansInventarioBO\\TemuFansInventarioBO.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansinventariobo\\almacenbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9F2120C-75D8-4AF1-A0CC-0543F99684CA}|TemuFansInventarioBO\\TemuFansInventarioBO.csproj|solutionrelative:temufansinventariobo\\almacenbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74E4ECB7-0624-475E-BFEE-A4B8BB6342A0}|TemuFansInventarioTest\\TemuFansInventarioTest.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansinventariotest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74E4ECB7-0624-475E-BFEE-A4B8BB6342A0}|TemuFansInventarioTest\\TemuFansInventarioTest.csproj|solutionrelative:temufansinventariotest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\scripts\\gestion_clientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\scripts\\gestion_clientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0184043D-EA3C-45D7-AA8B-A476FC6B91C4}|TemuFansUsuarioBO\\TemuFansUsuarioBO.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansusuariobo\\clientebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0184043D-EA3C-45D7-AA8B-A476FC6B91C4}|TemuFansUsuarioBO\\TemuFansUsuarioBO.csproj|solutionrelative:temufansusuariobo\\clientebo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\historial_ventas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\pruebabootstrap\\ventas\\historial_ventas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BE81CF3-9BAB-4E79-A3CD-AAE8092ADE2C}|PruebaBootstrap\\PruebaBootstrap.csproj|solutionrelative:pruebabootstrap\\ventas\\historial_ventas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9F2120C-75D8-4AF1-A0CC-0543F99684CA}|TemuFansInventarioBO\\TemuFansInventarioBO.csproj|D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansinventariobo\\marcabo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9F2120C-75D8-4AF1-A0CC-0543F99684CA}|TemuFansInventarioBO\\TemuFansInventarioBO.csproj|C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\temufansinventariobo\\marcabo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9F2120C-75D8-4AF1-A0CC-0543F99684CA}|TemuFansInventarioBO\\TemuFansInventarioBO.csproj|solutionrelative:temufansinventariobo\\marcabo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -78,185 +142,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Home.aspx",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Home.aspx",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Home.aspx",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Home.aspx",
-              "RelativeToolTip": "PruebaBootstrap\\Home.aspx",
+              "Title": "MasterCompras.master",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Compras\\MasterCompras.master",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Compras\\MasterCompras.master",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Compras\\MasterCompras.master",
+              "RelativeToolTip": "PruebaBootstrap\\Compras\\MasterCompras.master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-13T05:01:45.946Z",
+              "WhenOpened": "2024-11-18T20:40:35.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeCompras.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Compras\\HomeCompras.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Compras\\HomeCompras.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Compras\\HomeCompras.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Compras\\HomeCompras.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-18T20:58:03.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "reporteAlmacen.aspx",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
-              "RelativeToolTip": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-13T04:44:53.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Registrar_Pago.aspx",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx",
-              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-13T04:25:57.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ClienteBO.cs",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansUsuarioBO\\ClienteBO.cs",
-              "RelativeDocumentMoniker": "TemuFansUsuarioBO\\ClienteBO.cs",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansUsuarioBO\\ClienteBO.cs",
-              "RelativeToolTip": "TemuFansUsuarioBO\\ClienteBO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Title": "HomeCompras.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Compras\\HomeCompras.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Compras\\HomeCompras.aspx.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Compras\\HomeCompras.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Compras\\HomeCompras.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:59:38.544Z"
+              "WhenOpened": "2024-11-18T21:04:48.007Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Gestion_de_Clientes.aspx.cs",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx.cs",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx.cs",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx.cs",
-              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCMAAABQAAAAAAAAAA==",
+              "Title": "HomeVentas.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\HomeVentas.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\HomeVentas.aspx.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\HomeVentas.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\HomeVentas.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:58:24.33Z"
+              "WhenOpened": "2024-11-18T20:39:13.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MasterCompras.master.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Compras\\MasterCompras.master.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Compras\\MasterCompras.master.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Compras\\MasterCompras.master.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Compras\\MasterCompras.master.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T20:40:41.065Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Gestion_de_Clientes.aspx",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx",
-              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx",
+              "Title": "HomeVentas.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\HomeVentas.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\HomeVentas.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\HomeVentas.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\HomeVentas.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-13T02:57:09.042Z"
+              "WhenOpened": "2024-11-18T20:33:52.419Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Historial_Ventas.aspx.cs",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Historial_Ventas.aspx.cs",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Historial_Ventas.aspx.cs",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Historial_Ventas.aspx.cs",
-              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Historial_Ventas.aspx.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAgwFUAAABSAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "MasterVentas.master.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MasterVentas.master.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\MasterVentas.master.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MasterVentas.master.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\MasterVentas.master.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:06:30.395Z"
+              "WhenOpened": "2024-11-18T20:34:10.667Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Historial_Ventas.aspx",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Historial_Ventas.aspx",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Historial_Ventas.aspx",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Historial_Ventas.aspx",
-              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Historial_Ventas.aspx",
+              "DocumentIndex": 7,
+              "Title": "MasterVentas.master",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MasterVentas.master",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\MasterVentas.master",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MasterVentas.master",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\MasterVentas.master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-13T02:04:52.965Z",
+              "WhenOpened": "2024-11-18T20:32:39.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MasterCompras.master.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Compras\\MasterCompras.master.designer.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Compras\\MasterCompras.master.designer.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Compras\\MasterCompras.master.designer.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Compras\\MasterCompras.master.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T20:40:41.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "PedidoBO.cs",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansDocumentosBO\\PedidoBO.cs",
-              "RelativeDocumentMoniker": "TemuFansDocumentosBO\\PedidoBO.cs",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansDocumentosBO\\PedidoBO.cs",
-              "RelativeToolTip": "TemuFansDocumentosBO\\PedidoBO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:04:35.423Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "reporteAlmacen.aspx.cs",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs",
-              "RelativeToolTip": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAowHkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:31:45.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Registrar_Pago.aspx.cs",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.cs",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.cs",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.cs",
-              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAIwI8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T04:27:08.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Registrar_Pago.aspx.designer.cs",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.designer.cs",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.designer.cs",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.designer.cs",
-              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T04:27:19.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioTest\\Program.cs",
-              "RelativeDocumentMoniker": "TemuFansInventarioTest\\Program.cs",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioTest\\Program.cs",
-              "RelativeToolTip": "TemuFansInventarioTest\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwC0AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:26:40.803Z"
+              "Title": "HomeAlmacen.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\HomeAlmacen.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\HomeAlmacen.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\HomeAlmacen.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Almacen\\HomeAlmacen.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-18T21:02:05.149Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AlmacenBO.cs",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioBO\\AlmacenBO.cs",
-              "RelativeDocumentMoniker": "TemuFansInventarioBO\\AlmacenBO.cs",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioBO\\AlmacenBO.cs",
-              "RelativeToolTip": "TemuFansInventarioBO\\AlmacenBO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:24:26.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "MasterPrincipal.Master",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\MasterPrincipal.Master",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\MasterPrincipal.Master",
               "RelativeDocumentMoniker": "PruebaBootstrap\\MasterPrincipal.Master",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\MasterPrincipal.Master",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\MasterPrincipal.Master",
               "RelativeToolTip": "PruebaBootstrap\\MasterPrincipal.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -265,27 +293,278 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeVentas.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\HomeVentas.aspx.designer.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\HomeVentas.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\HomeVentas.aspx.designer.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\HomeVentas.aspx.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T20:39:15.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "gestion_clientes.js",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Scripts\\gestion_clientes.js",
-              "RelativeDocumentMoniker": "PruebaBootstrap\\Scripts\\gestion_clientes.js",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Scripts\\gestion_clientes.js",
-              "RelativeToolTip": "PruebaBootstrap\\Scripts\\gestion_clientes.js",
-              "ViewState": "AgIAADYAAAAAAAAAAAAUwEYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-13T03:06:59.385Z"
+              "Title": "MasterAlmacen.master",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\MasterAlmacen.master",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\MasterAlmacen.master",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\MasterAlmacen.master",
+              "RelativeToolTip": "PruebaBootstrap\\Almacen\\MasterAlmacen.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-18T20:38:53.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Home.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Home.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Home.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Home.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Home.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-13T05:01:45.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "MarcaBO.cs",
-              "DocumentMoniker": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioBO\\MarcaBO.cs",
-              "RelativeDocumentMoniker": "TemuFansInventarioBO\\MarcaBO.cs",
-              "ToolTip": "D:\\yo\\programacion 3\\TA\\Lab11_entrega\\backend\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioBO\\MarcaBO.cs",
-              "RelativeToolTip": "TemuFansInventarioBO\\MarcaBO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Title": "MV_GesPed.master.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MV_GesPed.master.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\MV_GesPed.master.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MV_GesPed.master.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\MV_GesPed.master.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:24:41.819Z"
+              "WhenOpened": "2024-11-18T20:32:05.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MV_GesPed.master",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MV_GesPed.master",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\MV_GesPed.master",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MV_GesPed.master",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\MV_GesPed.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-18T20:32:30.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MV_GesCli.master.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MV_GesCli.master.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\MV_GesCli.master.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MV_GesCli.master.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\MV_GesCli.master.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T20:31:54.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MV_GesCli.master",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MV_GesCli.master",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\MV_GesCli.master",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\MV_GesCli.master",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\MV_GesCli.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-18T20:31:50.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ClienteBO.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansUsuarioBO\\ClienteBO.cs",
+              "RelativeDocumentMoniker": "TemuFansUsuarioBO\\ClienteBO.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansUsuarioBO\\ClienteBO.cs",
+              "RelativeToolTip": "TemuFansUsuarioBO\\ClienteBO.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:59:38.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Gestion_de_Clientes.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:58:24.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Gestion_de_Clientes.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Gestion_de_Clientes.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-13T02:57:09.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Historial_Ventas.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Historial_Ventas.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Historial_Ventas.aspx.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Historial_Ventas.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Historial_Ventas.aspx.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:06:30.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Historial_Ventas.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Historial_Ventas.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Historial_Ventas.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Historial_Ventas.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Historial_Ventas.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-13T02:04:52.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Registrar_Pago.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-13T04:25:57.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "reporteAlmacen.aspx",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
+              "RelativeToolTip": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-13T04:44:53.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PedidoBO.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansDocumentosBO\\PedidoBO.cs",
+              "RelativeDocumentMoniker": "TemuFansDocumentosBO\\PedidoBO.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansDocumentosBO\\PedidoBO.cs",
+              "RelativeToolTip": "TemuFansDocumentosBO\\PedidoBO.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:04:35.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "reporteAlmacen.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Almacen\\reporteAlmacen.aspx.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:31:45.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Registrar_Pago.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T04:27:08.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Registrar_Pago.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.designer.cs",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.designer.cs",
+              "RelativeToolTip": "PruebaBootstrap\\Ventas\\Registrar_Pago.aspx.designer.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T04:27:19.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioTest\\Program.cs",
+              "RelativeDocumentMoniker": "TemuFansInventarioTest\\Program.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioTest\\Program.cs",
+              "RelativeToolTip": "TemuFansInventarioTest\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:26:40.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AlmacenBO.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioBO\\AlmacenBO.cs",
+              "RelativeDocumentMoniker": "TemuFansInventarioBO\\AlmacenBO.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioBO\\AlmacenBO.cs",
+              "RelativeToolTip": "TemuFansInventarioBO\\AlmacenBO.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:24:26.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "gestion_clientes.js",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Scripts\\gestion_clientes.js",
+              "RelativeDocumentMoniker": "PruebaBootstrap\\Scripts\\gestion_clientes.js",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\PruebaBootstrap\\Scripts\\gestion_clientes.js",
+              "RelativeToolTip": "PruebaBootstrap\\Scripts\\gestion_clientes.js",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-13T03:06:59.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MarcaBO.cs",
+              "DocumentMoniker": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioBO\\MarcaBO.cs",
+              "RelativeDocumentMoniker": "TemuFansInventarioBO\\MarcaBO.cs",
+              "ToolTip": "C:\\Users\\Leoncio\\Documents\\GitHub\\PROYECTO_PROGRAMACION_3_FINAL\\Front\\TemuFansInventarioBO\\MarcaBO.cs",
+              "RelativeToolTip": "TemuFansInventarioBO\\MarcaBO.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:24:41.819Z",
+              "EditorCaption": ""
             }
           ]
         }
