@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="ClienteBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedorBO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TemuFansBO\TemuFansBO.csproj">

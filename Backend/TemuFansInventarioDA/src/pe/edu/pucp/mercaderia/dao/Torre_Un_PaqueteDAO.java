@@ -5,14 +5,14 @@
 package pe.edu.pucp.mercaderia.dao;
 
 import java.util.ArrayList;
-import pe.edu.pucp.inventario.model.ConsultaStock;
+import pe.edu.pucp.inventario.model.Torre_Un_Paquete;
 
 /**
  *
  * @author usuario
  */
 public interface Torre_Un_PaqueteDAO {
-    public ConsultaStock consultarStockProductoPorId(Integer idProducto);
+    public Torre_Un_Paquete consultarStockProductoPorId(Integer idProducto);
     
-    public ArrayList<ConsultaStock> alertasDeStock();
+    public ArrayList<Torre_Un_Paquete> alertasDeStock();
 }

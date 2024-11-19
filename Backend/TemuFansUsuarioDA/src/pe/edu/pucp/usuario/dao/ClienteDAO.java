@@ -21,4 +21,6 @@ public interface ClienteDAO {
     public ArrayList<Cliente> listarPorNombre(String nombre);
     
     public boolean existeCliente(String doi);
+    
+    public Cliente obtenerPorId(Integer idCliente);
 }

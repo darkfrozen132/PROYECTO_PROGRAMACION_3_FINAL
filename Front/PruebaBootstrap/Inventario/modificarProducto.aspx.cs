@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using TemuFansBO.ServicioWS;
 using TemuFansInventarioBO;
+using UtilidadesWeb;
 
 namespace PruebaBootstrap
 {
@@ -35,6 +36,10 @@ namespace PruebaBootstrap
                 double.Parse(txtPrecio.Text));
 
                 Response.Redirect("modificarProducto.aspx");
+            }
+            else
+            {
+                ScriptsGenericos.MostrarMensajeError(this, "Por favor, seleccione un producto válido.");
             }
             
         }

@@ -7,11 +7,11 @@
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                   <li class="nav-item">
-                    <a id="idNuevoCliente" class="nav-link" href="Gestion_de_Clientes.aspx" runat="server">Nuevo Cliente</a>
+                    <a id="idNuevoCliente" class="nav-link" href="Gestion_de_Clientes.aspx" runat="server">NUEVO CLIENTE</a>
                   </li>
                   <li class="nav-item">
                       <!-- mandar indicacion que solo quiero los pedidos pendientes que puedan ser modificados -->
-                    <a id="idListarClientes" class="nav-link" href="Listar_Clientes.aspx" runat="server">Lista Clientes</a>
+                    <a id="idListarClientes" class="nav-link" href="Listar_Clientes.aspx" runat="server">LISTA CLIENTES</a>
                   </li>
                 </ul>
              </div>              

@@ -18,14 +18,14 @@
           </div>
           <div class="col-10 mb-1 small">Genere reportes de los almacenes</div>
         </a>
-          <!--
-        <a id="idModificarProducto" href="modificarProducto.aspx"  class="list-group-item list-group-item-action py-3 lh-sm" runat="server">
+          
+        <a id="idProductoEnTorre" href="AsignarProductoEnTorre.aspx"  class="list-group-item list-group-item-action py-3 lh-sm" runat="server">
           <div class="d-flex w-100 align-items-center justify-content-between">
-            <strong class="mb-1">MODIFICAR PRODUCTO</strong>
+            <strong class="mb-1">ASIGNAR PRODUCTO</strong>
           </div>
-          <div class="col-10 mb-1 small">Modifique el nombre, precio, estado de un producto</div>
+          <div class="col-10 mb-1 small">Agregue un producto a una torre</div>
         </a>
-          -->
+          
       </div>
     </div>
 

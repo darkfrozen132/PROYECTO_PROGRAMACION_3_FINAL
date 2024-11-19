@@ -11,26 +11,26 @@
             <div class="card-body">
                 <div class="row mb-3">
                     <div class="col-md-2">
-                        <label for="txtDesde">Desde</label>
+                        <label for="txtDesde">DESDE</label>
                         <asp:TextBox ID="txtDesde" runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>
                     </div>
 
                     <div class="col-md-2">
-                        <label for="txtHasta">Hasta</label>
+                        <label for="txtHasta">HASTA</label>
                         <asp:TextBox ID="txtHasta" runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>
                     </div>
 
 
                     <div class="col-md-2">
-                        <asp:Button ID="btnFiltrar" runat="server" CssClass="btn btn-primary mt-4" Text="Filtrar" OnClick="btnFiltrar_Click"/>
+                        <asp:Button ID="btnFiltrar" runat="server" CssClass="btn btn-primary mt-4" Text="FILTRAR" OnClick="btnFiltrar_Click"/>
                     </div>
                 </div>
 
                 <asp:GridView ID="gvResumen" runat="server" AutoGenerateColumns="False" CssClass="table table-striped" AllowPaging="true" PageSize="5" OnPageIndexChanging="gvResumen_PageIndexChanging" ShowFooter="true" OnRowDataBound="gvResumen_RowDataBound">
                     <Columns>
-                        <asp:BoundField DataField="Fecha" HeaderText="Fecha" DataFormatString="{0:dd/MM/yyyy}"/>
-                        <asp:BoundField DataField="Cantidad de pedidos" HeaderText="Cantidad de pedidos" />
-                        <asp:BoundField DataField="Total vendido" HeaderText="Total vendido" />
+                        <asp:BoundField DataField="Fecha" HeaderText="FECHA" DataFormatString="{0:dd/MM/yyyy}"/>
+                        <asp:BoundField DataField="Cantidad de pedidos" HeaderText="CANTIDAD DE PEDIDOS" />
+                        <asp:BoundField DataField="Total vendido" HeaderText="TOTAL VENDIDO" />
                     </Columns>
                 </asp:GridView>
            

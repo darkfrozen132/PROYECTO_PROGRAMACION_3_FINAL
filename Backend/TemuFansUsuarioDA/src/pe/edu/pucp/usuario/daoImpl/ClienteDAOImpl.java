@@ -21,11 +21,14 @@ import pe.edu.pucp.usuario.model.Tipo_Usuario;
  * @author usuario
  */
 public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
+
     private Integer tipoListado;
+    private Integer tipoObtenerPorID;
     private Cliente cliente;
-    
-    public ClienteDAOImpl(){
+
+    public ClienteDAOImpl() {
         this.tipoListado = 1;
+        this.tipoObtenerPorID = 1;
         this.cliente = null;
     }
 
@@ -46,7 +49,7 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
 
     @Override
     protected String getProcedure_Listar() {
-        switch (this.tipoListado){
+        switch (this.tipoListado) {
             case 1 -> {
                 return "LISTAR_CLIENTES";
             }
@@ -56,18 +59,28 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
             case 3 -> {
                 return "LISTAR_POR_NOMBRE_CLIENTE";
             }
-            default -> throw new AssertionError();
+            default ->
+                throw new AssertionError();
         }
     }
 
     @Override
     protected String getProcedure_ObtenerPorId() {
-        return "OBTENER_POR_DOI_CLIENTE";
+        switch (this.tipoObtenerPorID) {
+            case 1 -> {
+                return "OBTENER_POR_DOI_CLIENTE";
+            }
+            case 2 -> {
+                return "OBTENER_POR_ID_CLIENTE";
+            }
+            default ->
+                throw new AssertionError();
+        }
     }
 
     @Override
     protected void getParamEntrada_Insertar() {
-        try{
+        try {
             SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
             String fecha = df.format(cliente.getFecha_registro());
             this.registrarParametroEntrada("_tipo", cliente.getTipo_usuario().toString());
@@ -77,8 +90,7 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
             this.registrarParametroEntrada("_fecha_registro", fecha);
             this.registrarParametroEntrada("_Nombre", cliente.getNombre());
             this.registrarParametroEntrada("_telefono", cliente.getTelefono());
-        }
-        catch(SQLException ex){
+        } catch (SQLException ex) {
             Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -95,44 +107,57 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
 
     @Override
     protected void getParamEntrada_Listar() {
-        switch(this.tipoListado){
+        switch (this.tipoListado) {
             case 1 -> {
                 //no tienen parametros de entrada;
             }
             case 2 -> {
                 try {
-                    if(this.cliente.getNombre() == null)
+                    if (this.cliente.getNombre() == null) {
                         this.registrarParametroNulo("_nombre", Types.VARCHAR);
-                    else
+                    } else {
                         this.registrarParametroEntrada("_nombre", this.cliente.getNombre());
-                    
-                    if(this.cliente.getCodigo() == null)
+                    }
+
+                    if (this.cliente.getCodigo() == null) {
                         this.registrarParametroNulo("_codigo", Types.VARCHAR);
-                    else
+                    } else {
                         this.registrarParametroEntrada("_codigo", this.cliente.getCodigo());
+                    }
                 } catch (SQLException ex) {
                     Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
             case 3 -> {
                 try {
-                    if(this.cliente.getNombre() == null)
+                    if (this.cliente.getNombre() == null) {
                         this.registrarParametroNulo("_nombre", Types.VARCHAR);
-                    else
+                    } else {
                         this.registrarParametroEntrada("_nombre", this.cliente.getNombre());
+                    }
                 } catch (SQLException ex) {
                     Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
-            default -> throw new AssertionError();
+            default ->
+                throw new AssertionError();
 
         }
     }
 
     @Override
     protected void getParamEntrada_ObtenerPorId() {
-        try{
-            this.registrarParametroEntrada("__doi", cliente.getDoi());
+        try {
+            switch (this.tipoObtenerPorID) {
+                case 1 -> {
+                    this.registrarParametroEntrada("__doi", cliente.getDoi());
+                }
+                case 2 -> {
+                    this.registrarParametroEntrada("_id_cliente", this.cliente.getIdCliente());
+                }
+                default ->
+                    throw new AssertionError();
+            }
         } catch (SQLException ex) {
             Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -140,10 +165,9 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
 
     @Override
     protected void getParamSalida_Insertar() {
-        try{
+        try {
             this.registrarParametroSalida("_idUsuario", Types.INTEGER);
-        }
-        catch(SQLException ex){
+        } catch (SQLException ex) {
             Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -160,12 +184,11 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
 
     @Override
     protected void setParamSalida_Insertar() {
-        try{
-            Integer id = (Integer)this.obtenerParametroSalida("_idUsuario", Types.INTEGER);
+        try {
+            Integer id = (Integer) this.obtenerParametroSalida("_idUsuario", Types.INTEGER);
             this.cliente.setIdCliente(id);
             this.cliente.setCodigo("CLI-" + id);
-        }
-        catch(SQLException ex) {
+        } catch (SQLException ex) {
             Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -184,7 +207,7 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
     protected Object agregarObjetoALaLista(ResultSet lector) {
         Cliente cli = new Cliente();
         try {
-            switch(this.tipoListado){
+            switch (this.tipoListado) {
                 case 1 -> {
                     cli.setNombre(lector.getString("nombre"));
                     cli.setFecha_registro(lector.getDate("fechaRegistro"));
@@ -193,9 +216,11 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
                     //como por ejemplo CLI-GOGO-12
                     int i;
                     String cod_unido = "";
-                    for(i=0; i<cod.length - 1; i++){
+                    for (i = 0; i < cod.length - 1; i++) {
                         cod_unido += cod[i];
-                        if(i<cod.length - 2)cod_unido += "-";
+                        if (i < cod.length - 2) {
+                            cod_unido += "-";
+                        }
                     }
                     cli.setCodigo(cod_unido);
                     cli.setIdCliente(Integer.valueOf(cod[i]));
@@ -209,9 +234,11 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
                     //como por ejemplo CLI-GOGO-12
                     int i;
                     String cod_unido = "";
-                    for(i=0; i<cod.length - 1; i++){
+                    for (i = 0; i < cod.length - 1; i++) {
                         cod_unido += cod[i];
-                        if(i<cod.length - 2)cod_unido += "-";
+                        if (i < cod.length - 2) {
+                            cod_unido += "-";
+                        }
                     }
                     cli.setCodigo(cod_unido);
                     cli.setIdCliente(Integer.valueOf(cod[i]));
@@ -222,30 +249,43 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
                     idCliente,
                     idUsuario,
                     nombre
-                    */
+                     */
                     cli.setIdCliente(lector.getInt("idCliente"));
                     cli.setIdUsuario(lector.getInt("idUsuario"));
                     cli.setNombre(lector.getString("nombre"));
                     return cli;
                 }
-                default -> throw new AssertionError();
+                default ->
+                    throw new AssertionError();
             }
-            
+
         } catch (SQLException ex) {
             Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
         //no deberias de llegar aca, sino hay un error con el tipoListado
-        return this.cliente;
+        return null;
     }
 
     @Override
     protected void instanciarObjetoDelResultSet(ResultSet lector) {
-        try{
-            Tipo_Usuario tipoUs = Tipo_Usuario.valueOf(lector.getString("tipo"));
-            this.cliente.setTipo_usuario(tipoUs);
-            this.cliente.setDoi(lector.getString("_doi"));
-        }
-        catch (SQLException ex){
+        try {
+            switch (this.tipoObtenerPorID) {
+                case 1 -> {
+                    Tipo_Usuario tipoUs = Tipo_Usuario.valueOf(lector.getString("tipo"));
+                    this.cliente.setTipo_usuario(tipoUs);
+                    this.cliente.setDoi(lector.getString("_doi"));
+                }
+                case 2 -> {
+                    this.cliente.setCodigo(lector.getString("codigo"));
+                    this.cliente.setDoi(lector.getString("ruc"));
+                    this.cliente.setNombre(lector.getString("nombre"));
+                    this.cliente.setTelefono(lector.getString("telefono"));
+                    this.cliente.setIdUsuario(lector.getInt("idUsuario"));
+                }
+                default ->
+                    throw new AssertionError();
+            }
+        } catch (SQLException ex) {
             Logger.getLogger(ClienteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -260,11 +300,12 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
     public ArrayList<Cliente> listarTodos() {
         this.tipoListado = 1;
         ArrayList<Cliente> lista = new ArrayList<>();
-        for(Object obj : super.listar())
-            lista.add((Cliente)obj);
+        for (Object obj : super.listar()) {
+            lista.add((Cliente) obj);
+        }
         return lista;
     }
-    
+
     @Override
     public ArrayList<Cliente> listarTodosNombreCodigo(String nombre, String codigo) {
         this.nroParametros = 2;
@@ -273,8 +314,9 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
         this.cliente.setCodigo(codigo);
         this.tipoListado = 2;
         ArrayList<Cliente> lista = new ArrayList<>();
-        for(Object obj : super.listar())
-            lista.add((Cliente)obj);
+        for (Object obj : super.listar()) {
+            lista.add((Cliente) obj);
+        }
         this.nroParametros = 0;
         return lista;
     }
@@ -286,7 +328,7 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
         Integer resOperacion = super.insertar();
         Integer id = cliente.getIdCliente();
         this.nroParametros = 0;
-        
+
         return id;
     }
 
@@ -297,8 +339,9 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
         this.cliente.setNombre(nombre);
         this.tipoListado = 3;
         ArrayList<Cliente> lista = new ArrayList<>();
-        for(Object obj : super.listar())
-            lista.add((Cliente)obj);
+        for (Object obj : super.listar()) {
+            lista.add((Cliente) obj);
+        }
         this.nroParametros = 0;
         return lista;
     }
@@ -306,12 +349,24 @@ public class ClienteDAOImpl extends DAOImpl implements ClienteDAO {
     @Override
     public boolean existeCliente(String doi) {
         this.nroParametros = 1;
+        this.tipoObtenerPorID = 1;
         cliente = new Cliente();
         cliente.setDoi(doi);
         super.obtenerPorId();
         this.nroParametros = 0;
-        return cliente.getDoi() != null 
-                && (cliente.getTipo_usuario() == Tipo_Usuario.CLIENTE 
+        return cliente.getDoi() != null
+                && (cliente.getTipo_usuario() == Tipo_Usuario.CLIENTE
                 || cliente.getTipo_usuario() == Tipo_Usuario.EMPRESA);
+    }
+
+    @Override
+    public Cliente obtenerPorId(Integer idCliente) {
+        this.nroParametros = 1;
+        this.tipoObtenerPorID = 2;
+        this.cliente = new Cliente();
+        this.cliente.setIdCliente(idCliente);
+        super.obtenerPorId();
+        this.nroParametros = 0;
+        return this.cliente;
     }
 }

@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" MasterPageFile="MasterCompras.master" AutoEventWireup="true" CodeBehind="MV_GesPro.Master.cs" Inherits="PruebaBootstrap.MV_GesPro_Master" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cphComprasContenido" runat="server">
+    <div class="container">
+        <div class="card">
+            <!-- Barra de navegación -->
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a id="idNuevoProveedor" class="nav-link" href="Gestion_de_Proveedores.aspx" runat="server">Nuevo Proveedor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="idListarProveedores" class="nav-link" href="Listar_Proveedores.aspx" runat="server">Lista de Proveedores</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contenido dinámico -->
+            <div class="card-body">
+                <asp:ContentPlaceHolder ID="cphCompras_Gestion_Proveedores" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+
+

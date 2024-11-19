@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetalleBO.cs" />
     <Compile Include="PedidoBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -348,6 +348,7 @@ public class PedidoDAOImpl extends DAOImpl implements PedidoDAO {
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.nroParametros = 2;
+        this.tipoListado = 1;
         ArrayList<ResumenPorFecha> listaResumen = new ArrayList<>();
         for (Object obj : super.listar()) {
             listaResumen.add((ResumenPorFecha) obj);

@@ -306,16 +306,3 @@ D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Fron
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\itextsharp.dll
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\BouncyCastle.Cryptography.xml
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\itextsharp.xml
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\BouncyCastle.Cryptography.dll
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\itextsharp.dll
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\TemuFansBO.dll
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\TemuFansDocumentosBO.dll
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\TemuFansInventarioBO.dll
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\TemuFansUsuarioBO.dll
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\TemuFansBO.pdb
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\TemuFansBO.dll.config
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\TemuFansDocumentosBO.pdb
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\TemuFansInventarioBO.pdb
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\TemuFansUsuarioBO.pdb
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\BouncyCastle.Cryptography.xml
-C:\Users\Leoncio\Documents\GitHub\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\itextsharp.xml

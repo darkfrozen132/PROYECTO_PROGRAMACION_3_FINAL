@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="MasterInventario.master" AutoEventWireup="true" CodeBehind="modificarProducto.aspx.cs" Inherits="PruebaBootstrap.modificarProducto" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphInventarioContenido" runat="server">
+
+
+
+
     <div class="container">
         <h2>Modificar Producto</h2>
     
@@ -70,7 +74,7 @@
         <div class="col-md-12 text-end">
             <asp:Button ID="btnCancelar" runat="server" Text="CANCELAR" CssClass="btn btn-secondary me-2" OnClick="BtnCancelar_Click" />
             <asp:Button ID="btnLimpiar" runat="server" Text="LIMPIAR" CssClass="btn btn-warning me-2" OnClick="BtnLimpiar_Click"/>
-            <asp:Button ID="btnGuardar" runat="server" Text="MODIFICAR" CssClass="btn btn-primary"  OnClick="BtnGuardar_Click" OnClientClick="return validarSeleccionProducto() && confirmarModificacion();" />
+            <asp:Button ID="btnGuardar" runat="server" Text="MODIFICAR" CssClass="btn btn-primary"  OnClick="BtnGuardar_Click" />
         </div>
     </div>
 </div>

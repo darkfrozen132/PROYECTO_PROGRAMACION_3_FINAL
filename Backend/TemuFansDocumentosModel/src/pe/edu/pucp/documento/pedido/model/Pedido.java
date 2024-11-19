@@ -21,8 +21,8 @@ public class Pedido {
     
     public Pedido(){
         this.id_pedido = null;
-        this.usuario = null;
-        this.empleado = null;
+        this.usuario = new Usuario();
+        this.empleado = new Empleado();
         this.tipo_pedido = null;
         this.codigo = null;
         this.estado_pedido = null;

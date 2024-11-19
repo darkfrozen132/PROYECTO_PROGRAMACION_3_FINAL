@@ -11,16 +11,16 @@ namespace TemuFansInventarioBO
 {
     public class Torre_Un_PaqueteBO : BaseBO
     {
-        public consultaStock consultarStockProductoPorId(int idProducto)
+        public torreUnPaquete consultarStockProductoPorId(int idProducto)
         {
             return this.ServicioWS.torre_consultarStockProducto(idProducto);
 
         }
 
-        public BindingList<consultaStock> listarAlertasDeStock()
+        public BindingList<torreUnPaquete> listarAlertasDeStock()
         {
-            consultaStock[] consultaStocks = this.ServicioWS.torre_listarAlertasDeStock();
-            return new BindingList<consultaStock>(consultaStocks);
+            torreUnPaquete[] consultaStocks = this.ServicioWS.torre_listarAlertasDeStock();
+            return new BindingList<torreUnPaquete>(consultaStocks);
         }
     }
 }

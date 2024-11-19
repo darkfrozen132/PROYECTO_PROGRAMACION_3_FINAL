@@ -39,5 +39,10 @@ namespace TemuFansDocumentosBO
 
             return new BindingList<pagoPedidoCliente>(lista2);
         }
+
+        public int insertarPedidoVenta(int idUsuario, int idEmpleado, double subtotal, double impuesto, double total)
+        {
+            return this.ServicioWS.pedido_insertarVenta(idUsuario, idEmpleado, subtotal, impuesto, total);
+        }
     }
 }

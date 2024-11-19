@@ -37,5 +37,14 @@ namespace TemuFansInventarioBO
         {
             return this.ServicioWS.producto_obtenerPorId(id);
         }
+        public BindingList<producto> buscarPorCriterio(string nombre, string codigo)
+        {
+            producto[] productos = this.ServicioWS.producto_buscarProductosCriterio(nombre, codigo);
+            if (productos == null)
+            {
+                productos = new producto[0];
+            }
+            return new BindingList<producto>(productos);
+        }
     }
 }

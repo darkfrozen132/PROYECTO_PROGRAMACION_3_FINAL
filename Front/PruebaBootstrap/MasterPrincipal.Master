@@ -6,14 +6,18 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link rel="stylesheet" href="Content/Fonts/css/all.css">
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Content/Fonts/css/all.css">
 
-    <script src="Scripts/bootstrap.js"> </script>
-	<script src="Scripts/bootstrap.bundle.js"> </script>
+    <script src="/Scripts/bootstrap.js"> </script>
+	<script src="/Scripts/bootstrap.bundle.js"> </script>
 
-    <script src="Scripts/PruebaModal/gestionar_productos_pedido.js"></script>
+    <script src="/Scripts/PruebaModal/gestionar_productos_pedido.js"></script>
     <script src="/Scripts/gestion_clientes.js"></script>
+    
+    <script src="/Scripts/mostrar_error.js"></script>
+    <link href="/Content/mostrar_error.css" rel="stylesheet" type="text/css" />
+    
     <title>
        <asp:ContentPlaceHolder ID="cphTitle" runat="server">
        </asp:ContentPlaceHolder>
@@ -111,12 +115,11 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="/Home.aspx" class="nav-link px-2 text-secondary">Inicio</a></li>
-          <li><a href="/Ventas/HomeVentas.aspx" class="nav-link px-2 text-white">Ventas</a></li>
-          <li><a href="/Compras/HomeCompras.aspx" class="nav-link px-2 text-white">Compras</a></li>
-          <li><a href="/Almacen/HomeAlmacen.aspx" class="nav-link px-2 text-white">Almacen</a></li>
-          <li><a href="/Inventario/HomeInventario.aspx" class="nav-link px-2 text-white">Inventario</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Configuracion</a></li>
+          <li><a href="/Home.aspx" class="nav-link px-2 text-secondary">INICIO</a></li>
+          <li><a href="/Ventas/HomeVentas.aspx" class="nav-link px-2 text-white">VENTAS</a></li>
+          <li><a href="/Compras/HomeCompras.aspx" class="nav-link px-2 text-white">COMPRAS</a></li>
+          <li><a href="/Almacen/HomeAlmacen.aspx" class="nav-link px-2 text-white">ALMACEN</a></li>
+          <li><a href="/Inventario/HomeInventario.aspx" class="nav-link px-2 text-white">INVENTARIO</a></li>
         </ul>
           <!-- Comentando la parte del login
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -139,42 +142,9 @@
   <div class="container">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
         <div class="col mb-3">
-          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          </a>
           <p class="text-body-secondary">TemuFans es un software de uso libre &copy; 2024</p>
         </div>
 
-        <div class="col mb-3">
-
-        </div>
-
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-
-          </ul>
-        </div>
-
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-
-          </ul>
-        </div>
-
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-
-          </ul>
-        </div>
       </footer>
 </div>
     <!-- BARRA LATERAL CON OPCIONES DE CADA MODULO-->

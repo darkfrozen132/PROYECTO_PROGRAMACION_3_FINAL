@@ -34,7 +34,7 @@ namespace PruebaBootstrap.Inventario
         private DataTable ObtenerDatosDeResumen()
         {
             Torre_Un_PaqueteBO torreBO = new Torre_Un_PaqueteBO();
-            BindingList<consultaStock> lista = torreBO.listarAlertasDeStock();
+            BindingList<torreUnPaquete> lista = torreBO.listarAlertasDeStock();
 
             DataTable dt = new DataTable();
             dt.Columns.Add("Producto", typeof(string));
@@ -43,10 +43,10 @@ namespace PruebaBootstrap.Inventario
             dt.Columns.Add("NroTorre", typeof(int));
             dt.Columns.Add("Stock", typeof(int));
 
-            foreach (consultaStock consulta in lista)
+            foreach (torreUnPaquete consulta in lista)
             {
-                dt.Rows.Add(consulta.producto.nombre, consulta.marca.nombre, consulta.almacen.direccion,
-                    consulta.torre.nro_torre, consulta.torre.cantidad_paquete
+                dt.Rows.Add(consulta.producto.nombre, consulta.producto.marca.nombre, consulta.almacen.direccion,
+                    consulta.nro_torre, consulta.cantidad_paquete
                     );
             }
             return dt;

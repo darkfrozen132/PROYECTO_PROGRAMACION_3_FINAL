@@ -27,7 +27,7 @@ public class Producto {
         this.estado = null;
         this.nombre = null;
         this.precio = null;
-        this.marca = null;
+        this.marca = new Marca();
         this.fechaRegistro = null;
     }
     
@@ -37,7 +37,7 @@ public class Producto {
         this.estado = null;
         this.nombre = null;
         this.precio = null;
-        this.marca = null;
+        this.marca = new Marca();
         this.fechaRegistro = null;
     }
     

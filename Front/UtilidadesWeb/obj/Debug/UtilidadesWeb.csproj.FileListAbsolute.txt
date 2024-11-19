@@ -1,0 +1,6 @@
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\UtilidadesWeb\bin\Debug\UtilidadesWeb.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\UtilidadesWeb\bin\Debug\UtilidadesWeb.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\UtilidadesWeb\obj\Debug\UtilidadesWeb.csproj.AssemblyReference.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\UtilidadesWeb\obj\Debug\UtilidadesWeb.csproj.CoreCompileInputs.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\UtilidadesWeb\obj\Debug\UtilidadesWeb.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\UtilidadesWeb\obj\Debug\UtilidadesWeb.pdb

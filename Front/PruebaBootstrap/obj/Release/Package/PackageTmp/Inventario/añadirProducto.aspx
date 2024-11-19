@@ -3,14 +3,15 @@
 <div class="container">
     <h2>Registrar Producto</h2>
     <script type="text/javascript">
-function validarSeleccionMarca() {
-    var ddlMarca = document.getElementById('<%= ddlMarca.ClientID %>');
-    if (ddlMarca.value === "0") {
-        alert("Por favor, seleccione una marca válida.");
-        return false; // Evita que el formulario se envíe
-    }
-    return true; // Permite el envío del formulario si se selecciona ua marca válida
-}
+        function validarSeleccionMarca() {
+            var ddlMarca = document.getElementById('<%= ddlMarca.ClientID %>');
+            if (ddlMarca.value === "0") {
+                alert("Por favor, seleccione una marca válida.");
+                return false; // Evita que el formulario se envíe
+            }
+            return true; // Permite el envío del formulario si se selecciona ua marca válida
+        }
+        
     </script>
 
     <div class="row">
@@ -66,6 +67,8 @@ function validarSeleccionMarca() {
             <asp:Button ID="btnGuardar" runat="server" Text="REGISTRAR" CssClass="btn btn-primary"  OnClick="BtnGuardar_Click" OnClientClick="return validarSeleccionMarca();"/>
         </div>
     </div>
+
+   
 </div>
 
 </asp:Content>

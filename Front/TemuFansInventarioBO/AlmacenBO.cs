@@ -22,6 +22,11 @@ namespace TemuFansInventarioBO
             consultaStock[] consulta = this.ServicioWS.almacen_reportePorId(id);
             return new BindingList<consultaStock>(consulta);
         }
+        public BindingList<consultaStock> listarTorresPorAlmacen(int id)
+        {
+            consultaStock[] consulta = this.ServicioWS.almacen_reportePorId(id);
+            return new BindingList<consultaStock>(consulta);
+        }
 
 
     }

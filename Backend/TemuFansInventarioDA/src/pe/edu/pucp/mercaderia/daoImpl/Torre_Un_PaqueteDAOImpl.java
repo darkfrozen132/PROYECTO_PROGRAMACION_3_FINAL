@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import pe.edu.pucp.dbmanager.config.DAOImpl;
-import pe.edu.pucp.inventario.model.ConsultaStock;
+import pe.edu.pucp.inventario.model.Torre_Un_Paquete;
 import pe.edu.pucp.mercaderia.dao.Torre_Un_PaqueteDAO;
 import pe.edu.pucp.mercaderia.model.Estado;
 
@@ -19,7 +19,8 @@ import pe.edu.pucp.mercaderia.model.Estado;
  * @author usuario
  */
 public class Torre_Un_PaqueteDAOImpl extends DAOImpl implements Torre_Un_PaqueteDAO {
-    private ConsultaStock consultaStock;
+    //private ConsultaStock consultaStock;
+    private Torre_Un_Paquete consultaStock;
     
     public Torre_Un_PaqueteDAOImpl(){
         this.consultaStock = null;
@@ -111,13 +112,13 @@ public class Torre_Un_PaqueteDAOImpl extends DAOImpl implements Torre_Un_Paquete
 
     @Override
     protected Object agregarObjetoALaLista(ResultSet lector) {
-        this.consultaStock = new ConsultaStock();
+        this.consultaStock = new Torre_Un_Paquete();
         try{
             this.consultaStock.getProducto().setNombre(lector.getString("Nombre"));
-            this.consultaStock.getTorre().setCantidad_paquete(lector.getInt("Stock"));
+            this.consultaStock.setCantidad_paquete(lector.getInt("Stock"));
             this.consultaStock.getAlmacen().setDireccion(lector.getString("Direccion"));
-            this.consultaStock.getTorre().setNro_torre(lector.getInt("nroTorre"));
-            this.consultaStock.getMarca().setNombre(lector.getString("Marca"));
+            this.consultaStock.setNro_torre(lector.getInt("nroTorre"));
+            this.consultaStock.getProducto().getMarca().setNombre(lector.getString("Marca"));
             return this.consultaStock;
         } catch (SQLException ex) {
             Logger.getLogger(Torre_Un_PaqueteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -130,13 +131,13 @@ public class Torre_Un_PaqueteDAOImpl extends DAOImpl implements Torre_Un_Paquete
     protected void instanciarObjetoDelResultSet(ResultSet lector) {
         try {
             this.consultaStock.getProducto().setNombre(lector.getString("Nombre"));
-            this.consultaStock.getTorre().setCantidad_paquete(lector.getInt("Stock"));
+            this.consultaStock.setCantidad_paquete(lector.getInt("Stock"));
             this.consultaStock.getProducto().setEstado(Estado.valueOf(lector.getString("Estado_Producto")));
             this.consultaStock.getProducto().setPrecio(lector.getDouble("Precio"));
             this.consultaStock.getProducto().setFechaRegistro(lector.getDate("FechaRegistro"));
             this.consultaStock.getAlmacen().setDireccion(lector.getString("Direccion"));
-            this.consultaStock.getTorre().setNro_torre(lector.getInt("nroTorre"));
-            this.consultaStock.getMarca().setNombre(lector.getString("Marca"));
+            this.consultaStock.setNro_torre(lector.getInt("nroTorre"));
+            this.consultaStock.getProducto().getMarca().setNombre(lector.getString("Marca"));
         } catch (SQLException ex) {
             Logger.getLogger(Torre_Un_PaqueteDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -148,21 +149,21 @@ public class Torre_Un_PaqueteDAOImpl extends DAOImpl implements Torre_Un_Paquete
     }
 
     @Override
-    public ConsultaStock consultarStockProductoPorId(Integer idProducto) {
+    public Torre_Un_Paquete consultarStockProductoPorId(Integer idProducto) {
         this.nroParametros = 1;
-        this.consultaStock = new ConsultaStock(idProducto);
+        this.consultaStock = new Torre_Un_Paquete(idProducto);
         super.obtenerPorId();
         this.nroParametros = 0;
         return this.consultaStock;
     }
 
     @Override
-    public ArrayList<ConsultaStock> alertasDeStock() {
-        ArrayList<ConsultaStock> lista = new ArrayList<>();
+    public ArrayList<Torre_Un_Paquete> alertasDeStock() {
+        ArrayList<Torre_Un_Paquete> lista = new ArrayList<>();
         this.nroParametros = 0;
 
         for (Object obj : super.listar()) {
-            lista.add((ConsultaStock) obj);
+            lista.add((Torre_Un_Paquete) obj);
         }
         return lista; 
     }

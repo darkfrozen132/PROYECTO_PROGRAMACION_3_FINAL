@@ -54,7 +54,7 @@ public class AlmacenDAOImpl extends DAOImpl implements AlmacenDAO {
                 return "LISTAR_ALMACENES_NOMBRE";
             }
             case 2 -> {
-                return "CONSULTAR_REPORTE_ALMACEN_POR_ID";
+                return "LISTAR_TORRE_POR_ALMACEN";
             }
             default -> {
                 throw new AssertionError();

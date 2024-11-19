@@ -66,6 +66,9 @@
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.almacen_reportePorIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -81,6 +84,9 @@
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.cliente_listarClientesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.cliente_obtenerPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.consultaStock.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -90,6 +96,9 @@
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.marca.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -97,6 +106,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pagoPedidoCliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pedido_insertarVentaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.pedido_listar_fechaResponse.datasource">
@@ -114,6 +126,9 @@
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto_buscarProductosCriterioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto_eliminarProductoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -129,10 +144,22 @@
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.producto_obtenerPorIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.proveedor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.proveedor_insertarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.proveedor_listarPorNombreRucResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.resumenHistorialVentas.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.resumenPorFecha.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.torreUnPaquete.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWS\TemuFansBO.ServicioWS.torre_consultarStockProductoResponse.datasource">

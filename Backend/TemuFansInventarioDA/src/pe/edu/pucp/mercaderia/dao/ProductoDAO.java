@@ -23,4 +23,6 @@ public interface ProductoDAO {
     public Producto obtenerPorId(Integer idProducto);
     
     public ArrayList<Producto> listarProductosNombre();
+    
+    public ArrayList<Producto> buscarProductosCriterio(String nombre, String codigo);
 }

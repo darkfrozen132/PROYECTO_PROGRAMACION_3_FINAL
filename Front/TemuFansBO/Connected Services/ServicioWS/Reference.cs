@@ -58,8 +58,9 @@ namespace TemuFansBO.ServicioWS {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(empleado))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(proveedor))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(cliente))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(empleado))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -286,15 +287,13 @@ namespace TemuFansBO.ServicioWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
-    public partial class empleado : usuario {
+    public partial class proveedor : usuario {
         
         private string codigoField;
         
-        private int idEmpleadoField;
+        private int idProveedorField;
         
-        private bool idEmpleadoFieldSpecified;
-        
-        private double sueldoField;
+        private bool idProveedorFieldSpecified;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -310,37 +309,25 @@ namespace TemuFansBO.ServicioWS {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idEmpleado {
+        public int idProveedor {
             get {
-                return this.idEmpleadoField;
+                return this.idProveedorField;
             }
             set {
-                this.idEmpleadoField = value;
-                this.RaisePropertyChanged("idEmpleado");
+                this.idProveedorField = value;
+                this.RaisePropertyChanged("idProveedor");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idEmpleadoSpecified {
+        public bool idProveedorSpecified {
             get {
-                return this.idEmpleadoFieldSpecified;
+                return this.idProveedorFieldSpecified;
             }
             set {
-                this.idEmpleadoFieldSpecified = value;
-                this.RaisePropertyChanged("idEmpleadoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public double sueldo {
-            get {
-                return this.sueldoField;
-            }
-            set {
-                this.sueldoField = value;
-                this.RaisePropertyChanged("sueldo");
+                this.idProveedorFieldSpecified = value;
+                this.RaisePropertyChanged("idProveedorSpecified");
             }
         }
     }
@@ -402,275 +389,15 @@ namespace TemuFansBO.ServicioWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
-    public partial class resumenPorFecha : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int cantPedidosField;
-        
-        private bool cantPedidosFieldSpecified;
-        
-        private System.DateTime fechaField;
-        
-        private bool fechaFieldSpecified;
-        
-        private double totalField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int cantPedidos {
-            get {
-                return this.cantPedidosField;
-            }
-            set {
-                this.cantPedidosField = value;
-                this.RaisePropertyChanged("cantPedidos");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool cantPedidosSpecified {
-            get {
-                return this.cantPedidosFieldSpecified;
-            }
-            set {
-                this.cantPedidosFieldSpecified = value;
-                this.RaisePropertyChanged("cantPedidosSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public System.DateTime fecha {
-            get {
-                return this.fechaField;
-            }
-            set {
-                this.fechaField = value;
-                this.RaisePropertyChanged("fecha");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaSpecified {
-            get {
-                return this.fechaFieldSpecified;
-            }
-            set {
-                this.fechaFieldSpecified = value;
-                this.RaisePropertyChanged("fechaSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public double total {
-            get {
-                return this.totalField;
-            }
-            set {
-                this.totalField = value;
-                this.RaisePropertyChanged("total");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
-    public partial class torreUnPaquete : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int cantidad_paqueteField;
-        
-        private bool cantidad_paqueteFieldSpecified;
+    public partial class empleado : usuario {
         
         private string codigoField;
         
-        private bool estadoField;
+        private int idEmpleadoField;
         
-        private bool estadoFieldSpecified;
+        private bool idEmpleadoFieldSpecified;
         
-        private producto idProductoField;
-        
-        private int idTorre_Un_PaqueteField;
-        
-        private bool idTorre_Un_PaqueteFieldSpecified;
-        
-        private int nro_torreField;
-        
-        private bool nro_torreFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int cantidad_paquete {
-            get {
-                return this.cantidad_paqueteField;
-            }
-            set {
-                this.cantidad_paqueteField = value;
-                this.RaisePropertyChanged("cantidad_paquete");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool cantidad_paqueteSpecified {
-            get {
-                return this.cantidad_paqueteFieldSpecified;
-            }
-            set {
-                this.cantidad_paqueteFieldSpecified = value;
-                this.RaisePropertyChanged("cantidad_paqueteSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string codigo {
-            get {
-                return this.codigoField;
-            }
-            set {
-                this.codigoField = value;
-                this.RaisePropertyChanged("codigo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public bool estado {
-            get {
-                return this.estadoField;
-            }
-            set {
-                this.estadoField = value;
-                this.RaisePropertyChanged("estado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool estadoSpecified {
-            get {
-                return this.estadoFieldSpecified;
-            }
-            set {
-                this.estadoFieldSpecified = value;
-                this.RaisePropertyChanged("estadoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public producto idProducto {
-            get {
-                return this.idProductoField;
-            }
-            set {
-                this.idProductoField = value;
-                this.RaisePropertyChanged("idProducto");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public int idTorre_Un_Paquete {
-            get {
-                return this.idTorre_Un_PaqueteField;
-            }
-            set {
-                this.idTorre_Un_PaqueteField = value;
-                this.RaisePropertyChanged("idTorre_Un_Paquete");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idTorre_Un_PaqueteSpecified {
-            get {
-                return this.idTorre_Un_PaqueteFieldSpecified;
-            }
-            set {
-                this.idTorre_Un_PaqueteFieldSpecified = value;
-                this.RaisePropertyChanged("idTorre_Un_PaqueteSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public int nro_torre {
-            get {
-                return this.nro_torreField;
-            }
-            set {
-                this.nro_torreField = value;
-                this.RaisePropertyChanged("nro_torre");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool nro_torreSpecified {
-            get {
-                return this.nro_torreFieldSpecified;
-            }
-            set {
-                this.nro_torreFieldSpecified = value;
-                this.RaisePropertyChanged("nro_torreSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
-    public partial class producto : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string codigoField;
-        
-        private estado estadoField;
-        
-        private bool estadoFieldSpecified;
-        
-        private System.DateTime fechaRegistroField;
-        
-        private bool fechaRegistroFieldSpecified;
-        
-        private int idProductoField;
-        
-        private bool idProductoFieldSpecified;
-        
-        private marca marcaField;
-        
-        private string nombreField;
-        
-        private double precioField;
-        
-        private bool precioFieldSpecified;
+        private double sueldoField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -686,407 +413,37 @@ namespace TemuFansBO.ServicioWS {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public estado estado {
+        public int idEmpleado {
             get {
-                return this.estadoField;
+                return this.idEmpleadoField;
             }
             set {
-                this.estadoField = value;
-                this.RaisePropertyChanged("estado");
+                this.idEmpleadoField = value;
+                this.RaisePropertyChanged("idEmpleado");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool estadoSpecified {
+        public bool idEmpleadoSpecified {
             get {
-                return this.estadoFieldSpecified;
+                return this.idEmpleadoFieldSpecified;
             }
             set {
-                this.estadoFieldSpecified = value;
-                this.RaisePropertyChanged("estadoSpecified");
+                this.idEmpleadoFieldSpecified = value;
+                this.RaisePropertyChanged("idEmpleadoSpecified");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public System.DateTime fechaRegistro {
+        public double sueldo {
             get {
-                return this.fechaRegistroField;
+                return this.sueldoField;
             }
             set {
-                this.fechaRegistroField = value;
-                this.RaisePropertyChanged("fechaRegistro");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaRegistroSpecified {
-            get {
-                return this.fechaRegistroFieldSpecified;
-            }
-            set {
-                this.fechaRegistroFieldSpecified = value;
-                this.RaisePropertyChanged("fechaRegistroSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int idProducto {
-            get {
-                return this.idProductoField;
-            }
-            set {
-                this.idProductoField = value;
-                this.RaisePropertyChanged("idProducto");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idProductoSpecified {
-            get {
-                return this.idProductoFieldSpecified;
-            }
-            set {
-                this.idProductoFieldSpecified = value;
-                this.RaisePropertyChanged("idProductoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public marca marca {
-            get {
-                return this.marcaField;
-            }
-            set {
-                this.marcaField = value;
-                this.RaisePropertyChanged("marca");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public string nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                this.nombreField = value;
-                this.RaisePropertyChanged("nombre");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public double precio {
-            get {
-                return this.precioField;
-            }
-            set {
-                this.precioField = value;
-                this.RaisePropertyChanged("precio");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool precioSpecified {
-            get {
-                return this.precioFieldSpecified;
-            }
-            set {
-                this.precioFieldSpecified = value;
-                this.RaisePropertyChanged("precioSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
-    public enum estado {
-        
-        /// <remarks/>
-        ACTIVO,
-        
-        /// <remarks/>
-        INACTIVO,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
-    public partial class marca : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string codigo_marcaField;
-        
-        private string descripcionField;
-        
-        private int idMarcaField;
-        
-        private bool idMarcaFieldSpecified;
-        
-        private string nombreField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string codigo_marca {
-            get {
-                return this.codigo_marcaField;
-            }
-            set {
-                this.codigo_marcaField = value;
-                this.RaisePropertyChanged("codigo_marca");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string descripcion {
-            get {
-                return this.descripcionField;
-            }
-            set {
-                this.descripcionField = value;
-                this.RaisePropertyChanged("descripcion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int idMarca {
-            get {
-                return this.idMarcaField;
-            }
-            set {
-                this.idMarcaField = value;
-                this.RaisePropertyChanged("idMarca");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idMarcaSpecified {
-            get {
-                return this.idMarcaFieldSpecified;
-            }
-            set {
-                this.idMarcaFieldSpecified = value;
-                this.RaisePropertyChanged("idMarcaSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                this.nombreField = value;
-                this.RaisePropertyChanged("nombre");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
-    public partial class almacen : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string codigo_almacenField;
-        
-        private string direccionField;
-        
-        private int idAlmacenField;
-        
-        private bool idAlmacenFieldSpecified;
-        
-        private int nro_torresField;
-        
-        private bool nro_torresFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string codigo_almacen {
-            get {
-                return this.codigo_almacenField;
-            }
-            set {
-                this.codigo_almacenField = value;
-                this.RaisePropertyChanged("codigo_almacen");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string direccion {
-            get {
-                return this.direccionField;
-            }
-            set {
-                this.direccionField = value;
-                this.RaisePropertyChanged("direccion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int idAlmacen {
-            get {
-                return this.idAlmacenField;
-            }
-            set {
-                this.idAlmacenField = value;
-                this.RaisePropertyChanged("idAlmacen");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idAlmacenSpecified {
-            get {
-                return this.idAlmacenFieldSpecified;
-            }
-            set {
-                this.idAlmacenFieldSpecified = value;
-                this.RaisePropertyChanged("idAlmacenSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int nro_torres {
-            get {
-                return this.nro_torresField;
-            }
-            set {
-                this.nro_torresField = value;
-                this.RaisePropertyChanged("nro_torres");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool nro_torresSpecified {
-            get {
-                return this.nro_torresFieldSpecified;
-            }
-            set {
-                this.nro_torresFieldSpecified = value;
-                this.RaisePropertyChanged("nro_torresSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
-    public partial class consultaStock : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private almacen almacenField;
-        
-        private marca marcaField;
-        
-        private producto productoField;
-        
-        private torreUnPaquete torreField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public almacen almacen {
-            get {
-                return this.almacenField;
-            }
-            set {
-                this.almacenField = value;
-                this.RaisePropertyChanged("almacen");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public marca marca {
-            get {
-                return this.marcaField;
-            }
-            set {
-                this.marcaField = value;
-                this.RaisePropertyChanged("marca");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public producto producto {
-            get {
-                return this.productoField;
-            }
-            set {
-                this.productoField = value;
-                this.RaisePropertyChanged("producto");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public torreUnPaquete torre {
-            get {
-                return this.torreField;
-            }
-            set {
-                this.torreField = value;
-                this.RaisePropertyChanged("torre");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+                this.sueldoField = value;
+                this.RaisePropertyChanged("sueldo");
             }
         }
     }
@@ -1094,6 +451,147 @@ namespace TemuFansBO.ServicioWS {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", ConfigurationName="ServicioWS.ServicioWS")]
     public interface ServicioWS {
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.cliente_listarClientesResponse cliente_listarClientes(TemuFansBO.ServicioWS.cliente_listarClientesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_listarClientesResponse> cliente_listarClientesAsync(TemuFansBO.ServicioWS.cliente_listarClientesRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteResponse" +
+            "")]
+        [System.ServiceModel.FaultContractAttribute(typeof(TemuFansBO.ServicioWS.ParseException), Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_cliente/Fault/P" +
+            "arseException", Name="ParseException")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.usuario_insertar_clienteResponse usuario_insertar_cliente(TemuFansBO.ServicioWS.usuario_insertar_clienteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteResponse" +
+            "")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_insertar_clienteResponse> usuario_insertar_clienteAsync(TemuFansBO.ServicioWS.usuario_insertar_clienteRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.cliente_buscarClienteResponse cliente_buscarCliente(TemuFansBO.ServicioWS.cliente_buscarClienteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_buscarClienteResponse> cliente_buscarClienteAsync(TemuFansBO.ServicioWS.cliente_buscarClienteRequest request);
+        
+        // CODEGEN: El parámetro 'detalles' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePed_insertarPorLoteDetall" +
+            "esRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePed_insertarPorLoteDetall" +
+            "esResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesResponse detallePed_insertarPorLoteDetalles(TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePed_insertarPorLoteDetall" +
+            "esRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePed_insertarPorLoteDetall" +
+            "esResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesResponse> detallePed_insertarPorLoteDetallesAsync(TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.pedido_listar_fechaResponse pedido_listar_fecha(TemuFansBO.ServicioWS.pedido_listar_fechaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_fechaResponse> pedido_listar_fechaAsync(TemuFansBO.ServicioWS.pedido_listar_fechaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.almacen_reportePorIdResponse almacen_reportePorId(TemuFansBO.ServicioWS.almacen_reportePorIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_reportePorIdResponse> almacen_reportePorIdAsync(TemuFansBO.ServicioWS.almacen_reportePorIdRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.cliente_obtenerPorIdResponse cliente_obtenerPorId(TemuFansBO.ServicioWS.cliente_obtenerPorIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_obtenerPorIdResponse> cliente_obtenerPorIdAsync(TemuFansBO.ServicioWS.cliente_obtenerPorIdRequest request);
+        
+        // CODEGEN: El parámetro 'idProducto' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoReques" +
+            "t", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoRespon" +
+            "se")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        TemuFansBO.ServicioWS.producto_modificarProductoResponse producto_modificarProducto(TemuFansBO.ServicioWS.producto_modificarProductoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoReques" +
+            "t", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoRespon" +
+            "se")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_modificarProductoResponse> producto_modificarProductoAsync(TemuFansBO.ServicioWS.producto_modificarProductoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_buscarProductosCriterio" +
+            "Request", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_buscarProductosCriterio" +
+            "Response")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.producto_buscarProductosCriterioResponse producto_buscarProductosCriterio(TemuFansBO.ServicioWS.producto_buscarProductosCriterioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_buscarProductosCriterio" +
+            "Request", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_buscarProductosCriterio" +
+            "Response")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_buscarProductosCriterioResponse> producto_buscarProductosCriterioAsync(TemuFansBO.ServicioWS.producto_buscarProductosCriterioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoRequest" +
+            "", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoRespons" +
+            "e")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.producto_insertarProductoResponse producto_insertarProducto(TemuFansBO.ServicioWS.producto_insertarProductoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoRequest" +
+            "", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoRespons" +
+            "e")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_insertarProductoResponse> producto_insertarProductoAsync(TemuFansBO.ServicioWS.producto_insertarProductoRequest request);
+        
+        // CODEGEN: El parámetro 'idProducto' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoRequest" +
+            "", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoRespons" +
+            "e")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        TemuFansBO.ServicioWS.producto_eliminarProductoResponse producto_eliminarProducto(TemuFansBO.ServicioWS.producto_eliminarProductoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoRequest" +
+            "", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoRespons" +
+            "e")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_eliminarProductoResponse> producto_eliminarProductoAsync(TemuFansBO.ServicioWS.producto_eliminarProductoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse almacen_listarAlmacenes(TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse> almacen_listarAlmacenesAsync(TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_obtenerPorIdRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_obtenerPorIdResponse")]
@@ -1120,24 +618,14 @@ namespace TemuFansBO.ServicioWS {
         System.Threading.Tasks.Task<TemuFansBO.ServicioWS.torre_listarAlertasDeStockResponse> torre_listarAlertasDeStockAsync(TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.pedido_listar_fechaResponse pedido_listar_fecha(TemuFansBO.ServicioWS.pedido_listar_fechaRequest request);
+        TemuFansBO.ServicioWS.usuario_existe_clienteResponse usuario_existe_cliente(TemuFansBO.ServicioWS.usuario_existe_clienteRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_fechaResponse> pedido_listar_fechaAsync(TemuFansBO.ServicioWS.pedido_listar_fechaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.cliente_listarClientesResponse cliente_listarClientes(TemuFansBO.ServicioWS.cliente_listarClientesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_listarClientesResponse> cliente_listarClientesAsync(TemuFansBO.ServicioWS.cliente_listarClientesRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_existe_clienteResponse> usuario_existe_clienteAsync(TemuFansBO.ServicioWS.usuario_existe_clienteRequest request);
         
         // CODEGEN: El parámetro 'idPedido' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoResponse")]
@@ -1147,94 +635,6 @@ namespace TemuFansBO.ServicioWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoResponse")]
         System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_modificarPagoResponse> pedido_modificarPagoAsync(TemuFansBO.ServicioWS.pedido_modificarPagoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteResponse" +
-            "")]
-        [System.ServiceModel.FaultContractAttribute(typeof(TemuFansBO.ServicioWS.ParseException), Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_cliente/Fault/P" +
-            "arseException", Name="ParseException")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.usuario_insertar_clienteResponse usuario_insertar_cliente(TemuFansBO.ServicioWS.usuario_insertar_clienteRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteResponse" +
-            "")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_insertar_clienteResponse> usuario_insertar_clienteAsync(TemuFansBO.ServicioWS.usuario_insertar_clienteRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoRequest" +
-            "", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoRespons" +
-            "e")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.producto_insertarProductoResponse producto_insertarProducto(TemuFansBO.ServicioWS.producto_insertarProductoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoRequest" +
-            "", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoRespons" +
-            "e")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_insertarProductoResponse> producto_insertarProductoAsync(TemuFansBO.ServicioWS.producto_insertarProductoRequest request);
-        
-        // CODEGEN: El parámetro 'idProducto' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoReques" +
-            "t", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoRespon" +
-            "se")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        TemuFansBO.ServicioWS.producto_modificarProductoResponse producto_modificarProducto(TemuFansBO.ServicioWS.producto_modificarProductoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoReques" +
-            "t", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoRespon" +
-            "se")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_modificarProductoResponse> producto_modificarProductoAsync(TemuFansBO.ServicioWS.producto_modificarProductoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.cliente_buscarClienteResponse cliente_buscarCliente(TemuFansBO.ServicioWS.cliente_buscarClienteRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_buscarClienteResponse> cliente_buscarClienteAsync(TemuFansBO.ServicioWS.cliente_buscarClienteRequest request);
-        
-        // CODEGEN: El parámetro 'idProducto' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoRequest" +
-            "", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoRespons" +
-            "e")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        TemuFansBO.ServicioWS.producto_eliminarProductoResponse producto_eliminarProducto(TemuFansBO.ServicioWS.producto_eliminarProductoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoRequest" +
-            "", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoRespons" +
-            "e")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_eliminarProductoResponse> producto_eliminarProductoAsync(TemuFansBO.ServicioWS.producto_eliminarProductoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.marca_listarMarcasResponse marca_listarMarcas(TemuFansBO.ServicioWS.marca_listarMarcasRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.marca_listarMarcasResponse> marca_listarMarcasAsync(TemuFansBO.ServicioWS.marca_listarMarcasRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePedido_obtenerLineasPedid" +
-            "oRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePedido_obtenerLineasPedid" +
-            "oResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse detallePedido_obtenerLineasPedido(TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePedido_obtenerLineasPedid" +
-            "oRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePedido_obtenerLineasPedid" +
-            "oResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse> detallePedido_obtenerLineasPedidoAsync(TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodi" +
@@ -1251,18 +651,46 @@ namespace TemuFansBO.ServicioWS {
         System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_listarClientesNombreCodigoResponse> cliente_listarClientesNombreCodigoAsync(TemuFansBO.ServicioWS.cliente_listarClientesNombreCodigoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreRe" +
-            "quest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreRe" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePedido_obtenerLineasPedid" +
+            "oRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePedido_obtenerLineasPedid" +
+            "oResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse detallePedido_obtenerLineasPedido(TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePedido_obtenerLineasPedid" +
+            "oRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePedido_obtenerLineasPedid" +
+            "oResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse> detallePedido_obtenerLineasPedidoAsync(TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_listarPorNombreRucRequ" +
+            "est", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_listarPorNombreRucResp" +
+            "onse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.proveedor_listarPorNombreRucResponse proveedor_listarPorNombreRuc(TemuFansBO.ServicioWS.proveedor_listarPorNombreRucRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_listarPorNombreRucRequ" +
+            "est", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_listarPorNombreRucResp" +
+            "onse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.proveedor_listarPorNombreRucResponse> proveedor_listarPorNombreRucAsync(TemuFansBO.ServicioWS.proveedor_listarPorNombreRucRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_historial_ventasRe" +
+            "quest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_historial_ventasRe" +
             "sponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.producto_listarProductosNombreResponse producto_listarProductosNombre(TemuFansBO.ServicioWS.producto_listarProductosNombreRequest request);
+        TemuFansBO.ServicioWS.pedido_listar_historial_ventasResponse pedido_listar_historial_ventas(TemuFansBO.ServicioWS.pedido_listar_historial_ventasRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreRe" +
-            "quest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreRe" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_historial_ventasRe" +
+            "quest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_historial_ventasRe" +
             "sponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_listarProductosNombreResponse> producto_listarProductosNombreAsync(TemuFansBO.ServicioWS.producto_listarProductosNombreRequest request);
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_historial_ventasResponse> pedido_listar_historial_ventasAsync(TemuFansBO.ServicioWS.pedido_listar_historial_ventasRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/torre_consultarStockProductoRequ" +
@@ -1279,24 +707,62 @@ namespace TemuFansBO.ServicioWS {
         System.Threading.Tasks.Task<TemuFansBO.ServicioWS.torre_consultarStockProductoResponse> torre_consultarStockProductoAsync(TemuFansBO.ServicioWS.torre_consultarStockProductoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarTorresPorAlmacenRe" +
+            "quest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarTorresPorAlmacenRe" +
+            "sponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse almacen_listarAlmacenes(TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest request);
+        TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenResponse almacen_listarTorresPorAlmacen(TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse> almacen_listarAlmacenesAsync(TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarTorresPorAlmacenRe" +
+            "quest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarTorresPorAlmacenRe" +
+            "sponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenResponse> almacen_listarTorresPorAlmacenAsync(TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreRe" +
+            "quest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreRe" +
+            "sponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.almacen_reportePorIdResponse almacen_reportePorId(TemuFansBO.ServicioWS.almacen_reportePorIdRequest request);
+        TemuFansBO.ServicioWS.producto_listarProductosNombreResponse producto_listarProductosNombre(TemuFansBO.ServicioWS.producto_listarProductosNombreRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_reportePorIdResponse> almacen_reportePorIdAsync(TemuFansBO.ServicioWS.almacen_reportePorIdRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreRe" +
+            "quest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreRe" +
+            "sponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_listarProductosNombreResponse> producto_listarProductosNombreAsync(TemuFansBO.ServicioWS.producto_listarProductosNombreRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_insertarVentaRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_insertarVentaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.pedido_insertarVentaResponse pedido_insertarVenta(TemuFansBO.ServicioWS.pedido_insertarVentaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_insertarVentaRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_insertarVentaResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_insertarVentaResponse> pedido_insertarVentaAsync(TemuFansBO.ServicioWS.pedido_insertarVentaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.marca_listarMarcasResponse marca_listarMarcas(TemuFansBO.ServicioWS.marca_listarMarcasRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.marca_listarMarcasResponse> marca_listarMarcasAsync(TemuFansBO.ServicioWS.marca_listarMarcasRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_insertarRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_insertarResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        TemuFansBO.ServicioWS.proveedor_insertarResponse proveedor_insertar(TemuFansBO.ServicioWS.proveedor_insertarRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_insertarRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_insertarResponse")]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.proveedor_insertarResponse> proveedor_insertarAsync(TemuFansBO.ServicioWS.proveedor_insertarRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_pagoRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_pagoResponse")]
@@ -1307,135 +773,6 @@ namespace TemuFansBO.ServicioWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_pagoRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_pagoResponse")]
         System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_pagoResponse> pedido_listar_pagoAsync(TemuFansBO.ServicioWS.pedido_listar_pagoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.usuario_existe_clienteResponse usuario_existe_cliente(TemuFansBO.ServicioWS.usuario_existe_clienteRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteRequest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteResponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_existe_clienteResponse> usuario_existe_clienteAsync(TemuFansBO.ServicioWS.usuario_existe_clienteRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_historial_ventasRe" +
-            "quest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_historial_ventasRe" +
-            "sponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        TemuFansBO.ServicioWS.pedido_listar_historial_ventasResponse pedido_listar_historial_ventas(TemuFansBO.ServicioWS.pedido_listar_historial_ventasRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_historial_ventasRe" +
-            "quest", ReplyAction="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_historial_ventasRe" +
-            "sponse")]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_historial_ventasResponse> pedido_listar_historial_ventasAsync(TemuFansBO.ServicioWS.pedido_listar_historial_ventasRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_obtenerPorId", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class producto_obtenerPorIdRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idProducto;
-        
-        public producto_obtenerPorIdRequest() {
-        }
-        
-        public producto_obtenerPorIdRequest(int idProducto) {
-            this.idProducto = idProducto;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_obtenerPorIdResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class producto_obtenerPorIdResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public TemuFansBO.ServicioWS.producto @return;
-        
-        public producto_obtenerPorIdResponse() {
-        }
-        
-        public producto_obtenerPorIdResponse(TemuFansBO.ServicioWS.producto @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="torre_listarAlertasDeStock", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class torre_listarAlertasDeStockRequest {
-        
-        public torre_listarAlertasDeStockRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="torre_listarAlertasDeStockResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class torre_listarAlertasDeStockResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public TemuFansBO.ServicioWS.consultaStock[] @return;
-        
-        public torre_listarAlertasDeStockResponse() {
-        }
-        
-        public torre_listarAlertasDeStockResponse(TemuFansBO.ServicioWS.consultaStock[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_listar_fecha", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class pedido_listar_fechaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string fechaInicio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string fechaFin;
-        
-        public pedido_listar_fechaRequest() {
-        }
-        
-        public pedido_listar_fechaRequest(string fechaInicio, string fechaFin) {
-            this.fechaInicio = fechaInicio;
-            this.fechaFin = fechaFin;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_listar_fechaResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class pedido_listar_fechaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public TemuFansBO.ServicioWS.resumenPorFecha[] @return;
-        
-        public pedido_listar_fechaResponse() {
-        }
-        
-        public pedido_listar_fechaResponse(TemuFansBO.ServicioWS.resumenPorFecha[] @return) {
-            this.@return = @return;
-        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1463,39 +800,6 @@ namespace TemuFansBO.ServicioWS {
         
         public cliente_listarClientesResponse(TemuFansBO.ServicioWS.cliente[] @return) {
             this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_modificarPago", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class pedido_modificarPagoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPedido;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string estado_pedido;
-        
-        public pedido_modificarPagoRequest() {
-        }
-        
-        public pedido_modificarPagoRequest(int idPedido, string estado_pedido) {
-            this.idPedido = idPedido;
-            this.estado_pedido = estado_pedido;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_modificarPagoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class pedido_modificarPagoResponse {
-        
-        public pedido_modificarPagoResponse() {
         }
     }
     
@@ -1568,100 +872,6 @@ namespace TemuFansBO.ServicioWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_insertarProducto", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class producto_insertarProductoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double precio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string estado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idMarca;
-        
-        public producto_insertarProductoRequest() {
-        }
-        
-        public producto_insertarProductoRequest(double precio, string nombre, string estado, int idMarca) {
-            this.precio = precio;
-            this.nombre = nombre;
-            this.estado = estado;
-            this.idMarca = idMarca;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_insertarProductoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class producto_insertarProductoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public producto_insertarProductoResponse() {
-        }
-        
-        public producto_insertarProductoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_modificarProducto", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class producto_modificarProductoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idProducto;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string estado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double precio;
-        
-        public producto_modificarProductoRequest() {
-        }
-        
-        public producto_modificarProductoRequest(int idProducto, string nombre, string estado, double precio) {
-            this.idProducto = idProducto;
-            this.nombre = nombre;
-            this.estado = estado;
-            this.precio = precio;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_modificarProductoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class producto_modificarProductoResponse {
-        
-        public producto_modificarProductoResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_buscarCliente", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
     public partial class cliente_buscarClienteRequest {
         
@@ -1691,62 +901,6 @@ namespace TemuFansBO.ServicioWS {
         }
         
         public cliente_buscarClienteResponse(TemuFansBO.ServicioWS.cliente[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_eliminarProducto", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class producto_eliminarProductoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idProducto;
-        
-        public producto_eliminarProductoRequest() {
-        }
-        
-        public producto_eliminarProductoRequest(int idProducto) {
-            this.idProducto = idProducto;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_eliminarProductoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class producto_eliminarProductoResponse {
-        
-        public producto_eliminarProductoResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="marca_listarMarcas", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class marca_listarMarcasRequest {
-        
-        public marca_listarMarcasRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="marca_listarMarcasResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class marca_listarMarcasResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public TemuFansBO.ServicioWS.marca[] @return;
-        
-        public marca_listarMarcasResponse() {
-        }
-        
-        public marca_listarMarcasResponse(TemuFansBO.ServicioWS.marca[] @return) {
             this.@return = @return;
         }
     }
@@ -2222,39 +1376,1205 @@ namespace TemuFansBO.ServicioWS {
         VENTA,
     }
     
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="detallePedido_obtenerLineasPedido", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class detallePedido_obtenerLineasPedidoRequest {
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
+    public partial class producto : object, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
+        private string codigoField;
         
-        public detallePedido_obtenerLineasPedidoRequest() {
+        private estado estadoField;
+        
+        private bool estadoFieldSpecified;
+        
+        private System.DateTime fechaRegistroField;
+        
+        private bool fechaRegistroFieldSpecified;
+        
+        private int idProductoField;
+        
+        private bool idProductoFieldSpecified;
+        
+        private marca marcaField;
+        
+        private string nombreField;
+        
+        private double precioField;
+        
+        private bool precioFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string codigo {
+            get {
+                return this.codigoField;
+            }
+            set {
+                this.codigoField = value;
+                this.RaisePropertyChanged("codigo");
+            }
         }
         
-        public detallePedido_obtenerLineasPedidoRequest(int id) {
-            this.id = id;
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public estado estado {
+            get {
+                return this.estadoField;
+            }
+            set {
+                this.estadoField = value;
+                this.RaisePropertyChanged("estado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool estadoSpecified {
+            get {
+                return this.estadoFieldSpecified;
+            }
+            set {
+                this.estadoFieldSpecified = value;
+                this.RaisePropertyChanged("estadoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public System.DateTime fechaRegistro {
+            get {
+                return this.fechaRegistroField;
+            }
+            set {
+                this.fechaRegistroField = value;
+                this.RaisePropertyChanged("fechaRegistro");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaRegistroSpecified {
+            get {
+                return this.fechaRegistroFieldSpecified;
+            }
+            set {
+                this.fechaRegistroFieldSpecified = value;
+                this.RaisePropertyChanged("fechaRegistroSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int idProducto {
+            get {
+                return this.idProductoField;
+            }
+            set {
+                this.idProductoField = value;
+                this.RaisePropertyChanged("idProducto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idProductoSpecified {
+            get {
+                return this.idProductoFieldSpecified;
+            }
+            set {
+                this.idProductoFieldSpecified = value;
+                this.RaisePropertyChanged("idProductoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public marca marca {
+            get {
+                return this.marcaField;
+            }
+            set {
+                this.marcaField = value;
+                this.RaisePropertyChanged("marca");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("nombre");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public double precio {
+            get {
+                return this.precioField;
+            }
+            set {
+                this.precioField = value;
+                this.RaisePropertyChanged("precio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool precioSpecified {
+            get {
+                return this.precioFieldSpecified;
+            }
+            set {
+                this.precioFieldSpecified = value;
+                this.RaisePropertyChanged("precioSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
+    public enum estado {
+        
+        /// <remarks/>
+        ACTIVO,
+        
+        /// <remarks/>
+        INACTIVO,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
+    public partial class marca : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codigo_marcaField;
+        
+        private string descripcionField;
+        
+        private int idMarcaField;
+        
+        private bool idMarcaFieldSpecified;
+        
+        private string nombreField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string codigo_marca {
+            get {
+                return this.codigo_marcaField;
+            }
+            set {
+                this.codigo_marcaField = value;
+                this.RaisePropertyChanged("codigo_marca");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                this.descripcionField = value;
+                this.RaisePropertyChanged("descripcion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int idMarca {
+            get {
+                return this.idMarcaField;
+            }
+            set {
+                this.idMarcaField = value;
+                this.RaisePropertyChanged("idMarca");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idMarcaSpecified {
+            get {
+                return this.idMarcaFieldSpecified;
+            }
+            set {
+                this.idMarcaFieldSpecified = value;
+                this.RaisePropertyChanged("idMarcaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("nombre");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="detallePedido_obtenerLineasPedidoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class detallePedido_obtenerLineasPedidoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="detallePed_insertarPorLoteDetalles", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class detallePed_insertarPorLoteDetallesRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("detalles", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.detallePedido[] detalles;
+        
+        public detallePed_insertarPorLoteDetallesRequest() {
+        }
+        
+        public detallePed_insertarPorLoteDetallesRequest(TemuFansBO.ServicioWS.detallePedido[] detalles) {
+            this.detalles = detalles;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="detallePed_insertarPorLoteDetallesResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class detallePed_insertarPorLoteDetallesResponse {
+        
+        public detallePed_insertarPorLoteDetallesResponse() {
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
+    public partial class resumenPorFecha : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int cantPedidosField;
+        
+        private bool cantPedidosFieldSpecified;
+        
+        private System.DateTime fechaField;
+        
+        private bool fechaFieldSpecified;
+        
+        private double totalField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int cantPedidos {
+            get {
+                return this.cantPedidosField;
+            }
+            set {
+                this.cantPedidosField = value;
+                this.RaisePropertyChanged("cantPedidos");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool cantPedidosSpecified {
+            get {
+                return this.cantPedidosFieldSpecified;
+            }
+            set {
+                this.cantPedidosFieldSpecified = value;
+                this.RaisePropertyChanged("cantPedidosSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public System.DateTime fecha {
+            get {
+                return this.fechaField;
+            }
+            set {
+                this.fechaField = value;
+                this.RaisePropertyChanged("fecha");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaSpecified {
+            get {
+                return this.fechaFieldSpecified;
+            }
+            set {
+                this.fechaFieldSpecified = value;
+                this.RaisePropertyChanged("fechaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public double total {
+            get {
+                return this.totalField;
+            }
+            set {
+                this.totalField = value;
+                this.RaisePropertyChanged("total");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_listar_fecha", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class pedido_listar_fechaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string fechaInicio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string fechaFin;
+        
+        public pedido_listar_fechaRequest() {
+        }
+        
+        public pedido_listar_fechaRequest(string fechaInicio, string fechaFin) {
+            this.fechaInicio = fechaInicio;
+            this.fechaFin = fechaFin;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_listar_fechaResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class pedido_listar_fechaResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public TemuFansBO.ServicioWS.detallePedido[] @return;
+        public TemuFansBO.ServicioWS.resumenPorFecha[] @return;
         
-        public detallePedido_obtenerLineasPedidoResponse() {
+        public pedido_listar_fechaResponse() {
         }
         
-        public detallePedido_obtenerLineasPedidoResponse(TemuFansBO.ServicioWS.detallePedido[] @return) {
+        public pedido_listar_fechaResponse(TemuFansBO.ServicioWS.resumenPorFecha[] @return) {
             this.@return = @return;
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
+    public partial class consultaStock : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private almacen almacenField;
+        
+        private marca marcaField;
+        
+        private producto productoField;
+        
+        private torreUnPaquete torreField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public almacen almacen {
+            get {
+                return this.almacenField;
+            }
+            set {
+                this.almacenField = value;
+                this.RaisePropertyChanged("almacen");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public marca marca {
+            get {
+                return this.marcaField;
+            }
+            set {
+                this.marcaField = value;
+                this.RaisePropertyChanged("marca");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public producto producto {
+            get {
+                return this.productoField;
+            }
+            set {
+                this.productoField = value;
+                this.RaisePropertyChanged("producto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public torreUnPaquete torre {
+            get {
+                return this.torreField;
+            }
+            set {
+                this.torreField = value;
+                this.RaisePropertyChanged("torre");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
+    public partial class almacen : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codigo_almacenField;
+        
+        private string direccionField;
+        
+        private int idAlmacenField;
+        
+        private bool idAlmacenFieldSpecified;
+        
+        private int nro_torresField;
+        
+        private bool nro_torresFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string codigo_almacen {
+            get {
+                return this.codigo_almacenField;
+            }
+            set {
+                this.codigo_almacenField = value;
+                this.RaisePropertyChanged("codigo_almacen");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string direccion {
+            get {
+                return this.direccionField;
+            }
+            set {
+                this.direccionField = value;
+                this.RaisePropertyChanged("direccion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int idAlmacen {
+            get {
+                return this.idAlmacenField;
+            }
+            set {
+                this.idAlmacenField = value;
+                this.RaisePropertyChanged("idAlmacen");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idAlmacenSpecified {
+            get {
+                return this.idAlmacenFieldSpecified;
+            }
+            set {
+                this.idAlmacenFieldSpecified = value;
+                this.RaisePropertyChanged("idAlmacenSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int nro_torres {
+            get {
+                return this.nro_torresField;
+            }
+            set {
+                this.nro_torresField = value;
+                this.RaisePropertyChanged("nro_torres");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool nro_torresSpecified {
+            get {
+                return this.nro_torresFieldSpecified;
+            }
+            set {
+                this.nro_torresFieldSpecified = value;
+                this.RaisePropertyChanged("nro_torresSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
+    public partial class torreUnPaquete : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private almacen almacenField;
+        
+        private int cantidad_limiteField;
+        
+        private bool cantidad_limiteFieldSpecified;
+        
+        private int cantidad_paqueteField;
+        
+        private bool cantidad_paqueteFieldSpecified;
+        
+        private string codigoField;
+        
+        private bool estadoField;
+        
+        private bool estadoFieldSpecified;
+        
+        private int idTorre_Un_PaqueteField;
+        
+        private bool idTorre_Un_PaqueteFieldSpecified;
+        
+        private int nro_torreField;
+        
+        private bool nro_torreFieldSpecified;
+        
+        private producto productoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public almacen almacen {
+            get {
+                return this.almacenField;
+            }
+            set {
+                this.almacenField = value;
+                this.RaisePropertyChanged("almacen");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int cantidad_limite {
+            get {
+                return this.cantidad_limiteField;
+            }
+            set {
+                this.cantidad_limiteField = value;
+                this.RaisePropertyChanged("cantidad_limite");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool cantidad_limiteSpecified {
+            get {
+                return this.cantidad_limiteFieldSpecified;
+            }
+            set {
+                this.cantidad_limiteFieldSpecified = value;
+                this.RaisePropertyChanged("cantidad_limiteSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int cantidad_paquete {
+            get {
+                return this.cantidad_paqueteField;
+            }
+            set {
+                this.cantidad_paqueteField = value;
+                this.RaisePropertyChanged("cantidad_paquete");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool cantidad_paqueteSpecified {
+            get {
+                return this.cantidad_paqueteFieldSpecified;
+            }
+            set {
+                this.cantidad_paqueteFieldSpecified = value;
+                this.RaisePropertyChanged("cantidad_paqueteSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string codigo {
+            get {
+                return this.codigoField;
+            }
+            set {
+                this.codigoField = value;
+                this.RaisePropertyChanged("codigo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public bool estado {
+            get {
+                return this.estadoField;
+            }
+            set {
+                this.estadoField = value;
+                this.RaisePropertyChanged("estado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool estadoSpecified {
+            get {
+                return this.estadoFieldSpecified;
+            }
+            set {
+                this.estadoFieldSpecified = value;
+                this.RaisePropertyChanged("estadoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public int idTorre_Un_Paquete {
+            get {
+                return this.idTorre_Un_PaqueteField;
+            }
+            set {
+                this.idTorre_Un_PaqueteField = value;
+                this.RaisePropertyChanged("idTorre_Un_Paquete");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idTorre_Un_PaqueteSpecified {
+            get {
+                return this.idTorre_Un_PaqueteFieldSpecified;
+            }
+            set {
+                this.idTorre_Un_PaqueteFieldSpecified = value;
+                this.RaisePropertyChanged("idTorre_Un_PaqueteSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public int nro_torre {
+            get {
+                return this.nro_torreField;
+            }
+            set {
+                this.nro_torreField = value;
+                this.RaisePropertyChanged("nro_torre");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool nro_torreSpecified {
+            get {
+                return this.nro_torreFieldSpecified;
+            }
+            set {
+                this.nro_torreFieldSpecified = value;
+                this.RaisePropertyChanged("nro_torreSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public producto producto {
+            get {
+                return this.productoField;
+            }
+            set {
+                this.productoField = value;
+                this.RaisePropertyChanged("producto");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="almacen_reportePorId", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class almacen_reportePorIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idAlmacen;
+        
+        public almacen_reportePorIdRequest() {
+        }
+        
+        public almacen_reportePorIdRequest(int idAlmacen) {
+            this.idAlmacen = idAlmacen;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="almacen_reportePorIdResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class almacen_reportePorIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.consultaStock[] @return;
+        
+        public almacen_reportePorIdResponse() {
+        }
+        
+        public almacen_reportePorIdResponse(TemuFansBO.ServicioWS.consultaStock[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_obtenerPorId", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class cliente_obtenerPorIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idCliente;
+        
+        public cliente_obtenerPorIdRequest() {
+        }
+        
+        public cliente_obtenerPorIdRequest(int idCliente) {
+            this.idCliente = idCliente;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cliente_obtenerPorIdResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class cliente_obtenerPorIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.cliente @return;
+        
+        public cliente_obtenerPorIdResponse() {
+        }
+        
+        public cliente_obtenerPorIdResponse(TemuFansBO.ServicioWS.cliente @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_modificarProducto", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_modificarProductoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idProducto;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string estado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double precio;
+        
+        public producto_modificarProductoRequest() {
+        }
+        
+        public producto_modificarProductoRequest(int idProducto, string nombre, string estado, double precio) {
+            this.idProducto = idProducto;
+            this.nombre = nombre;
+            this.estado = estado;
+            this.precio = precio;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_modificarProductoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_modificarProductoResponse {
+        
+        public producto_modificarProductoResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_buscarProductosCriterio", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_buscarProductosCriterioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string codigo;
+        
+        public producto_buscarProductosCriterioRequest() {
+        }
+        
+        public producto_buscarProductosCriterioRequest(string nombre, string codigo) {
+            this.nombre = nombre;
+            this.codigo = codigo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_buscarProductosCriterioResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_buscarProductosCriterioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.producto[] @return;
+        
+        public producto_buscarProductosCriterioResponse() {
+        }
+        
+        public producto_buscarProductosCriterioResponse(TemuFansBO.ServicioWS.producto[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_insertarProducto", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_insertarProductoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double precio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string estado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idMarca;
+        
+        public producto_insertarProductoRequest() {
+        }
+        
+        public producto_insertarProductoRequest(double precio, string nombre, string estado, int idMarca) {
+            this.precio = precio;
+            this.nombre = nombre;
+            this.estado = estado;
+            this.idMarca = idMarca;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_insertarProductoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_insertarProductoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public producto_insertarProductoResponse() {
+        }
+        
+        public producto_insertarProductoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_eliminarProducto", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_eliminarProductoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idProducto;
+        
+        public producto_eliminarProductoRequest() {
+        }
+        
+        public producto_eliminarProductoRequest(int idProducto) {
+            this.idProducto = idProducto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_eliminarProductoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_eliminarProductoResponse {
+        
+        public producto_eliminarProductoResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="almacen_listarAlmacenes", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class almacen_listarAlmacenesRequest {
+        
+        public almacen_listarAlmacenesRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="almacen_listarAlmacenesResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class almacen_listarAlmacenesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.almacen[] @return;
+        
+        public almacen_listarAlmacenesResponse() {
+        }
+        
+        public almacen_listarAlmacenesResponse(TemuFansBO.ServicioWS.almacen[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_obtenerPorId", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_obtenerPorIdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idProducto;
+        
+        public producto_obtenerPorIdRequest() {
+        }
+        
+        public producto_obtenerPorIdRequest(int idProducto) {
+            this.idProducto = idProducto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_obtenerPorIdResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_obtenerPorIdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.producto @return;
+        
+        public producto_obtenerPorIdResponse() {
+        }
+        
+        public producto_obtenerPorIdResponse(TemuFansBO.ServicioWS.producto @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="torre_listarAlertasDeStock", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class torre_listarAlertasDeStockRequest {
+        
+        public torre_listarAlertasDeStockRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="torre_listarAlertasDeStockResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class torre_listarAlertasDeStockResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.torreUnPaquete[] @return;
+        
+        public torre_listarAlertasDeStockResponse() {
+        }
+        
+        public torre_listarAlertasDeStockResponse(TemuFansBO.ServicioWS.torreUnPaquete[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="usuario_existe_cliente", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class usuario_existe_clienteRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string doi;
+        
+        public usuario_existe_clienteRequest() {
+        }
+        
+        public usuario_existe_clienteRequest(string doi) {
+            this.doi = doi;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="usuario_existe_clienteResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class usuario_existe_clienteResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public usuario_existe_clienteResponse() {
+        }
+        
+        public usuario_existe_clienteResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_modificarPago", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class pedido_modificarPagoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPedido;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string estado_pedido;
+        
+        public pedido_modificarPagoRequest() {
+        }
+        
+        public pedido_modificarPagoRequest(int idPedido, string estado_pedido) {
+            this.idPedido = idPedido;
+            this.estado_pedido = estado_pedido;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_modificarPagoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class pedido_modificarPagoResponse {
+        
+        public pedido_modificarPagoResponse() {
         }
     }
     
@@ -2302,27 +2622,35 @@ namespace TemuFansBO.ServicioWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_listarProductosNombre", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class producto_listarProductosNombreRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="detallePedido_obtenerLineasPedido", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class detallePedido_obtenerLineasPedidoRequest {
         
-        public producto_listarProductosNombreRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public detallePedido_obtenerLineasPedidoRequest() {
+        }
+        
+        public detallePedido_obtenerLineasPedidoRequest(int id) {
+            this.id = id;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_listarProductosNombreResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class producto_listarProductosNombreResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="detallePedido_obtenerLineasPedidoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class detallePedido_obtenerLineasPedidoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public TemuFansBO.ServicioWS.producto[] @return;
+        public TemuFansBO.ServicioWS.detallePedido[] @return;
         
-        public producto_listarProductosNombreResponse() {
+        public detallePedido_obtenerLineasPedidoResponse() {
         }
         
-        public producto_listarProductosNombreResponse(TemuFansBO.ServicioWS.producto[] @return) {
+        public detallePedido_obtenerLineasPedidoResponse(TemuFansBO.ServicioWS.detallePedido[] @return) {
             this.@return = @return;
         }
     }
@@ -2330,222 +2658,40 @@ namespace TemuFansBO.ServicioWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="torre_consultarStockProducto", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class torre_consultarStockProductoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idProducto;
-        
-        public torre_consultarStockProductoRequest() {
-        }
-        
-        public torre_consultarStockProductoRequest(int idProducto) {
-            this.idProducto = idProducto;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="torre_consultarStockProductoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class torre_consultarStockProductoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public TemuFansBO.ServicioWS.consultaStock @return;
-        
-        public torre_consultarStockProductoResponse() {
-        }
-        
-        public torre_consultarStockProductoResponse(TemuFansBO.ServicioWS.consultaStock @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="almacen_listarAlmacenes", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class almacen_listarAlmacenesRequest {
-        
-        public almacen_listarAlmacenesRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="almacen_listarAlmacenesResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class almacen_listarAlmacenesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public TemuFansBO.ServicioWS.almacen[] @return;
-        
-        public almacen_listarAlmacenesResponse() {
-        }
-        
-        public almacen_listarAlmacenesResponse(TemuFansBO.ServicioWS.almacen[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="almacen_reportePorId", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class almacen_reportePorIdRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idAlmacen;
-        
-        public almacen_reportePorIdRequest() {
-        }
-        
-        public almacen_reportePorIdRequest(int idAlmacen) {
-            this.idAlmacen = idAlmacen;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="almacen_reportePorIdResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class almacen_reportePorIdResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public TemuFansBO.ServicioWS.consultaStock[] @return;
-        
-        public almacen_reportePorIdResponse() {
-        }
-        
-        public almacen_reportePorIdResponse(TemuFansBO.ServicioWS.consultaStock[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
-    public partial class pagoPedidoCliente : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private pedido pedidoField;
-        
-        private usuario usuarioField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public pedido pedido {
-            get {
-                return this.pedidoField;
-            }
-            set {
-                this.pedidoField = value;
-                this.RaisePropertyChanged("pedido");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public usuario usuario {
-            get {
-                return this.usuarioField;
-            }
-            set {
-                this.usuarioField = value;
-                this.RaisePropertyChanged("usuario");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_listar_pago", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class pedido_listar_pagoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string fechaInicio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string fechaFin;
-        
-        public pedido_listar_pagoRequest() {
-        }
-        
-        public pedido_listar_pagoRequest(string fechaInicio, string fechaFin) {
-            this.fechaInicio = fechaInicio;
-            this.fechaFin = fechaFin;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_listar_pagoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class pedido_listar_pagoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public TemuFansBO.ServicioWS.pagoPedidoCliente[] @return;
-        
-        public pedido_listar_pagoResponse() {
-        }
-        
-        public pedido_listar_pagoResponse(TemuFansBO.ServicioWS.pagoPedidoCliente[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="usuario_existe_cliente", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class usuario_existe_clienteRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="proveedor_listarPorNombreRuc", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class proveedor_listarPorNombreRucRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public string doi;
         
-        public usuario_existe_clienteRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        public proveedor_listarPorNombreRucRequest() {
         }
         
-        public usuario_existe_clienteRequest(string doi) {
+        public proveedor_listarPorNombreRucRequest(string doi, string nombre) {
             this.doi = doi;
+            this.nombre = nombre;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="usuario_existe_clienteResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
-    public partial class usuario_existe_clienteResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="proveedor_listarPorNombreRucResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class proveedor_listarPorNombreRucResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.proveedor[] @return;
         
-        public usuario_existe_clienteResponse() {
+        public proveedor_listarPorNombreRucResponse() {
         }
         
-        public usuario_existe_clienteResponse(bool @return) {
+        public proveedor_listarPorNombreRucResponse(TemuFansBO.ServicioWS.proveedor[] @return) {
             this.@return = @return;
         }
     }
@@ -2802,6 +2948,323 @@ namespace TemuFansBO.ServicioWS {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="torre_consultarStockProducto", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class torre_consultarStockProductoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idProducto;
+        
+        public torre_consultarStockProductoRequest() {
+        }
+        
+        public torre_consultarStockProductoRequest(int idProducto) {
+            this.idProducto = idProducto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="torre_consultarStockProductoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class torre_consultarStockProductoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.torreUnPaquete @return;
+        
+        public torre_consultarStockProductoResponse() {
+        }
+        
+        public torre_consultarStockProductoResponse(TemuFansBO.ServicioWS.torreUnPaquete @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="almacen_listarTorresPorAlmacen", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class almacen_listarTorresPorAlmacenRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idAlmacen;
+        
+        public almacen_listarTorresPorAlmacenRequest() {
+        }
+        
+        public almacen_listarTorresPorAlmacenRequest(int idAlmacen) {
+            this.idAlmacen = idAlmacen;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="almacen_listarTorresPorAlmacenResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class almacen_listarTorresPorAlmacenResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.consultaStock[] @return;
+        
+        public almacen_listarTorresPorAlmacenResponse() {
+        }
+        
+        public almacen_listarTorresPorAlmacenResponse(TemuFansBO.ServicioWS.consultaStock[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_listarProductosNombre", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_listarProductosNombreRequest {
+        
+        public producto_listarProductosNombreRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="producto_listarProductosNombreResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class producto_listarProductosNombreResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.producto[] @return;
+        
+        public producto_listarProductosNombreResponse() {
+        }
+        
+        public producto_listarProductosNombreResponse(TemuFansBO.ServicioWS.producto[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_insertarVenta", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class pedido_insertarVentaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idEmpleado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double subtotal;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double impuesto;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double total;
+        
+        public pedido_insertarVentaRequest() {
+        }
+        
+        public pedido_insertarVentaRequest(int idUsuario, int idEmpleado, double subtotal, double impuesto, double total) {
+            this.idUsuario = idUsuario;
+            this.idEmpleado = idEmpleado;
+            this.subtotal = subtotal;
+            this.impuesto = impuesto;
+            this.total = total;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_insertarVentaResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class pedido_insertarVentaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public pedido_insertarVentaResponse() {
+        }
+        
+        public pedido_insertarVentaResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="marca_listarMarcas", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class marca_listarMarcasRequest {
+        
+        public marca_listarMarcasRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="marca_listarMarcasResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class marca_listarMarcasResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.marca[] @return;
+        
+        public marca_listarMarcasResponse() {
+        }
+        
+        public marca_listarMarcasResponse(TemuFansBO.ServicioWS.marca[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="proveedor_insertar", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class proveedor_insertarRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string doi;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string correo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        public proveedor_insertarRequest() {
+        }
+        
+        public proveedor_insertarRequest(string doi, string correo, string nombre) {
+            this.doi = doi;
+            this.correo = correo;
+            this.nombre = nombre;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="proveedor_insertarResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class proveedor_insertarResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public proveedor_insertarResponse() {
+        }
+        
+        public proveedor_insertarResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/")]
+    public partial class pagoPedidoCliente : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private pedido pedidoField;
+        
+        private usuario usuarioField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public pedido pedido {
+            get {
+                return this.pedidoField;
+            }
+            set {
+                this.pedidoField = value;
+                this.RaisePropertyChanged("pedido");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public usuario usuario {
+            get {
+                return this.usuarioField;
+            }
+            set {
+                this.usuarioField = value;
+                this.RaisePropertyChanged("usuario");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_listar_pago", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class pedido_listar_pagoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string fechaInicio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string fechaFin;
+        
+        public pedido_listar_pagoRequest() {
+        }
+        
+        public pedido_listar_pagoRequest(string fechaInicio, string fechaFin) {
+            this.fechaInicio = fechaInicio;
+            this.fechaFin = fechaFin;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="pedido_listar_pagoResponse", WrapperNamespace="http://servicios.TemuFans.pucp.edu.pe/", IsWrapped=true)]
+    public partial class pedido_listar_pagoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://servicios.TemuFans.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public TemuFansBO.ServicioWS.pagoPedidoCliente[] @return;
+        
+        public pedido_listar_pagoResponse() {
+        }
+        
+        public pedido_listar_pagoResponse(TemuFansBO.ServicioWS.pagoPedidoCliente[] @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface ServicioWSChannel : TemuFansBO.ServicioWS.ServicioWS, System.ServiceModel.IClientChannel {
     }
@@ -2830,75 +3293,6 @@ namespace TemuFansBO.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.producto_obtenerPorIdResponse TemuFansBO.ServicioWS.ServicioWS.producto_obtenerPorId(TemuFansBO.ServicioWS.producto_obtenerPorIdRequest request) {
-            return base.Channel.producto_obtenerPorId(request);
-        }
-        
-        public TemuFansBO.ServicioWS.producto producto_obtenerPorId(int idProducto) {
-            TemuFansBO.ServicioWS.producto_obtenerPorIdRequest inValue = new TemuFansBO.ServicioWS.producto_obtenerPorIdRequest();
-            inValue.idProducto = idProducto;
-            TemuFansBO.ServicioWS.producto_obtenerPorIdResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_obtenerPorId(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_obtenerPorIdResponse> TemuFansBO.ServicioWS.ServicioWS.producto_obtenerPorIdAsync(TemuFansBO.ServicioWS.producto_obtenerPorIdRequest request) {
-            return base.Channel.producto_obtenerPorIdAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_obtenerPorIdResponse> producto_obtenerPorIdAsync(int idProducto) {
-            TemuFansBO.ServicioWS.producto_obtenerPorIdRequest inValue = new TemuFansBO.ServicioWS.producto_obtenerPorIdRequest();
-            inValue.idProducto = idProducto;
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_obtenerPorIdAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.torre_listarAlertasDeStockResponse TemuFansBO.ServicioWS.ServicioWS.torre_listarAlertasDeStock(TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest request) {
-            return base.Channel.torre_listarAlertasDeStock(request);
-        }
-        
-        public TemuFansBO.ServicioWS.consultaStock[] torre_listarAlertasDeStock() {
-            TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest inValue = new TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest();
-            TemuFansBO.ServicioWS.torre_listarAlertasDeStockResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).torre_listarAlertasDeStock(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.torre_listarAlertasDeStockResponse> TemuFansBO.ServicioWS.ServicioWS.torre_listarAlertasDeStockAsync(TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest request) {
-            return base.Channel.torre_listarAlertasDeStockAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.torre_listarAlertasDeStockResponse> torre_listarAlertasDeStockAsync() {
-            TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest inValue = new TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest();
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).torre_listarAlertasDeStockAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.pedido_listar_fechaResponse TemuFansBO.ServicioWS.ServicioWS.pedido_listar_fecha(TemuFansBO.ServicioWS.pedido_listar_fechaRequest request) {
-            return base.Channel.pedido_listar_fecha(request);
-        }
-        
-        public TemuFansBO.ServicioWS.resumenPorFecha[] pedido_listar_fecha(string fechaInicio, string fechaFin) {
-            TemuFansBO.ServicioWS.pedido_listar_fechaRequest inValue = new TemuFansBO.ServicioWS.pedido_listar_fechaRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            TemuFansBO.ServicioWS.pedido_listar_fechaResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_listar_fecha(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_fechaResponse> TemuFansBO.ServicioWS.ServicioWS.pedido_listar_fechaAsync(TemuFansBO.ServicioWS.pedido_listar_fechaRequest request) {
-            return base.Channel.pedido_listar_fechaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_fechaResponse> pedido_listar_fechaAsync(string fechaInicio, string fechaFin) {
-            TemuFansBO.ServicioWS.pedido_listar_fechaRequest inValue = new TemuFansBO.ServicioWS.pedido_listar_fechaRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_listar_fechaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         TemuFansBO.ServicioWS.cliente_listarClientesResponse TemuFansBO.ServicioWS.ServicioWS.cliente_listarClientes(TemuFansBO.ServicioWS.cliente_listarClientesRequest request) {
             return base.Channel.cliente_listarClientes(request);
         }
@@ -2917,30 +3311,6 @@ namespace TemuFansBO.ServicioWS {
         public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_listarClientesResponse> cliente_listarClientesAsync() {
             TemuFansBO.ServicioWS.cliente_listarClientesRequest inValue = new TemuFansBO.ServicioWS.cliente_listarClientesRequest();
             return ((TemuFansBO.ServicioWS.ServicioWS)(this)).cliente_listarClientesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.pedido_modificarPagoResponse TemuFansBO.ServicioWS.ServicioWS.pedido_modificarPago(TemuFansBO.ServicioWS.pedido_modificarPagoRequest request) {
-            return base.Channel.pedido_modificarPago(request);
-        }
-        
-        public void pedido_modificarPago(int idPedido, string estado_pedido) {
-            TemuFansBO.ServicioWS.pedido_modificarPagoRequest inValue = new TemuFansBO.ServicioWS.pedido_modificarPagoRequest();
-            inValue.idPedido = idPedido;
-            inValue.estado_pedido = estado_pedido;
-            TemuFansBO.ServicioWS.pedido_modificarPagoResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_modificarPago(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_modificarPagoResponse> TemuFansBO.ServicioWS.ServicioWS.pedido_modificarPagoAsync(TemuFansBO.ServicioWS.pedido_modificarPagoRequest request) {
-            return base.Channel.pedido_modificarPagoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_modificarPagoResponse> pedido_modificarPagoAsync(int idPedido, string estado_pedido) {
-            TemuFansBO.ServicioWS.pedido_modificarPagoRequest inValue = new TemuFansBO.ServicioWS.pedido_modificarPagoRequest();
-            inValue.idPedido = idPedido;
-            inValue.estado_pedido = estado_pedido;
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_modificarPagoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2979,32 +3349,119 @@ namespace TemuFansBO.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.producto_insertarProductoResponse TemuFansBO.ServicioWS.ServicioWS.producto_insertarProducto(TemuFansBO.ServicioWS.producto_insertarProductoRequest request) {
-            return base.Channel.producto_insertarProducto(request);
+        TemuFansBO.ServicioWS.cliente_buscarClienteResponse TemuFansBO.ServicioWS.ServicioWS.cliente_buscarCliente(TemuFansBO.ServicioWS.cliente_buscarClienteRequest request) {
+            return base.Channel.cliente_buscarCliente(request);
         }
         
-        public int producto_insertarProducto(double precio, string nombre, string estado, int idMarca) {
-            TemuFansBO.ServicioWS.producto_insertarProductoRequest inValue = new TemuFansBO.ServicioWS.producto_insertarProductoRequest();
-            inValue.precio = precio;
+        public TemuFansBO.ServicioWS.cliente[] cliente_buscarCliente(string nombre) {
+            TemuFansBO.ServicioWS.cliente_buscarClienteRequest inValue = new TemuFansBO.ServicioWS.cliente_buscarClienteRequest();
             inValue.nombre = nombre;
-            inValue.estado = estado;
-            inValue.idMarca = idMarca;
-            TemuFansBO.ServicioWS.producto_insertarProductoResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_insertarProducto(inValue);
+            TemuFansBO.ServicioWS.cliente_buscarClienteResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).cliente_buscarCliente(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_insertarProductoResponse> TemuFansBO.ServicioWS.ServicioWS.producto_insertarProductoAsync(TemuFansBO.ServicioWS.producto_insertarProductoRequest request) {
-            return base.Channel.producto_insertarProductoAsync(request);
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_buscarClienteResponse> TemuFansBO.ServicioWS.ServicioWS.cliente_buscarClienteAsync(TemuFansBO.ServicioWS.cliente_buscarClienteRequest request) {
+            return base.Channel.cliente_buscarClienteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_insertarProductoResponse> producto_insertarProductoAsync(double precio, string nombre, string estado, int idMarca) {
-            TemuFansBO.ServicioWS.producto_insertarProductoRequest inValue = new TemuFansBO.ServicioWS.producto_insertarProductoRequest();
-            inValue.precio = precio;
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_buscarClienteResponse> cliente_buscarClienteAsync(string nombre) {
+            TemuFansBO.ServicioWS.cliente_buscarClienteRequest inValue = new TemuFansBO.ServicioWS.cliente_buscarClienteRequest();
             inValue.nombre = nombre;
-            inValue.estado = estado;
-            inValue.idMarca = idMarca;
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_insertarProductoAsync(inValue);
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).cliente_buscarClienteAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesResponse TemuFansBO.ServicioWS.ServicioWS.detallePed_insertarPorLoteDetalles(TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesRequest request) {
+            return base.Channel.detallePed_insertarPorLoteDetalles(request);
+        }
+        
+        public void detallePed_insertarPorLoteDetalles(TemuFansBO.ServicioWS.detallePedido[] detalles) {
+            TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesRequest inValue = new TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesRequest();
+            inValue.detalles = detalles;
+            TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).detallePed_insertarPorLoteDetalles(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesResponse> TemuFansBO.ServicioWS.ServicioWS.detallePed_insertarPorLoteDetallesAsync(TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesRequest request) {
+            return base.Channel.detallePed_insertarPorLoteDetallesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesResponse> detallePed_insertarPorLoteDetallesAsync(TemuFansBO.ServicioWS.detallePedido[] detalles) {
+            TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesRequest inValue = new TemuFansBO.ServicioWS.detallePed_insertarPorLoteDetallesRequest();
+            inValue.detalles = detalles;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).detallePed_insertarPorLoteDetallesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.pedido_listar_fechaResponse TemuFansBO.ServicioWS.ServicioWS.pedido_listar_fecha(TemuFansBO.ServicioWS.pedido_listar_fechaRequest request) {
+            return base.Channel.pedido_listar_fecha(request);
+        }
+        
+        public TemuFansBO.ServicioWS.resumenPorFecha[] pedido_listar_fecha(string fechaInicio, string fechaFin) {
+            TemuFansBO.ServicioWS.pedido_listar_fechaRequest inValue = new TemuFansBO.ServicioWS.pedido_listar_fechaRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            TemuFansBO.ServicioWS.pedido_listar_fechaResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_listar_fecha(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_fechaResponse> TemuFansBO.ServicioWS.ServicioWS.pedido_listar_fechaAsync(TemuFansBO.ServicioWS.pedido_listar_fechaRequest request) {
+            return base.Channel.pedido_listar_fechaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_fechaResponse> pedido_listar_fechaAsync(string fechaInicio, string fechaFin) {
+            TemuFansBO.ServicioWS.pedido_listar_fechaRequest inValue = new TemuFansBO.ServicioWS.pedido_listar_fechaRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_listar_fechaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.almacen_reportePorIdResponse TemuFansBO.ServicioWS.ServicioWS.almacen_reportePorId(TemuFansBO.ServicioWS.almacen_reportePorIdRequest request) {
+            return base.Channel.almacen_reportePorId(request);
+        }
+        
+        public TemuFansBO.ServicioWS.consultaStock[] almacen_reportePorId(int idAlmacen) {
+            TemuFansBO.ServicioWS.almacen_reportePorIdRequest inValue = new TemuFansBO.ServicioWS.almacen_reportePorIdRequest();
+            inValue.idAlmacen = idAlmacen;
+            TemuFansBO.ServicioWS.almacen_reportePorIdResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).almacen_reportePorId(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_reportePorIdResponse> TemuFansBO.ServicioWS.ServicioWS.almacen_reportePorIdAsync(TemuFansBO.ServicioWS.almacen_reportePorIdRequest request) {
+            return base.Channel.almacen_reportePorIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_reportePorIdResponse> almacen_reportePorIdAsync(int idAlmacen) {
+            TemuFansBO.ServicioWS.almacen_reportePorIdRequest inValue = new TemuFansBO.ServicioWS.almacen_reportePorIdRequest();
+            inValue.idAlmacen = idAlmacen;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).almacen_reportePorIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.cliente_obtenerPorIdResponse TemuFansBO.ServicioWS.ServicioWS.cliente_obtenerPorId(TemuFansBO.ServicioWS.cliente_obtenerPorIdRequest request) {
+            return base.Channel.cliente_obtenerPorId(request);
+        }
+        
+        public TemuFansBO.ServicioWS.cliente cliente_obtenerPorId(int idCliente) {
+            TemuFansBO.ServicioWS.cliente_obtenerPorIdRequest inValue = new TemuFansBO.ServicioWS.cliente_obtenerPorIdRequest();
+            inValue.idCliente = idCliente;
+            TemuFansBO.ServicioWS.cliente_obtenerPorIdResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).cliente_obtenerPorId(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_obtenerPorIdResponse> TemuFansBO.ServicioWS.ServicioWS.cliente_obtenerPorIdAsync(TemuFansBO.ServicioWS.cliente_obtenerPorIdRequest request) {
+            return base.Channel.cliente_obtenerPorIdAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_obtenerPorIdResponse> cliente_obtenerPorIdAsync(int idCliente) {
+            TemuFansBO.ServicioWS.cliente_obtenerPorIdRequest inValue = new TemuFansBO.ServicioWS.cliente_obtenerPorIdRequest();
+            inValue.idCliente = idCliente;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).cliente_obtenerPorIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3036,26 +3493,57 @@ namespace TemuFansBO.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.cliente_buscarClienteResponse TemuFansBO.ServicioWS.ServicioWS.cliente_buscarCliente(TemuFansBO.ServicioWS.cliente_buscarClienteRequest request) {
-            return base.Channel.cliente_buscarCliente(request);
+        TemuFansBO.ServicioWS.producto_buscarProductosCriterioResponse TemuFansBO.ServicioWS.ServicioWS.producto_buscarProductosCriterio(TemuFansBO.ServicioWS.producto_buscarProductosCriterioRequest request) {
+            return base.Channel.producto_buscarProductosCriterio(request);
         }
         
-        public TemuFansBO.ServicioWS.cliente[] cliente_buscarCliente(string nombre) {
-            TemuFansBO.ServicioWS.cliente_buscarClienteRequest inValue = new TemuFansBO.ServicioWS.cliente_buscarClienteRequest();
+        public TemuFansBO.ServicioWS.producto[] producto_buscarProductosCriterio(string nombre, string codigo) {
+            TemuFansBO.ServicioWS.producto_buscarProductosCriterioRequest inValue = new TemuFansBO.ServicioWS.producto_buscarProductosCriterioRequest();
             inValue.nombre = nombre;
-            TemuFansBO.ServicioWS.cliente_buscarClienteResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).cliente_buscarCliente(inValue);
+            inValue.codigo = codigo;
+            TemuFansBO.ServicioWS.producto_buscarProductosCriterioResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_buscarProductosCriterio(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_buscarClienteResponse> TemuFansBO.ServicioWS.ServicioWS.cliente_buscarClienteAsync(TemuFansBO.ServicioWS.cliente_buscarClienteRequest request) {
-            return base.Channel.cliente_buscarClienteAsync(request);
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_buscarProductosCriterioResponse> TemuFansBO.ServicioWS.ServicioWS.producto_buscarProductosCriterioAsync(TemuFansBO.ServicioWS.producto_buscarProductosCriterioRequest request) {
+            return base.Channel.producto_buscarProductosCriterioAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.cliente_buscarClienteResponse> cliente_buscarClienteAsync(string nombre) {
-            TemuFansBO.ServicioWS.cliente_buscarClienteRequest inValue = new TemuFansBO.ServicioWS.cliente_buscarClienteRequest();
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_buscarProductosCriterioResponse> producto_buscarProductosCriterioAsync(string nombre, string codigo) {
+            TemuFansBO.ServicioWS.producto_buscarProductosCriterioRequest inValue = new TemuFansBO.ServicioWS.producto_buscarProductosCriterioRequest();
             inValue.nombre = nombre;
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).cliente_buscarClienteAsync(inValue);
+            inValue.codigo = codigo;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_buscarProductosCriterioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.producto_insertarProductoResponse TemuFansBO.ServicioWS.ServicioWS.producto_insertarProducto(TemuFansBO.ServicioWS.producto_insertarProductoRequest request) {
+            return base.Channel.producto_insertarProducto(request);
+        }
+        
+        public int producto_insertarProducto(double precio, string nombre, string estado, int idMarca) {
+            TemuFansBO.ServicioWS.producto_insertarProductoRequest inValue = new TemuFansBO.ServicioWS.producto_insertarProductoRequest();
+            inValue.precio = precio;
+            inValue.nombre = nombre;
+            inValue.estado = estado;
+            inValue.idMarca = idMarca;
+            TemuFansBO.ServicioWS.producto_insertarProductoResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_insertarProducto(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_insertarProductoResponse> TemuFansBO.ServicioWS.ServicioWS.producto_insertarProductoAsync(TemuFansBO.ServicioWS.producto_insertarProductoRequest request) {
+            return base.Channel.producto_insertarProductoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_insertarProductoResponse> producto_insertarProductoAsync(double precio, string nombre, string estado, int idMarca) {
+            TemuFansBO.ServicioWS.producto_insertarProductoRequest inValue = new TemuFansBO.ServicioWS.producto_insertarProductoRequest();
+            inValue.precio = precio;
+            inValue.nombre = nombre;
+            inValue.estado = estado;
+            inValue.idMarca = idMarca;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_insertarProductoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3081,47 +3569,115 @@ namespace TemuFansBO.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.marca_listarMarcasResponse TemuFansBO.ServicioWS.ServicioWS.marca_listarMarcas(TemuFansBO.ServicioWS.marca_listarMarcasRequest request) {
-            return base.Channel.marca_listarMarcas(request);
+        TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse TemuFansBO.ServicioWS.ServicioWS.almacen_listarAlmacenes(TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest request) {
+            return base.Channel.almacen_listarAlmacenes(request);
         }
         
-        public TemuFansBO.ServicioWS.marca[] marca_listarMarcas() {
-            TemuFansBO.ServicioWS.marca_listarMarcasRequest inValue = new TemuFansBO.ServicioWS.marca_listarMarcasRequest();
-            TemuFansBO.ServicioWS.marca_listarMarcasResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).marca_listarMarcas(inValue);
+        public TemuFansBO.ServicioWS.almacen[] almacen_listarAlmacenes() {
+            TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest inValue = new TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest();
+            TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).almacen_listarAlmacenes(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.marca_listarMarcasResponse> TemuFansBO.ServicioWS.ServicioWS.marca_listarMarcasAsync(TemuFansBO.ServicioWS.marca_listarMarcasRequest request) {
-            return base.Channel.marca_listarMarcasAsync(request);
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse> TemuFansBO.ServicioWS.ServicioWS.almacen_listarAlmacenesAsync(TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest request) {
+            return base.Channel.almacen_listarAlmacenesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.marca_listarMarcasResponse> marca_listarMarcasAsync() {
-            TemuFansBO.ServicioWS.marca_listarMarcasRequest inValue = new TemuFansBO.ServicioWS.marca_listarMarcasRequest();
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).marca_listarMarcasAsync(inValue);
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse> almacen_listarAlmacenesAsync() {
+            TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest inValue = new TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest();
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).almacen_listarAlmacenesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse TemuFansBO.ServicioWS.ServicioWS.detallePedido_obtenerLineasPedido(TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest request) {
-            return base.Channel.detallePedido_obtenerLineasPedido(request);
+        TemuFansBO.ServicioWS.producto_obtenerPorIdResponse TemuFansBO.ServicioWS.ServicioWS.producto_obtenerPorId(TemuFansBO.ServicioWS.producto_obtenerPorIdRequest request) {
+            return base.Channel.producto_obtenerPorId(request);
         }
         
-        public TemuFansBO.ServicioWS.detallePedido[] detallePedido_obtenerLineasPedido(int id) {
-            TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest inValue = new TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest();
-            inValue.id = id;
-            TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).detallePedido_obtenerLineasPedido(inValue);
+        public TemuFansBO.ServicioWS.producto producto_obtenerPorId(int idProducto) {
+            TemuFansBO.ServicioWS.producto_obtenerPorIdRequest inValue = new TemuFansBO.ServicioWS.producto_obtenerPorIdRequest();
+            inValue.idProducto = idProducto;
+            TemuFansBO.ServicioWS.producto_obtenerPorIdResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_obtenerPorId(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse> TemuFansBO.ServicioWS.ServicioWS.detallePedido_obtenerLineasPedidoAsync(TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest request) {
-            return base.Channel.detallePedido_obtenerLineasPedidoAsync(request);
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_obtenerPorIdResponse> TemuFansBO.ServicioWS.ServicioWS.producto_obtenerPorIdAsync(TemuFansBO.ServicioWS.producto_obtenerPorIdRequest request) {
+            return base.Channel.producto_obtenerPorIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse> detallePedido_obtenerLineasPedidoAsync(int id) {
-            TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest inValue = new TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest();
-            inValue.id = id;
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).detallePedido_obtenerLineasPedidoAsync(inValue);
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_obtenerPorIdResponse> producto_obtenerPorIdAsync(int idProducto) {
+            TemuFansBO.ServicioWS.producto_obtenerPorIdRequest inValue = new TemuFansBO.ServicioWS.producto_obtenerPorIdRequest();
+            inValue.idProducto = idProducto;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_obtenerPorIdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.torre_listarAlertasDeStockResponse TemuFansBO.ServicioWS.ServicioWS.torre_listarAlertasDeStock(TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest request) {
+            return base.Channel.torre_listarAlertasDeStock(request);
+        }
+        
+        public TemuFansBO.ServicioWS.torreUnPaquete[] torre_listarAlertasDeStock() {
+            TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest inValue = new TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest();
+            TemuFansBO.ServicioWS.torre_listarAlertasDeStockResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).torre_listarAlertasDeStock(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.torre_listarAlertasDeStockResponse> TemuFansBO.ServicioWS.ServicioWS.torre_listarAlertasDeStockAsync(TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest request) {
+            return base.Channel.torre_listarAlertasDeStockAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.torre_listarAlertasDeStockResponse> torre_listarAlertasDeStockAsync() {
+            TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest inValue = new TemuFansBO.ServicioWS.torre_listarAlertasDeStockRequest();
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).torre_listarAlertasDeStockAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.usuario_existe_clienteResponse TemuFansBO.ServicioWS.ServicioWS.usuario_existe_cliente(TemuFansBO.ServicioWS.usuario_existe_clienteRequest request) {
+            return base.Channel.usuario_existe_cliente(request);
+        }
+        
+        public bool usuario_existe_cliente(string doi) {
+            TemuFansBO.ServicioWS.usuario_existe_clienteRequest inValue = new TemuFansBO.ServicioWS.usuario_existe_clienteRequest();
+            inValue.doi = doi;
+            TemuFansBO.ServicioWS.usuario_existe_clienteResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).usuario_existe_cliente(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_existe_clienteResponse> TemuFansBO.ServicioWS.ServicioWS.usuario_existe_clienteAsync(TemuFansBO.ServicioWS.usuario_existe_clienteRequest request) {
+            return base.Channel.usuario_existe_clienteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_existe_clienteResponse> usuario_existe_clienteAsync(string doi) {
+            TemuFansBO.ServicioWS.usuario_existe_clienteRequest inValue = new TemuFansBO.ServicioWS.usuario_existe_clienteRequest();
+            inValue.doi = doi;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).usuario_existe_clienteAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.pedido_modificarPagoResponse TemuFansBO.ServicioWS.ServicioWS.pedido_modificarPago(TemuFansBO.ServicioWS.pedido_modificarPagoRequest request) {
+            return base.Channel.pedido_modificarPago(request);
+        }
+        
+        public void pedido_modificarPago(int idPedido, string estado_pedido) {
+            TemuFansBO.ServicioWS.pedido_modificarPagoRequest inValue = new TemuFansBO.ServicioWS.pedido_modificarPagoRequest();
+            inValue.idPedido = idPedido;
+            inValue.estado_pedido = estado_pedido;
+            TemuFansBO.ServicioWS.pedido_modificarPagoResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_modificarPago(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_modificarPagoResponse> TemuFansBO.ServicioWS.ServicioWS.pedido_modificarPagoAsync(TemuFansBO.ServicioWS.pedido_modificarPagoRequest request) {
+            return base.Channel.pedido_modificarPagoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_modificarPagoResponse> pedido_modificarPagoAsync(int idPedido, string estado_pedido) {
+            TemuFansBO.ServicioWS.pedido_modificarPagoRequest inValue = new TemuFansBO.ServicioWS.pedido_modificarPagoRequest();
+            inValue.idPedido = idPedido;
+            inValue.estado_pedido = estado_pedido;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_modificarPagoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3150,139 +3706,51 @@ namespace TemuFansBO.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.producto_listarProductosNombreResponse TemuFansBO.ServicioWS.ServicioWS.producto_listarProductosNombre(TemuFansBO.ServicioWS.producto_listarProductosNombreRequest request) {
-            return base.Channel.producto_listarProductosNombre(request);
+        TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse TemuFansBO.ServicioWS.ServicioWS.detallePedido_obtenerLineasPedido(TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest request) {
+            return base.Channel.detallePedido_obtenerLineasPedido(request);
         }
         
-        public TemuFansBO.ServicioWS.producto[] producto_listarProductosNombre() {
-            TemuFansBO.ServicioWS.producto_listarProductosNombreRequest inValue = new TemuFansBO.ServicioWS.producto_listarProductosNombreRequest();
-            TemuFansBO.ServicioWS.producto_listarProductosNombreResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_listarProductosNombre(inValue);
+        public TemuFansBO.ServicioWS.detallePedido[] detallePedido_obtenerLineasPedido(int id) {
+            TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest inValue = new TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest();
+            inValue.id = id;
+            TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).detallePedido_obtenerLineasPedido(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_listarProductosNombreResponse> TemuFansBO.ServicioWS.ServicioWS.producto_listarProductosNombreAsync(TemuFansBO.ServicioWS.producto_listarProductosNombreRequest request) {
-            return base.Channel.producto_listarProductosNombreAsync(request);
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse> TemuFansBO.ServicioWS.ServicioWS.detallePedido_obtenerLineasPedidoAsync(TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest request) {
+            return base.Channel.detallePedido_obtenerLineasPedidoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_listarProductosNombreResponse> producto_listarProductosNombreAsync() {
-            TemuFansBO.ServicioWS.producto_listarProductosNombreRequest inValue = new TemuFansBO.ServicioWS.producto_listarProductosNombreRequest();
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_listarProductosNombreAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.torre_consultarStockProductoResponse TemuFansBO.ServicioWS.ServicioWS.torre_consultarStockProducto(TemuFansBO.ServicioWS.torre_consultarStockProductoRequest request) {
-            return base.Channel.torre_consultarStockProducto(request);
-        }
-        
-        public TemuFansBO.ServicioWS.consultaStock torre_consultarStockProducto(int idProducto) {
-            TemuFansBO.ServicioWS.torre_consultarStockProductoRequest inValue = new TemuFansBO.ServicioWS.torre_consultarStockProductoRequest();
-            inValue.idProducto = idProducto;
-            TemuFansBO.ServicioWS.torre_consultarStockProductoResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).torre_consultarStockProducto(inValue);
-            return retVal.@return;
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoResponse> detallePedido_obtenerLineasPedidoAsync(int id) {
+            TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest inValue = new TemuFansBO.ServicioWS.detallePedido_obtenerLineasPedidoRequest();
+            inValue.id = id;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).detallePedido_obtenerLineasPedidoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.torre_consultarStockProductoResponse> TemuFansBO.ServicioWS.ServicioWS.torre_consultarStockProductoAsync(TemuFansBO.ServicioWS.torre_consultarStockProductoRequest request) {
-            return base.Channel.torre_consultarStockProductoAsync(request);
+        TemuFansBO.ServicioWS.proveedor_listarPorNombreRucResponse TemuFansBO.ServicioWS.ServicioWS.proveedor_listarPorNombreRuc(TemuFansBO.ServicioWS.proveedor_listarPorNombreRucRequest request) {
+            return base.Channel.proveedor_listarPorNombreRuc(request);
         }
         
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.torre_consultarStockProductoResponse> torre_consultarStockProductoAsync(int idProducto) {
-            TemuFansBO.ServicioWS.torre_consultarStockProductoRequest inValue = new TemuFansBO.ServicioWS.torre_consultarStockProductoRequest();
-            inValue.idProducto = idProducto;
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).torre_consultarStockProductoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse TemuFansBO.ServicioWS.ServicioWS.almacen_listarAlmacenes(TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest request) {
-            return base.Channel.almacen_listarAlmacenes(request);
-        }
-        
-        public TemuFansBO.ServicioWS.almacen[] almacen_listarAlmacenes() {
-            TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest inValue = new TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest();
-            TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).almacen_listarAlmacenes(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse> TemuFansBO.ServicioWS.ServicioWS.almacen_listarAlmacenesAsync(TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest request) {
-            return base.Channel.almacen_listarAlmacenesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_listarAlmacenesResponse> almacen_listarAlmacenesAsync() {
-            TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest inValue = new TemuFansBO.ServicioWS.almacen_listarAlmacenesRequest();
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).almacen_listarAlmacenesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.almacen_reportePorIdResponse TemuFansBO.ServicioWS.ServicioWS.almacen_reportePorId(TemuFansBO.ServicioWS.almacen_reportePorIdRequest request) {
-            return base.Channel.almacen_reportePorId(request);
-        }
-        
-        public TemuFansBO.ServicioWS.consultaStock[] almacen_reportePorId(int idAlmacen) {
-            TemuFansBO.ServicioWS.almacen_reportePorIdRequest inValue = new TemuFansBO.ServicioWS.almacen_reportePorIdRequest();
-            inValue.idAlmacen = idAlmacen;
-            TemuFansBO.ServicioWS.almacen_reportePorIdResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).almacen_reportePorId(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_reportePorIdResponse> TemuFansBO.ServicioWS.ServicioWS.almacen_reportePorIdAsync(TemuFansBO.ServicioWS.almacen_reportePorIdRequest request) {
-            return base.Channel.almacen_reportePorIdAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_reportePorIdResponse> almacen_reportePorIdAsync(int idAlmacen) {
-            TemuFansBO.ServicioWS.almacen_reportePorIdRequest inValue = new TemuFansBO.ServicioWS.almacen_reportePorIdRequest();
-            inValue.idAlmacen = idAlmacen;
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).almacen_reportePorIdAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.pedido_listar_pagoResponse TemuFansBO.ServicioWS.ServicioWS.pedido_listar_pago(TemuFansBO.ServicioWS.pedido_listar_pagoRequest request) {
-            return base.Channel.pedido_listar_pago(request);
-        }
-        
-        public TemuFansBO.ServicioWS.pagoPedidoCliente[] pedido_listar_pago(string fechaInicio, string fechaFin) {
-            TemuFansBO.ServicioWS.pedido_listar_pagoRequest inValue = new TemuFansBO.ServicioWS.pedido_listar_pagoRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            TemuFansBO.ServicioWS.pedido_listar_pagoResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_listar_pago(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_pagoResponse> TemuFansBO.ServicioWS.ServicioWS.pedido_listar_pagoAsync(TemuFansBO.ServicioWS.pedido_listar_pagoRequest request) {
-            return base.Channel.pedido_listar_pagoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_pagoResponse> pedido_listar_pagoAsync(string fechaInicio, string fechaFin) {
-            TemuFansBO.ServicioWS.pedido_listar_pagoRequest inValue = new TemuFansBO.ServicioWS.pedido_listar_pagoRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_listar_pagoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        TemuFansBO.ServicioWS.usuario_existe_clienteResponse TemuFansBO.ServicioWS.ServicioWS.usuario_existe_cliente(TemuFansBO.ServicioWS.usuario_existe_clienteRequest request) {
-            return base.Channel.usuario_existe_cliente(request);
-        }
-        
-        public bool usuario_existe_cliente(string doi) {
-            TemuFansBO.ServicioWS.usuario_existe_clienteRequest inValue = new TemuFansBO.ServicioWS.usuario_existe_clienteRequest();
+        public TemuFansBO.ServicioWS.proveedor[] proveedor_listarPorNombreRuc(string doi, string nombre) {
+            TemuFansBO.ServicioWS.proveedor_listarPorNombreRucRequest inValue = new TemuFansBO.ServicioWS.proveedor_listarPorNombreRucRequest();
             inValue.doi = doi;
-            TemuFansBO.ServicioWS.usuario_existe_clienteResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).usuario_existe_cliente(inValue);
+            inValue.nombre = nombre;
+            TemuFansBO.ServicioWS.proveedor_listarPorNombreRucResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).proveedor_listarPorNombreRuc(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_existe_clienteResponse> TemuFansBO.ServicioWS.ServicioWS.usuario_existe_clienteAsync(TemuFansBO.ServicioWS.usuario_existe_clienteRequest request) {
-            return base.Channel.usuario_existe_clienteAsync(request);
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.proveedor_listarPorNombreRucResponse> TemuFansBO.ServicioWS.ServicioWS.proveedor_listarPorNombreRucAsync(TemuFansBO.ServicioWS.proveedor_listarPorNombreRucRequest request) {
+            return base.Channel.proveedor_listarPorNombreRucAsync(request);
         }
         
-        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.usuario_existe_clienteResponse> usuario_existe_clienteAsync(string doi) {
-            TemuFansBO.ServicioWS.usuario_existe_clienteRequest inValue = new TemuFansBO.ServicioWS.usuario_existe_clienteRequest();
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.proveedor_listarPorNombreRucResponse> proveedor_listarPorNombreRucAsync(string doi, string nombre) {
+            TemuFansBO.ServicioWS.proveedor_listarPorNombreRucRequest inValue = new TemuFansBO.ServicioWS.proveedor_listarPorNombreRucRequest();
             inValue.doi = doi;
-            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).usuario_existe_clienteAsync(inValue);
+            inValue.nombre = nombre;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).proveedor_listarPorNombreRucAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3318,6 +3786,177 @@ namespace TemuFansBO.ServicioWS {
             inValue.razonSocial = razonSocial;
             inValue.metodoPago = metodoPago;
             return ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_listar_historial_ventasAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.torre_consultarStockProductoResponse TemuFansBO.ServicioWS.ServicioWS.torre_consultarStockProducto(TemuFansBO.ServicioWS.torre_consultarStockProductoRequest request) {
+            return base.Channel.torre_consultarStockProducto(request);
+        }
+        
+        public TemuFansBO.ServicioWS.torreUnPaquete torre_consultarStockProducto(int idProducto) {
+            TemuFansBO.ServicioWS.torre_consultarStockProductoRequest inValue = new TemuFansBO.ServicioWS.torre_consultarStockProductoRequest();
+            inValue.idProducto = idProducto;
+            TemuFansBO.ServicioWS.torre_consultarStockProductoResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).torre_consultarStockProducto(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.torre_consultarStockProductoResponse> TemuFansBO.ServicioWS.ServicioWS.torre_consultarStockProductoAsync(TemuFansBO.ServicioWS.torre_consultarStockProductoRequest request) {
+            return base.Channel.torre_consultarStockProductoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.torre_consultarStockProductoResponse> torre_consultarStockProductoAsync(int idProducto) {
+            TemuFansBO.ServicioWS.torre_consultarStockProductoRequest inValue = new TemuFansBO.ServicioWS.torre_consultarStockProductoRequest();
+            inValue.idProducto = idProducto;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).torre_consultarStockProductoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenResponse TemuFansBO.ServicioWS.ServicioWS.almacen_listarTorresPorAlmacen(TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenRequest request) {
+            return base.Channel.almacen_listarTorresPorAlmacen(request);
+        }
+        
+        public TemuFansBO.ServicioWS.consultaStock[] almacen_listarTorresPorAlmacen(int idAlmacen) {
+            TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenRequest inValue = new TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenRequest();
+            inValue.idAlmacen = idAlmacen;
+            TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).almacen_listarTorresPorAlmacen(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenResponse> TemuFansBO.ServicioWS.ServicioWS.almacen_listarTorresPorAlmacenAsync(TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenRequest request) {
+            return base.Channel.almacen_listarTorresPorAlmacenAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenResponse> almacen_listarTorresPorAlmacenAsync(int idAlmacen) {
+            TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenRequest inValue = new TemuFansBO.ServicioWS.almacen_listarTorresPorAlmacenRequest();
+            inValue.idAlmacen = idAlmacen;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).almacen_listarTorresPorAlmacenAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.producto_listarProductosNombreResponse TemuFansBO.ServicioWS.ServicioWS.producto_listarProductosNombre(TemuFansBO.ServicioWS.producto_listarProductosNombreRequest request) {
+            return base.Channel.producto_listarProductosNombre(request);
+        }
+        
+        public TemuFansBO.ServicioWS.producto[] producto_listarProductosNombre() {
+            TemuFansBO.ServicioWS.producto_listarProductosNombreRequest inValue = new TemuFansBO.ServicioWS.producto_listarProductosNombreRequest();
+            TemuFansBO.ServicioWS.producto_listarProductosNombreResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_listarProductosNombre(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_listarProductosNombreResponse> TemuFansBO.ServicioWS.ServicioWS.producto_listarProductosNombreAsync(TemuFansBO.ServicioWS.producto_listarProductosNombreRequest request) {
+            return base.Channel.producto_listarProductosNombreAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.producto_listarProductosNombreResponse> producto_listarProductosNombreAsync() {
+            TemuFansBO.ServicioWS.producto_listarProductosNombreRequest inValue = new TemuFansBO.ServicioWS.producto_listarProductosNombreRequest();
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).producto_listarProductosNombreAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.pedido_insertarVentaResponse TemuFansBO.ServicioWS.ServicioWS.pedido_insertarVenta(TemuFansBO.ServicioWS.pedido_insertarVentaRequest request) {
+            return base.Channel.pedido_insertarVenta(request);
+        }
+        
+        public int pedido_insertarVenta(int idUsuario, int idEmpleado, double subtotal, double impuesto, double total) {
+            TemuFansBO.ServicioWS.pedido_insertarVentaRequest inValue = new TemuFansBO.ServicioWS.pedido_insertarVentaRequest();
+            inValue.idUsuario = idUsuario;
+            inValue.idEmpleado = idEmpleado;
+            inValue.subtotal = subtotal;
+            inValue.impuesto = impuesto;
+            inValue.total = total;
+            TemuFansBO.ServicioWS.pedido_insertarVentaResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_insertarVenta(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_insertarVentaResponse> TemuFansBO.ServicioWS.ServicioWS.pedido_insertarVentaAsync(TemuFansBO.ServicioWS.pedido_insertarVentaRequest request) {
+            return base.Channel.pedido_insertarVentaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_insertarVentaResponse> pedido_insertarVentaAsync(int idUsuario, int idEmpleado, double subtotal, double impuesto, double total) {
+            TemuFansBO.ServicioWS.pedido_insertarVentaRequest inValue = new TemuFansBO.ServicioWS.pedido_insertarVentaRequest();
+            inValue.idUsuario = idUsuario;
+            inValue.idEmpleado = idEmpleado;
+            inValue.subtotal = subtotal;
+            inValue.impuesto = impuesto;
+            inValue.total = total;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_insertarVentaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.marca_listarMarcasResponse TemuFansBO.ServicioWS.ServicioWS.marca_listarMarcas(TemuFansBO.ServicioWS.marca_listarMarcasRequest request) {
+            return base.Channel.marca_listarMarcas(request);
+        }
+        
+        public TemuFansBO.ServicioWS.marca[] marca_listarMarcas() {
+            TemuFansBO.ServicioWS.marca_listarMarcasRequest inValue = new TemuFansBO.ServicioWS.marca_listarMarcasRequest();
+            TemuFansBO.ServicioWS.marca_listarMarcasResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).marca_listarMarcas(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.marca_listarMarcasResponse> TemuFansBO.ServicioWS.ServicioWS.marca_listarMarcasAsync(TemuFansBO.ServicioWS.marca_listarMarcasRequest request) {
+            return base.Channel.marca_listarMarcasAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.marca_listarMarcasResponse> marca_listarMarcasAsync() {
+            TemuFansBO.ServicioWS.marca_listarMarcasRequest inValue = new TemuFansBO.ServicioWS.marca_listarMarcasRequest();
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).marca_listarMarcasAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.proveedor_insertarResponse TemuFansBO.ServicioWS.ServicioWS.proveedor_insertar(TemuFansBO.ServicioWS.proveedor_insertarRequest request) {
+            return base.Channel.proveedor_insertar(request);
+        }
+        
+        public int proveedor_insertar(string doi, string correo, string nombre) {
+            TemuFansBO.ServicioWS.proveedor_insertarRequest inValue = new TemuFansBO.ServicioWS.proveedor_insertarRequest();
+            inValue.doi = doi;
+            inValue.correo = correo;
+            inValue.nombre = nombre;
+            TemuFansBO.ServicioWS.proveedor_insertarResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).proveedor_insertar(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.proveedor_insertarResponse> TemuFansBO.ServicioWS.ServicioWS.proveedor_insertarAsync(TemuFansBO.ServicioWS.proveedor_insertarRequest request) {
+            return base.Channel.proveedor_insertarAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.proveedor_insertarResponse> proveedor_insertarAsync(string doi, string correo, string nombre) {
+            TemuFansBO.ServicioWS.proveedor_insertarRequest inValue = new TemuFansBO.ServicioWS.proveedor_insertarRequest();
+            inValue.doi = doi;
+            inValue.correo = correo;
+            inValue.nombre = nombre;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).proveedor_insertarAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        TemuFansBO.ServicioWS.pedido_listar_pagoResponse TemuFansBO.ServicioWS.ServicioWS.pedido_listar_pago(TemuFansBO.ServicioWS.pedido_listar_pagoRequest request) {
+            return base.Channel.pedido_listar_pago(request);
+        }
+        
+        public TemuFansBO.ServicioWS.pagoPedidoCliente[] pedido_listar_pago(string fechaInicio, string fechaFin) {
+            TemuFansBO.ServicioWS.pedido_listar_pagoRequest inValue = new TemuFansBO.ServicioWS.pedido_listar_pagoRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            TemuFansBO.ServicioWS.pedido_listar_pagoResponse retVal = ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_listar_pago(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_pagoResponse> TemuFansBO.ServicioWS.ServicioWS.pedido_listar_pagoAsync(TemuFansBO.ServicioWS.pedido_listar_pagoRequest request) {
+            return base.Channel.pedido_listar_pagoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<TemuFansBO.ServicioWS.pedido_listar_pagoResponse> pedido_listar_pagoAsync(string fechaInicio, string fechaFin) {
+            TemuFansBO.ServicioWS.pedido_listar_pagoRequest inValue = new TemuFansBO.ServicioWS.pedido_listar_pagoRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            return ((TemuFansBO.ServicioWS.ServicioWS)(this)).pedido_listar_pagoAsync(inValue);
         }
     }
 }

@@ -32,19 +32,19 @@ namespace PruebaBootstrap.Inventario
                 int idProducto = int.Parse(ddlProducto.SelectedValue);
 
                 // Fetch the product details based on the selected product ID
-                consultaStock consulta = torreBO.consultarStockProductoPorId(idProducto);
+                torreUnPaquete consulta = torreBO.consultarStockProductoPorId(idProducto);
 
                 if (consulta != null)
                 {
                     // Populate the fields with the product details
                     txtNombre.Text = consulta.producto.nombre;
-                    txtStock.Text = consulta.torre.cantidad_paquete.ToString();
+                    txtStock.Text = consulta.cantidad_paquete.ToString();
                     rbEstado.Text = consulta.producto.estado.ToString();
                     txtPrecio.Text = consulta.producto.precio.ToString();
                     txtFechaRegistro.Text = consulta.producto.fechaRegistro.ToString();
                     txtDireccion.Text = consulta.almacen.direccion;
-                    txtNroTorre.Text = consulta.torre.nro_torre.ToString();
-                    txtMarca.Text = consulta.marca.nombre.ToString();
+                    txtNroTorre.Text = consulta.nro_torre.ToString();
+                    txtMarca.Text = consulta.producto.marca.nombre.ToString();
                 }
             }
         }

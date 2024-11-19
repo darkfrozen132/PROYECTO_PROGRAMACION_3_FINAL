@@ -1,5 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="MV_GesPed.master" AutoEventWireup="true" CodeBehind="Agregar_Pedido.aspx.cs" Inherits="PruebaBootstrap.Agregar_Pedido" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphVentas_Ped" runat="server">
+    <script src="gestionar_productos_pedido.js" type="text/javascript"></script>
+    <!--
+    <script type="text/javascript">
+        function showModalFormClientePedido() {
+            var modalForm = new bootstrap.Modal(document.getElementById('form-modal-pedido'));
+            modalForm.toggle();
+        }
+
+        function showModalFormAgregarProducto() {
+            var modalForm = new bootstrap.Modal(document.getElementById('form-modal-agregar_producto'));
+            modalForm.toggle();
+        }
+    </script>
+    -->
                         <!-- datos del cliente -->
                     <div>
                         <h6 class="card-title"> Datos del cliente</h6>

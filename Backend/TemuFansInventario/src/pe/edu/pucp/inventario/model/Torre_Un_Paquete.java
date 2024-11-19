@@ -6,18 +6,21 @@ import pe.edu.pucp.mercaderia.model.Producto;
 public class Torre_Un_Paquete {
     private Integer idTorre_Un_Paquete;
     private Integer nro_torre;
-    private Producto idProducto;
+    private Producto producto;
     private String codigo;
     private Integer cantidad_paquete;
     private Boolean estado;
+    private Almacen almacen;
+    private Integer cantidad_limite;
 
-    public Torre_Un_Paquete(Integer idTorre_Un_Paquete,Integer nro_torre, Producto idProducto, String codigo, Integer cantidad_paquete, Boolean estado) {
+    public Torre_Un_Paquete(Integer idTorre_Un_Paquete,Integer nro_torre, Producto producto, String codigo, Integer cantidad_paquete, Boolean estado, Almacen almacen) {
         this.idTorre_Un_Paquete = idTorre_Un_Paquete;
         this.nro_torre = nro_torre;
-        this.idProducto = idProducto;
+        this.producto = producto;
         this.codigo = codigo;
         this.cantidad_paquete = cantidad_paquete;
         this.estado = estado;
+        this.almacen = almacen;
     }
     
     public Torre_Un_Paquete() {
@@ -25,8 +28,21 @@ public class Torre_Un_Paquete {
         this.codigo = null;
         this.cantidad_paquete = null;
         this.estado = null;
+        this.nro_torre = null;
+        this.producto = new Producto();
+        this.almacen = new Almacen();
+        this.cantidad_limite = null;
+    }
+    
+    public Torre_Un_Paquete(Integer idProducto) {
+        this.idTorre_Un_Paquete = null;
+        this.codigo = null;
+        this.cantidad_paquete = null;
+        this.estado = null;
         this.nro_torre = 0;
-        this.idProducto = null;
+        this.producto = new Producto(idProducto);
+        this.almacen = new Almacen();
+        this.cantidad_limite = null;
     }
 
     /**
@@ -100,17 +116,45 @@ public class Torre_Un_Paquete {
     }
 
     /**
-     * @return the idProducto
+     * @return the producto
      */
-    public Producto getIdProducto() {
-        return idProducto;
+    public Producto getProducto() {
+        return producto;
     }
 
     /**
-     * @param idProducto the idProducto to set
+     * @param producto the producto to set
      */
-    public void setIdProducto(Producto idProducto) {
-        this.idProducto = idProducto;
+    public void setProducto(Producto producto) {
+        this.producto = producto;
+    }
+
+    /**
+     * @return the almacen
+     */
+    public Almacen getAlmacen() {
+        return almacen;
+    }
+
+    /**
+     * @param almacen the almacen to set
+     */
+    public void setAlmacen(Almacen almacen) {
+        this.almacen = almacen;
+    }
+
+    /**
+     * @return the cantidad_limite
+     */
+    public Integer getCantidad_limite() {
+        return cantidad_limite;
+    }
+
+    /**
+     * @param cantidad_limite the cantidad_limite to set
+     */
+    public void setCantidad_limite(Integer cantidad_limite) {
+        this.cantidad_limite = cantidad_limite;
     }
     
 }

@@ -5,7 +5,7 @@
 package pe.edu.pucp.mercaderia.bo;
 
 import java.util.ArrayList;
-import pe.edu.pucp.inventario.model.ConsultaStock;
+import pe.edu.pucp.inventario.model.Torre_Un_Paquete;
 import pe.edu.pucp.mercaderia.dao.Torre_Un_PaqueteDAO;
 import pe.edu.pucp.mercaderia.daoImpl.Torre_Un_PaqueteDAOImpl;
 
@@ -20,11 +20,11 @@ public class Torre_Un_PaqueteBO {
         this.torre_Un_PaqueteDAO = new Torre_Un_PaqueteDAOImpl();
     }
     
-    public ConsultaStock consultarStockProductoPorId(Integer idProducto){
+    public Torre_Un_Paquete consultarStockProductoPorId(Integer idProducto){
         return this.torre_Un_PaqueteDAO.consultarStockProductoPorId(idProducto);
     }
     
-    public ArrayList<ConsultaStock> listarAlertasDeStock(){
+    public ArrayList<Torre_Un_Paquete> listarAlertasDeStock(){
         return this.torre_Un_PaqueteDAO.alertasDeStock();
     }
 }

@@ -13,7 +13,7 @@
 	<script src="Scripts/bootstrap.bundle.js"> </script>
 
     <script src="Scripts/PruebaModal/gestionar_productos_pedido.js"></script>
-
+    <script src="/Scripts/gestion_clientes.js"></script>
     <title>
        <asp:ContentPlaceHolder ID="cphTitle" runat="server">
        </asp:ContentPlaceHolder>
@@ -114,7 +114,7 @@
           <li><a href="/Home.aspx" class="nav-link px-2 text-secondary">Inicio</a></li>
           <li><a href="/Ventas/HomeVentas.aspx" class="nav-link px-2 text-white">Ventas</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Compras</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Almacen</a></li>
+          <li><a href="/Almacen/HomeAlmacen.aspx" class="nav-link px-2 text-white">Almacen</a></li>
           <li><a href="/Inventario/HomeInventario.aspx" class="nav-link px-2 text-white">Inventario</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Configuracion</a></li>
         </ul>

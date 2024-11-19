@@ -1,0 +1,13 @@
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\bin\Debug\TemuFansEnviaCorreoTest.exe.config
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\bin\Debug\TemuFansEnviaCorreoTest.exe
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\bin\Debug\TemuFansEnviaCorreoTest.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\bin\Debug\TemuFansBO.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\bin\Debug\TemuFansEnviaCorreos.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\bin\Debug\TemuFansBO.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\bin\Debug\TemuFansBO.dll.config
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\bin\Debug\TemuFansEnviaCorreos.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\obj\Debug\TemuFansEnviaCorreoTest.csproj.AssemblyReference.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\obj\Debug\TemuFansEnviaCorreoTest.csproj.CoreCompileInputs.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\obj\Debug\TemuFans.0DFAA14C.Up2Date
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\obj\Debug\TemuFansEnviaCorreoTest.exe
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreoTest\obj\Debug\TemuFansEnviaCorreoTest.pdb

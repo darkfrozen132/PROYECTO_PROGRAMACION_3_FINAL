@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TemuFansBO.ServicioWS;
 using TemuFansDocumentosBO;
 
 namespace PruebaBootstrap
@@ -23,29 +24,34 @@ namespace PruebaBootstrap
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-
             DateTime desde, hasta;
 
             if (DateTime.TryParse(txtDesde.Text, out desde) && DateTime.TryParse(txtHasta.Text, out hasta))
             {
-
-                var resumenData = ObtenerDatosDeResumen(desde, hasta);
-
-
-                if (resumenData != null && resumenData.Rows.Count > 0)
+                // Validación adicional para verificar que desde <= hasta
+                if (desde <= hasta)
                 {
-                    ViewState["ResumenDataFiltrada"] = resumenData;
-                    gvResumen.DataSource = resumenData;
-                    gvResumen.DataBind();
+                    var resumenData = ObtenerDatosDeResumen(desde, hasta);
+
+
+                    if (resumenData != null && resumenData.Rows.Count > 0)
+                    {
+                        ViewState["ResumenDataFiltrada"] = resumenData;
+                        gvResumen.DataSource = resumenData;
+                        gvResumen.DataBind();
+                    }
+                    else
+                    {
+                        Response.Write("<script>alert('No se encontraron datos para el rango de fechas seleccionado.');</script>");
+                    }
                 }
                 else
                 {
-                    Response.Write("<script>alert('No se encontraron datos para el rango de fechas seleccionado.');</script>");
+                    Response.Write("<script>alert('La fecha inicial debe ser menor o igual a la fecha final.');</script>");
                 }
             }
             else
             {
-
                 Response.Write("<script>alert('Por favor ingrese fechas válidas');</script>");
             }
         }

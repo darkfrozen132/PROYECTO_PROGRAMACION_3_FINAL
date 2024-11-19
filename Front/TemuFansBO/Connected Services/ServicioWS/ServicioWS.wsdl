@@ -5,6 +5,81 @@
       <xsd:import schemaLocation="http://localhost:8080/TemuFansWS/ServicioWS?xsd=1" namespace="http://servicios.TemuFans.pucp.edu.pe/" />
     </xsd:schema>
   </types>
+  <message name="cliente_listarClientes">
+    <part name="parameters" element="tns:cliente_listarClientes" />
+  </message>
+  <message name="cliente_listarClientesResponse">
+    <part name="parameters" element="tns:cliente_listarClientesResponse" />
+  </message>
+  <message name="usuario_insertar_cliente">
+    <part name="parameters" element="tns:usuario_insertar_cliente" />
+  </message>
+  <message name="usuario_insertar_clienteResponse">
+    <part name="parameters" element="tns:usuario_insertar_clienteResponse" />
+  </message>
+  <message name="ParseException">
+    <part name="fault" element="tns:ParseException" />
+  </message>
+  <message name="cliente_buscarCliente">
+    <part name="parameters" element="tns:cliente_buscarCliente" />
+  </message>
+  <message name="cliente_buscarClienteResponse">
+    <part name="parameters" element="tns:cliente_buscarClienteResponse" />
+  </message>
+  <message name="detallePed_insertarPorLoteDetalles">
+    <part name="parameters" element="tns:detallePed_insertarPorLoteDetalles" />
+  </message>
+  <message name="detallePed_insertarPorLoteDetallesResponse">
+    <part name="parameters" element="tns:detallePed_insertarPorLoteDetallesResponse" />
+  </message>
+  <message name="pedido_listar_fecha">
+    <part name="parameters" element="tns:pedido_listar_fecha" />
+  </message>
+  <message name="pedido_listar_fechaResponse">
+    <part name="parameters" element="tns:pedido_listar_fechaResponse" />
+  </message>
+  <message name="almacen_reportePorId">
+    <part name="parameters" element="tns:almacen_reportePorId" />
+  </message>
+  <message name="almacen_reportePorIdResponse">
+    <part name="parameters" element="tns:almacen_reportePorIdResponse" />
+  </message>
+  <message name="cliente_obtenerPorId">
+    <part name="parameters" element="tns:cliente_obtenerPorId" />
+  </message>
+  <message name="cliente_obtenerPorIdResponse">
+    <part name="parameters" element="tns:cliente_obtenerPorIdResponse" />
+  </message>
+  <message name="producto_modificarProducto">
+    <part name="parameters" element="tns:producto_modificarProducto" />
+  </message>
+  <message name="producto_modificarProductoResponse">
+    <part name="parameters" element="tns:producto_modificarProductoResponse" />
+  </message>
+  <message name="producto_buscarProductosCriterio">
+    <part name="parameters" element="tns:producto_buscarProductosCriterio" />
+  </message>
+  <message name="producto_buscarProductosCriterioResponse">
+    <part name="parameters" element="tns:producto_buscarProductosCriterioResponse" />
+  </message>
+  <message name="producto_insertarProducto">
+    <part name="parameters" element="tns:producto_insertarProducto" />
+  </message>
+  <message name="producto_insertarProductoResponse">
+    <part name="parameters" element="tns:producto_insertarProductoResponse" />
+  </message>
+  <message name="producto_eliminarProducto">
+    <part name="parameters" element="tns:producto_eliminarProducto" />
+  </message>
+  <message name="producto_eliminarProductoResponse">
+    <part name="parameters" element="tns:producto_eliminarProductoResponse" />
+  </message>
+  <message name="almacen_listarAlmacenes">
+    <part name="parameters" element="tns:almacen_listarAlmacenes" />
+  </message>
+  <message name="almacen_listarAlmacenesResponse">
+    <part name="parameters" element="tns:almacen_listarAlmacenesResponse" />
+  </message>
   <message name="producto_obtenerPorId">
     <part name="parameters" element="tns:producto_obtenerPorId" />
   </message>
@@ -17,17 +92,11 @@
   <message name="torre_listarAlertasDeStockResponse">
     <part name="parameters" element="tns:torre_listarAlertasDeStockResponse" />
   </message>
-  <message name="pedido_listar_fecha">
-    <part name="parameters" element="tns:pedido_listar_fecha" />
+  <message name="usuario_existe_cliente">
+    <part name="parameters" element="tns:usuario_existe_cliente" />
   </message>
-  <message name="pedido_listar_fechaResponse">
-    <part name="parameters" element="tns:pedido_listar_fechaResponse" />
-  </message>
-  <message name="cliente_listarClientes">
-    <part name="parameters" element="tns:cliente_listarClientes" />
-  </message>
-  <message name="cliente_listarClientesResponse">
-    <part name="parameters" element="tns:cliente_listarClientesResponse" />
+  <message name="usuario_existe_clienteResponse">
+    <part name="parameters" element="tns:usuario_existe_clienteResponse" />
   </message>
   <message name="pedido_modificarPago">
     <part name="parameters" element="tns:pedido_modificarPago" />
@@ -35,44 +104,11 @@
   <message name="pedido_modificarPagoResponse">
     <part name="parameters" element="tns:pedido_modificarPagoResponse" />
   </message>
-  <message name="usuario_insertar_cliente">
-    <part name="parameters" element="tns:usuario_insertar_cliente" />
+  <message name="cliente_listarClientesNombreCodigo">
+    <part name="parameters" element="tns:cliente_listarClientesNombreCodigo" />
   </message>
-  <message name="usuario_insertar_clienteResponse">
-    <part name="parameters" element="tns:usuario_insertar_clienteResponse" />
-  </message>
-  <message name="ParseException">
-    <part name="fault" element="tns:ParseException" />
-  </message>
-  <message name="producto_insertarProducto">
-    <part name="parameters" element="tns:producto_insertarProducto" />
-  </message>
-  <message name="producto_insertarProductoResponse">
-    <part name="parameters" element="tns:producto_insertarProductoResponse" />
-  </message>
-  <message name="producto_modificarProducto">
-    <part name="parameters" element="tns:producto_modificarProducto" />
-  </message>
-  <message name="producto_modificarProductoResponse">
-    <part name="parameters" element="tns:producto_modificarProductoResponse" />
-  </message>
-  <message name="cliente_buscarCliente">
-    <part name="parameters" element="tns:cliente_buscarCliente" />
-  </message>
-  <message name="cliente_buscarClienteResponse">
-    <part name="parameters" element="tns:cliente_buscarClienteResponse" />
-  </message>
-  <message name="producto_eliminarProducto">
-    <part name="parameters" element="tns:producto_eliminarProducto" />
-  </message>
-  <message name="producto_eliminarProductoResponse">
-    <part name="parameters" element="tns:producto_eliminarProductoResponse" />
-  </message>
-  <message name="marca_listarMarcas">
-    <part name="parameters" element="tns:marca_listarMarcas" />
-  </message>
-  <message name="marca_listarMarcasResponse">
-    <part name="parameters" element="tns:marca_listarMarcasResponse" />
+  <message name="cliente_listarClientesNombreCodigoResponse">
+    <part name="parameters" element="tns:cliente_listarClientesNombreCodigoResponse" />
   </message>
   <message name="detallePedido_obtenerLineasPedido">
     <part name="parameters" element="tns:detallePedido_obtenerLineasPedido" />
@@ -80,47 +116,11 @@
   <message name="detallePedido_obtenerLineasPedidoResponse">
     <part name="parameters" element="tns:detallePedido_obtenerLineasPedidoResponse" />
   </message>
-  <message name="cliente_listarClientesNombreCodigo">
-    <part name="parameters" element="tns:cliente_listarClientesNombreCodigo" />
+  <message name="proveedor_listarPorNombreRuc">
+    <part name="parameters" element="tns:proveedor_listarPorNombreRuc" />
   </message>
-  <message name="cliente_listarClientesNombreCodigoResponse">
-    <part name="parameters" element="tns:cliente_listarClientesNombreCodigoResponse" />
-  </message>
-  <message name="producto_listarProductosNombre">
-    <part name="parameters" element="tns:producto_listarProductosNombre" />
-  </message>
-  <message name="producto_listarProductosNombreResponse">
-    <part name="parameters" element="tns:producto_listarProductosNombreResponse" />
-  </message>
-  <message name="torre_consultarStockProducto">
-    <part name="parameters" element="tns:torre_consultarStockProducto" />
-  </message>
-  <message name="torre_consultarStockProductoResponse">
-    <part name="parameters" element="tns:torre_consultarStockProductoResponse" />
-  </message>
-  <message name="almacen_listarAlmacenes">
-    <part name="parameters" element="tns:almacen_listarAlmacenes" />
-  </message>
-  <message name="almacen_listarAlmacenesResponse">
-    <part name="parameters" element="tns:almacen_listarAlmacenesResponse" />
-  </message>
-  <message name="almacen_reportePorId">
-    <part name="parameters" element="tns:almacen_reportePorId" />
-  </message>
-  <message name="almacen_reportePorIdResponse">
-    <part name="parameters" element="tns:almacen_reportePorIdResponse" />
-  </message>
-  <message name="pedido_listar_pago">
-    <part name="parameters" element="tns:pedido_listar_pago" />
-  </message>
-  <message name="pedido_listar_pagoResponse">
-    <part name="parameters" element="tns:pedido_listar_pagoResponse" />
-  </message>
-  <message name="usuario_existe_cliente">
-    <part name="parameters" element="tns:usuario_existe_cliente" />
-  </message>
-  <message name="usuario_existe_clienteResponse">
-    <part name="parameters" element="tns:usuario_existe_clienteResponse" />
+  <message name="proveedor_listarPorNombreRucResponse">
+    <part name="parameters" element="tns:proveedor_listarPorNombreRucResponse" />
   </message>
   <message name="pedido_listar_historial_ventas">
     <part name="parameters" element="tns:pedido_listar_historial_ventas" />
@@ -128,7 +128,98 @@
   <message name="pedido_listar_historial_ventasResponse">
     <part name="parameters" element="tns:pedido_listar_historial_ventasResponse" />
   </message>
+  <message name="torre_consultarStockProducto">
+    <part name="parameters" element="tns:torre_consultarStockProducto" />
+  </message>
+  <message name="torre_consultarStockProductoResponse">
+    <part name="parameters" element="tns:torre_consultarStockProductoResponse" />
+  </message>
+  <message name="almacen_listarTorresPorAlmacen">
+    <part name="parameters" element="tns:almacen_listarTorresPorAlmacen" />
+  </message>
+  <message name="almacen_listarTorresPorAlmacenResponse">
+    <part name="parameters" element="tns:almacen_listarTorresPorAlmacenResponse" />
+  </message>
+  <message name="producto_listarProductosNombre">
+    <part name="parameters" element="tns:producto_listarProductosNombre" />
+  </message>
+  <message name="producto_listarProductosNombreResponse">
+    <part name="parameters" element="tns:producto_listarProductosNombreResponse" />
+  </message>
+  <message name="pedido_insertarVenta">
+    <part name="parameters" element="tns:pedido_insertarVenta" />
+  </message>
+  <message name="pedido_insertarVentaResponse">
+    <part name="parameters" element="tns:pedido_insertarVentaResponse" />
+  </message>
+  <message name="marca_listarMarcas">
+    <part name="parameters" element="tns:marca_listarMarcas" />
+  </message>
+  <message name="marca_listarMarcasResponse">
+    <part name="parameters" element="tns:marca_listarMarcasResponse" />
+  </message>
+  <message name="proveedor_insertar">
+    <part name="parameters" element="tns:proveedor_insertar" />
+  </message>
+  <message name="proveedor_insertarResponse">
+    <part name="parameters" element="tns:proveedor_insertarResponse" />
+  </message>
+  <message name="pedido_listar_pago">
+    <part name="parameters" element="tns:pedido_listar_pago" />
+  </message>
+  <message name="pedido_listar_pagoResponse">
+    <part name="parameters" element="tns:pedido_listar_pagoResponse" />
+  </message>
   <portType name="ServicioWS">
+    <operation name="cliente_listarClientes">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesRequest" message="tns:cliente_listarClientes" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesResponse" message="tns:cliente_listarClientesResponse" />
+    </operation>
+    <operation name="usuario_insertar_cliente">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteRequest" message="tns:usuario_insertar_cliente" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteResponse" message="tns:usuario_insertar_clienteResponse" />
+      <fault wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_cliente/Fault/ParseException" name="ParseException" message="tns:ParseException" />
+    </operation>
+    <operation name="cliente_buscarCliente">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteRequest" message="tns:cliente_buscarCliente" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteResponse" message="tns:cliente_buscarClienteResponse" />
+    </operation>
+    <operation name="detallePed_insertarPorLoteDetalles">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePed_insertarPorLoteDetallesRequest" message="tns:detallePed_insertarPorLoteDetalles" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePed_insertarPorLoteDetallesResponse" message="tns:detallePed_insertarPorLoteDetallesResponse" />
+    </operation>
+    <operation name="pedido_listar_fecha">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaRequest" message="tns:pedido_listar_fecha" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaResponse" message="tns:pedido_listar_fechaResponse" />
+    </operation>
+    <operation name="almacen_reportePorId">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdRequest" message="tns:almacen_reportePorId" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdResponse" message="tns:almacen_reportePorIdResponse" />
+    </operation>
+    <operation name="cliente_obtenerPorId">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdRequest" message="tns:cliente_obtenerPorId" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_obtenerPorIdResponse" message="tns:cliente_obtenerPorIdResponse" />
+    </operation>
+    <operation name="producto_modificarProducto">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoRequest" message="tns:producto_modificarProducto" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoResponse" message="tns:producto_modificarProductoResponse" />
+    </operation>
+    <operation name="producto_buscarProductosCriterio">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_buscarProductosCriterioRequest" message="tns:producto_buscarProductosCriterio" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_buscarProductosCriterioResponse" message="tns:producto_buscarProductosCriterioResponse" />
+    </operation>
+    <operation name="producto_insertarProducto">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoRequest" message="tns:producto_insertarProducto" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoResponse" message="tns:producto_insertarProductoResponse" />
+    </operation>
+    <operation name="producto_eliminarProducto">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoRequest" message="tns:producto_eliminarProducto" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoResponse" message="tns:producto_eliminarProductoResponse" />
+    </operation>
+    <operation name="almacen_listarAlmacenes">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesRequest" message="tns:almacen_listarAlmacenes" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesResponse" message="tns:almacen_listarAlmacenesResponse" />
+    </operation>
     <operation name="producto_obtenerPorId">
       <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_obtenerPorIdRequest" message="tns:producto_obtenerPorId" />
       <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_obtenerPorIdResponse" message="tns:producto_obtenerPorIdResponse" />
@@ -137,119 +228,62 @@
       <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/torre_listarAlertasDeStockRequest" message="tns:torre_listarAlertasDeStock" />
       <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/torre_listarAlertasDeStockResponse" message="tns:torre_listarAlertasDeStockResponse" />
     </operation>
-    <operation name="pedido_listar_fecha">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaRequest" message="tns:pedido_listar_fecha" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_fechaResponse" message="tns:pedido_listar_fechaResponse" />
-    </operation>
-    <operation name="cliente_listarClientes">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesRequest" message="tns:cliente_listarClientes" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesResponse" message="tns:cliente_listarClientesResponse" />
+    <operation name="usuario_existe_cliente">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteRequest" message="tns:usuario_existe_cliente" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteResponse" message="tns:usuario_existe_clienteResponse" />
     </operation>
     <operation name="pedido_modificarPago">
       <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoRequest" message="tns:pedido_modificarPago" />
       <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_modificarPagoResponse" message="tns:pedido_modificarPagoResponse" />
     </operation>
-    <operation name="usuario_insertar_cliente">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteRequest" message="tns:usuario_insertar_cliente" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_clienteResponse" message="tns:usuario_insertar_clienteResponse" />
-      <fault wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_insertar_cliente/Fault/ParseException" name="ParseException" message="tns:ParseException" />
-    </operation>
-    <operation name="producto_insertarProducto">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoRequest" message="tns:producto_insertarProducto" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_insertarProductoResponse" message="tns:producto_insertarProductoResponse" />
-    </operation>
-    <operation name="producto_modificarProducto">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoRequest" message="tns:producto_modificarProducto" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_modificarProductoResponse" message="tns:producto_modificarProductoResponse" />
-    </operation>
-    <operation name="cliente_buscarCliente">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteRequest" message="tns:cliente_buscarCliente" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_buscarClienteResponse" message="tns:cliente_buscarClienteResponse" />
-    </operation>
-    <operation name="producto_eliminarProducto">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoRequest" message="tns:producto_eliminarProducto" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_eliminarProductoResponse" message="tns:producto_eliminarProductoResponse" />
-    </operation>
-    <operation name="marca_listarMarcas">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasRequest" message="tns:marca_listarMarcas" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasResponse" message="tns:marca_listarMarcasResponse" />
+    <operation name="cliente_listarClientesNombreCodigo">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodigoRequest" message="tns:cliente_listarClientesNombreCodigo" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodigoResponse" message="tns:cliente_listarClientesNombreCodigoResponse" />
     </operation>
     <operation name="detallePedido_obtenerLineasPedido">
       <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePedido_obtenerLineasPedidoRequest" message="tns:detallePedido_obtenerLineasPedido" />
       <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/detallePedido_obtenerLineasPedidoResponse" message="tns:detallePedido_obtenerLineasPedidoResponse" />
     </operation>
-    <operation name="cliente_listarClientesNombreCodigo">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodigoRequest" message="tns:cliente_listarClientesNombreCodigo" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/cliente_listarClientesNombreCodigoResponse" message="tns:cliente_listarClientesNombreCodigoResponse" />
-    </operation>
-    <operation name="producto_listarProductosNombre">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreRequest" message="tns:producto_listarProductosNombre" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreResponse" message="tns:producto_listarProductosNombreResponse" />
-    </operation>
-    <operation name="torre_consultarStockProducto">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/torre_consultarStockProductoRequest" message="tns:torre_consultarStockProducto" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/torre_consultarStockProductoResponse" message="tns:torre_consultarStockProductoResponse" />
-    </operation>
-    <operation name="almacen_listarAlmacenes">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesRequest" message="tns:almacen_listarAlmacenes" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarAlmacenesResponse" message="tns:almacen_listarAlmacenesResponse" />
-    </operation>
-    <operation name="almacen_reportePorId">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdRequest" message="tns:almacen_reportePorId" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_reportePorIdResponse" message="tns:almacen_reportePorIdResponse" />
-    </operation>
-    <operation name="pedido_listar_pago">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_pagoRequest" message="tns:pedido_listar_pago" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_pagoResponse" message="tns:pedido_listar_pagoResponse" />
-    </operation>
-    <operation name="usuario_existe_cliente">
-      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteRequest" message="tns:usuario_existe_cliente" />
-      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/usuario_existe_clienteResponse" message="tns:usuario_existe_clienteResponse" />
+    <operation name="proveedor_listarPorNombreRuc">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_listarPorNombreRucRequest" message="tns:proveedor_listarPorNombreRuc" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_listarPorNombreRucResponse" message="tns:proveedor_listarPorNombreRucResponse" />
     </operation>
     <operation name="pedido_listar_historial_ventas">
       <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_historial_ventasRequest" message="tns:pedido_listar_historial_ventas" />
       <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_historial_ventasResponse" message="tns:pedido_listar_historial_ventasResponse" />
     </operation>
+    <operation name="torre_consultarStockProducto">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/torre_consultarStockProductoRequest" message="tns:torre_consultarStockProducto" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/torre_consultarStockProductoResponse" message="tns:torre_consultarStockProductoResponse" />
+    </operation>
+    <operation name="almacen_listarTorresPorAlmacen">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarTorresPorAlmacenRequest" message="tns:almacen_listarTorresPorAlmacen" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/almacen_listarTorresPorAlmacenResponse" message="tns:almacen_listarTorresPorAlmacenResponse" />
+    </operation>
+    <operation name="producto_listarProductosNombre">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreRequest" message="tns:producto_listarProductosNombre" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/producto_listarProductosNombreResponse" message="tns:producto_listarProductosNombreResponse" />
+    </operation>
+    <operation name="pedido_insertarVenta">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_insertarVentaRequest" message="tns:pedido_insertarVenta" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_insertarVentaResponse" message="tns:pedido_insertarVentaResponse" />
+    </operation>
+    <operation name="marca_listarMarcas">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasRequest" message="tns:marca_listarMarcas" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/marca_listarMarcasResponse" message="tns:marca_listarMarcasResponse" />
+    </operation>
+    <operation name="proveedor_insertar">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_insertarRequest" message="tns:proveedor_insertar" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/proveedor_insertarResponse" message="tns:proveedor_insertarResponse" />
+    </operation>
+    <operation name="pedido_listar_pago">
+      <input wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_pagoRequest" message="tns:pedido_listar_pago" />
+      <output wsam:Action="http://servicios.TemuFans.pucp.edu.pe/ServicioWS/pedido_listar_pagoResponse" message="tns:pedido_listar_pagoResponse" />
+    </operation>
   </portType>
   <binding name="ServicioWSPortBinding" type="tns:ServicioWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="producto_obtenerPorId">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="torre_listarAlertasDeStock">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="pedido_listar_fecha">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="cliente_listarClientes">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="pedido_modificarPago">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -270,24 +304,6 @@
         <soap:fault use="literal" name="ParseException" namespace="" />
       </fault>
     </operation>
-    <operation name="producto_insertarProducto">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="producto_modificarProducto">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="cliente_buscarCliente">
       <soap:operation soapAction="" />
       <input>
@@ -297,7 +313,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="producto_eliminarProducto">
+    <operation name="detallePed_insertarPorLoteDetalles">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -306,52 +322,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="marca_listarMarcas">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="detallePedido_obtenerLineasPedido">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="cliente_listarClientesNombreCodigo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="producto_listarProductosNombre">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="torre_consultarStockProducto">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="almacen_listarAlmacenes">
+    <operation name="pedido_listar_fecha">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -369,7 +340,70 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="pedido_listar_pago">
+    <operation name="cliente_obtenerPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="producto_modificarProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="producto_buscarProductosCriterio">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="producto_insertarProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="producto_eliminarProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="almacen_listarAlmacenes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="producto_obtenerPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="torre_listarAlertasDeStock">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -387,7 +421,106 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="pedido_modificarPago">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cliente_listarClientesNombreCodigo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="detallePedido_obtenerLineasPedido">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="proveedor_listarPorNombreRuc">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="pedido_listar_historial_ventas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="torre_consultarStockProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="almacen_listarTorresPorAlmacen">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="producto_listarProductosNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pedido_insertarVenta">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="marca_listarMarcas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="proveedor_insertar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pedido_listar_pago">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

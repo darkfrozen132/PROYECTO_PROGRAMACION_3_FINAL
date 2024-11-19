@@ -20,8 +20,7 @@ public class Entrega {
     }
     
     public Entrega() {
-        this.pedido = null;
-        this.pedido = null;
+        this.pedido = new Pedido();
         this.nro_entrega_pedido = null;
         this.codigo = null;
         this.fecha_entrega = null;

@@ -58,4 +58,8 @@ public class ClienteBO {
     public boolean existeCliente(String doi){
         return this.clienteDAO.existeCliente(doi);
     }
+    
+    public Cliente obtenerPorId(Integer idCliente){
+        return this.clienteDAO.obtenerPorId(idCliente);
+    }
 }

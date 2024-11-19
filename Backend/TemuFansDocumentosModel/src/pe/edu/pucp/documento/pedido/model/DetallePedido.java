@@ -22,9 +22,8 @@ public class DetallePedido {
     }
     
     public DetallePedido() {
-        this.pedido = null;
-        this.producto = null;
-        this.pedido = null;
+        this.pedido = new Pedido();
+        this.producto = new Producto();
         this.codigo = null;
         this.cantidad = null;
         this.monto = 0;

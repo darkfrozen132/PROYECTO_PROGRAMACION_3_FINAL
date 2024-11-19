@@ -24,13 +24,13 @@ namespace PruebaBootstrap.Almacen
         protected global::System.Web.UI.HtmlControls.HtmlAnchor idReporteAlmacen;
 
         /// <summary>
-        /// Control idModificarProducto.
+        /// Control idProductoEnTorre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor idModificarProducto;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor idProductoEnTorre;
 
         /// <summary>
         /// Control cphInventarioContenido.

@@ -23,9 +23,6 @@ public class DetalleEntrega {
         this.entrega = new Entrega();
         this.detallePedido = new DetallePedido();
         this.torre = new Torre_Un_Paquete();
-        this.entrega = null;
-        this.detallePedido = null;
-        this.torre = null;
         this.codigo = null;
         this.cantidad = null;
     }

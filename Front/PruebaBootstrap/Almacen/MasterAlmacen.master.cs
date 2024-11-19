@@ -18,6 +18,11 @@ namespace PruebaBootstrap.Almacen
                 idReporteAlmacen.Attributes["class"] += " active";
                 idReporteAlmacen.Attributes["aria-current"] = "true";
             }
+            else if (currentPage == "AsignarProductoEnTorre.aspx")
+            {
+                idProductoEnTorre.Attributes["class"] += " active";
+                idProductoEnTorre.Attributes["aria-current"] = "true";
+            }
         }
     }
 }

@@ -61,6 +61,13 @@
             <td><asp:TextBox ID="txtMarca" runat="server" CssClass="form-control" placeholder="Marca del Producto" ReadOnly="true" /></td>
         </tr>
     </table>
+    <div class="card-footer">
+        <!-- Botón Imprimir -->
+        <!--
+        <asp:Button ID="Button" CssClass="btn btn-success float-start" runat="server" Text="Imprimir" OnClientClick="window.print(); return false;" />
+        -->
+        <asp:Button ID="Button1" CssClass="btn btn-success float-start" runat="server" Text="Generar PDF" OnClick="Button1_Click" />
 
+    </div>
 </div>
 </asp:Content>

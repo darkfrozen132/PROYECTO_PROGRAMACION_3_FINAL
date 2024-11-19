@@ -27,14 +27,25 @@ namespace TemuFansUsuarioBO
             return this.ServicioWS.usuario_insertar_cliente(tipo_usuario, doi, tipo_doi, correo, fechaRegistro, nombre, telefono);
         }
 
-        public BindingList<cliente> buscarCliente(string nombre)
-        {
-            cliente[] lista = this.ServicioWS.cliente_buscarCliente(nombre);
-            return new BindingList<cliente>(lista);
-        }
         public Boolean existeCliente(string doi)
         {
             return this.ServicioWS.usuario_existe_cliente(doi);
+        }
+
+        public BindingList<cliente> buscarCliente(string nombre)
+        {
+            cliente[] lista = this.ServicioWS.cliente_buscarCliente(nombre);
+            // Si lista es null, crea un array vacío
+            if (lista == null)
+            {
+                lista = new cliente[0];
+            }
+            return new BindingList<cliente>(lista);
+        }
+
+        public cliente obtenerPorId(int idCliente)
+        {
+            return this.ServicioWS.cliente_obtenerPorId(idCliente);
         }
     }
 }

@@ -20,15 +20,18 @@ import pe.edu.pucp.documento.pedido.model.ResumenHistorialVentas;
 import pe.edu.pucp.documento.pedido.model.ResumenPorFecha;
 import pe.edu.pucp.inventario.model.Almacen;
 import pe.edu.pucp.inventario.model.ConsultaStock;
+import pe.edu.pucp.inventario.model.Torre_Un_Paquete;
 import pe.edu.pucp.mercaderia.bo.AlmacenBO;
 import pe.edu.pucp.mercaderia.bo.MarcaBO;
 import pe.edu.pucp.mercaderia.bo.Torre_Un_PaqueteBO;
 import pe.edu.pucp.mercaderia.model.Marca;
 import pe.edu.pucp.mercaderia.model.Producto;
+import pe.edu.pucp.usuario.BO.ProveedorBO;
+import pe.edu.pucp.usuario.model.Proveedor;
 
 /**
  *
- * @author usuario
+ * @author divano132
  */
 @WebService(serviceName = "ServicioWS")
 public class ServicioWS {
@@ -40,6 +43,7 @@ public class ServicioWS {
     private final MarcaBO marcabo;
     private final Torre_Un_PaqueteBO torrebo;
     private final AlmacenBO almacenbo;
+    private final ProveedorBO proveedorbo;
     /**
      * This is a sample web service operation
      */
@@ -51,6 +55,7 @@ public class ServicioWS {
         this.marcabo = new MarcaBO();
         this.torrebo = new Torre_Un_PaqueteBO();
         this.almacenbo = new AlmacenBO();
+        this.proveedorbo = new ProveedorBO();
     }
     
     /////////////////////////////////////////////////////////////////
@@ -95,9 +100,22 @@ public class ServicioWS {
         return this.clientebo.existeCliente(doi);
     }
     
+    @WebMethod(operationName = "cliente_obtenerPorId")
+    public Cliente cliente_obtenerPorId(
+            @WebParam(name = "idCliente")Integer idCliente){
+        return this.clientebo.obtenerPorId(idCliente);
+    }
+    
     /////////////////////////////////////////////////////////////////
     ///////////////////     PRODUCTO     ////////////////////////////
     /////////////////////////////////////////////////////////////////
+    
+    @WebMethod(operationName = "producto_buscarProductosCriterio")
+    public ArrayList<Producto> buscarProductosCriterio(
+            @WebParam(name = "nombre")String nombre,
+            @WebParam(name = "codigo")String codigo){
+        return this.productobo.buscarProductosCriterio(nombre,codigo);
+    }
     
     @WebMethod(operationName = "producto_insertarProducto")
     public Integer producto_insertarProducto(@WebParam(name = "precio")Double precio, 
@@ -140,12 +158,12 @@ public class ServicioWS {
     /////////////////////////////////////////////////////////////////
     
     @WebMethod(operationName = "torre_consultarStockProducto")
-    public ConsultaStock torre_consultarStockProducto(@WebParam(name = "idProducto")Integer id){
+    public Torre_Un_Paquete torre_consultarStockProducto(@WebParam(name = "idProducto")Integer id){
         return this.torrebo.consultarStockProductoPorId(id);
     }
     
     @WebMethod(operationName = "torre_listarAlertasDeStock")
-    public ArrayList<ConsultaStock> torre_listarAlertasDeStock(){
+    public ArrayList<Torre_Un_Paquete> torre_listarAlertasDeStock(){
         return this.torrebo.listarAlertasDeStock();
     }
     
@@ -160,6 +178,11 @@ public class ServicioWS {
     
     @WebMethod(operationName = "almacen_reportePorId")
     public ArrayList<ConsultaStock> almacen_reportePorId(@WebParam(name = "idAlmacen")Integer id){
+        return this.almacenbo.reportePorId(id);
+    }
+    
+    @WebMethod(operationName = "almacen_listarTorresPorAlmacen")
+    public ArrayList<ConsultaStock> almacen_listarTorresPorAlmacen(@WebParam(name = "idAlmacen")Integer id){
         return this.almacenbo.reportePorId(id);
     }
     
@@ -194,20 +217,53 @@ public class ServicioWS {
         return this.pedidobo.obtenerListaPago(fechaInicio, fechaFin);
     }
     
-    ////////////////////////////////////////////////////////////////////////////
+    @WebMethod(operationName = "pedido_insertarVenta")
+    public Integer insertarVenta(
+            @WebParam(name = "idUsuario")Integer idUsuario,
+            @WebParam(name = "idEmpleado")Integer idEmpleado,
+            @WebParam(name = "subtotal")double subtotal,
+            @WebParam(name = "impuesto")double impuesto,
+            @WebParam(name = "total")double total){
+        return this.pedidobo.insertarVenta(idUsuario, idEmpleado, subtotal, impuesto, total);
+    }
     
-    
+    /////////////////////////////////////////////////////////////////
+    ///////////////////   DETALLE PEDIDO  ///////////////////////////
+    /////////////////////////////////////////////////////////////////
     
     @WebMethod(operationName = "detallePedido_obtenerLineasPedido")
     public ArrayList<DetallePedido> detallePedido_obtenerLineasPedido(@WebParam(name = "id")Integer id){
-        
         return this.detallePedidoBo.listarLineasDePedido(id);
     }
+    
+    @WebMethod(operationName = "detallePed_insertarPorLoteDetalles")
+    public void insertarPorLoteDetalles(
+            @WebParam(name = "detalles")ArrayList<DetallePedido> detalles){
+        this.detallePedidoBo.insertarPorLoteLineaPed(detalles);
+    }
+    
+    /////////////////////////////////////////////////////////////////
+    ////////////////////       MARCA      ///////////////////////////
+    /////////////////////////////////////////////////////////////////
     
     @WebMethod(operationName = "marca_listarMarcas")
     public ArrayList<Marca> marca_listarMarcas(){
         return this.marcabo.listarMarcas();
     }
     
+    /////////////////////////////////////////////////////////////////
+    ////////////////////     PROVEEDOR    ///////////////////////////
+    /////////////////////////////////////////////////////////////////
     
+    @WebMethod(operationName = "proveedor_insertar")
+    public Integer proveedor_insertar(@WebParam(name = "doi")String doi,@WebParam(name = "correo")String correo, 
+            @WebParam(name = "nombre")String nombre){
+        
+        return this.proveedorbo.insertar(doi, correo, nombre);
+    }
+    
+    @WebMethod(operationName = "proveedor_listarPorNombreRuc")
+    public ArrayList<Proveedor> proveedor_listarPorNombreRuc(@WebParam(name = "doi")String doi,@WebParam(name = "nombre") String nombre){
+        return this.proveedorbo.listarPorNombreRuc(doi, nombre);
+    }
 }

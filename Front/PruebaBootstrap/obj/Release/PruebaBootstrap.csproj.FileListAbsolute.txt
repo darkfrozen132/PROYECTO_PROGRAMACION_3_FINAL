@@ -66,3 +66,7 @@ D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Fron
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\obj\Release\PruebaBo.AF03839A.Up2Date
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\obj\Release\PruebaBootstrap.dll
 D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\obj\Release\PruebaBootstrap.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\BouncyCastle.Cryptography.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\itextsharp.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\BouncyCastle.Cryptography.xml
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\PruebaBootstrap\bin\itextsharp.xml

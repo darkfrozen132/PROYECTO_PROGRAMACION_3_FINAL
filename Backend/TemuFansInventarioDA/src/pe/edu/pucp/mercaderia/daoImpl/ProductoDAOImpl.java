@@ -57,7 +57,11 @@ public class ProductoDAOImpl extends DAOImpl implements ProductoDAO {
             case 2 -> {
                 return "LISTAR_PRODUCTOS_NOMBRE";
             }
-            default -> throw new AssertionError();
+            case 3 -> {
+                return "LISTAR_POR_NOMBRE_PRODUCTO";
+            }
+            default ->
+                throw new AssertionError();
         }
     }
 
@@ -126,7 +130,20 @@ public class ProductoDAOImpl extends DAOImpl implements ProductoDAO {
                 case 2 -> {
                     //sin parametros de entrada
                 }
-                default -> throw new AssertionError();
+                case 3 -> {
+                    if (this.producto.getCodigo() == null) {
+                        this.registrarParametroNulo("_codigo", Types.VARCHAR);
+                    } else {
+                        this.registrarParametroEntrada("_codigo", this.producto.getCodigo());
+                    }
+                    if (this.producto.getNombre() == null) {
+                        this.registrarParametroNulo("_nombre", Types.VARCHAR);
+                    } else {
+                        this.registrarParametroEntrada("_nombre", this.producto.getNombre());
+                    }
+                }
+                default ->
+                    throw new AssertionError();
             }
 
         } catch (SQLException ex) {
@@ -200,7 +217,24 @@ public class ProductoDAOImpl extends DAOImpl implements ProductoDAO {
                     this.producto.setPrecio(lector.getDouble("precio"));
                     return this.producto;
                 }
-                default -> throw new AssertionError();
+                case 3 -> {
+                    /*
+                    prod.idProducto AS id,
+				prod.codigo AS codigo,
+				prod.nombre AS nombre,
+				prod.precio AS precio,
+				mar.nombre AS marca
+                     */
+                    this.producto.setIdProducto(lector.getInt("id"));
+                    this.producto.setCodigo(lector.getString("codigo"));
+                    this.marca = new Marca();
+                    this.marca.setNombre(lector.getString("marca"));
+                    this.producto.setMarca(marca);
+                    this.producto.setNombre(lector.getString("nombre"));
+                    this.producto.setPrecio(lector.getDouble("precio"));
+                }
+                default ->
+                    throw new AssertionError();
             }
         } catch (SQLException ex) {
             Logger.getLogger(ProductoDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -287,6 +321,21 @@ public class ProductoDAOImpl extends DAOImpl implements ProductoDAO {
         for (Object obj : super.listar()) {
             lista.add((Producto) obj);
         }
+        return lista;
+    }
+
+    @Override
+    public ArrayList<Producto> buscarProductosCriterio(String nombre, String codigo) {
+        ArrayList<Producto> lista = new ArrayList<>();
+        this.nroParametros = 2;
+        this.tipo_listado = 3;
+        this.producto = new Producto();
+        this.producto.setNombre(nombre);
+        this.producto.setCodigo(codigo);
+        for (Object obj : super.listar()) {
+            lista.add((Producto) obj);
+        }
+        this.nroParametros = 0;
         return lista;
     }
 }

@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/yo/programacion%203/TA/Lab11_entrega/backend/PROYECTO_PROGRAMACION_3_FINAL/Backend/TemuFansUsuarioDA/src/pe/edu/pucp/usuario/daoImpl/ClienteDAOImpl.java</file>
+            <file>file:/D:/yo/programacion%203/TA/Lab11_entrega/backend/PROYECTO_PROGRAMACION_3_FINAL/Backend/TemuFansUsuarioDA/src/pe/edu/pucp/usuario/dao/ProveedorDAO.java</file>
+            <file>file:/D:/yo/programacion%203/TA/Lab11_entrega/backend/PROYECTO_PROGRAMACION_3_FINAL/Backend/TemuFansUsuarioDA/src/pe/edu/pucp/usuario/dao/ClienteDAO.java</file>
+            <file>file:/D:/yo/programacion%203/TA/Lab11_entrega/backend/PROYECTO_PROGRAMACION_3_FINAL/Backend/TemuFansUsuarioDA/src/pe/edu/pucp/usuario/daoImpl/ProveedorDAOImpl.java</file>
+        </group>
     </open-files>
 </project-private>

@@ -27,7 +27,7 @@
 
                     <div class="col">
                       <div class="card shadow-sm">
-                          <img src="../super_secret_settings/img_proveedor.jpg" class="card-img-top" alt="Descripción de la imagen" width="100%" height="225">
+                          <img src="/super_secret_settings/img_proveedor.png" class="card-img-top" alt="Descripción de la imagen" width="100%" height="225">
                         <div class="card-body">
                           <p class="card-text">Bienvenido a la pestaña de Compras.</p>
                           <div class="d-flex justify-content-between align-items-center">

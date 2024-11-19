@@ -46,4 +46,8 @@ public class ProductoBO {
     public ArrayList<Producto> listarProductosNombre(){
         return this.productoDAO.listarProductosNombre();
     }
+    
+    public ArrayList<Producto> buscarProductosCriterio(String nombre,String codigo){
+        return this.productoDAO.buscarProductosCriterio(nombre,codigo);
+    }
 }

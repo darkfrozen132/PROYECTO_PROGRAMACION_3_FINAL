@@ -55,10 +55,11 @@ public class DetPedDAOImpl extends DAOImpl implements DetPedDAO{
             /*
                 datos del procedimiento para el insertar
             */
-            this.nroParametros = 5;
+            //this.nroParametros = 5;
             for(DetallePedido det : detalles){
-                this.detalle = det;
-                Integer resOp = super.insertar();
+                /*this.detalle = det;
+                Integer resOp = super.insertar();*/
+                Integer resOp = this.insertar(det);
                 System.out.println("El resultado de la operacion es : " + resOp);
             }
             this.comitarTransaccion();

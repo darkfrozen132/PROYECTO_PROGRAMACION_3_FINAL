@@ -1,0 +1,10 @@
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreos\bin\Debug\TemuFansEnviaCorreos.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreos\bin\Debug\TemuFansEnviaCorreos.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreos\bin\Debug\TemuFansBO.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreos\bin\Debug\TemuFansBO.pdb
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreos\bin\Debug\TemuFansBO.dll.config
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreos\obj\Debug\TemuFansEnviaCorreos.csproj.AssemblyReference.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreos\obj\Debug\TemuFansEnviaCorreos.csproj.CoreCompileInputs.cache
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreos\obj\Debug\TemuFans.16C9522C.Up2Date
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreos\obj\Debug\TemuFansEnviaCorreos.dll
+D:\yo\programacion 3\TA\Lab11_entrega\backend\PROYECTO_PROGRAMACION_3_FINAL\Front\TemuFansEnviaCorreos\obj\Debug\TemuFansEnviaCorreos.pdb
